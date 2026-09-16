@@ -87,7 +87,8 @@ MOMO demonstrates a candidate physical-design direction (small stylized fox/scou
 - [x] Early highest-risk prototype/test is an explicit governance decision
 - [x] Data serialization/schema, stable-ID format and asset-registry naming deliberately deferred until real requirements
 - [x] Repository ruleset state checked: no rulesets are currently configured
-- [ ] Phase 0 owner/reviewer acceptance and merge
+- [x] Phase 0 foundation prepared for owner/reviewer decision
+- [ ] Owner/reviewer accepts Phase 0 and merges
 - [ ] Configure `main` protection/ruleset when repository permissions/workflow allow it
 
 ## NEXT MILESTONES
@@ -104,4 +105,4 @@ Do not mass-generate roster/skills/items/campaign/STL; finalize gacha/monetizati
 
 ## NEXT DECISION
 
-Owner accepts or requests changes to the Phase 0 foundation. After merge, Product Vision should combine focused external research with explicit hypotheses and choose the cheapest credible test for the highest-risk product assumption before deep worldbuilding.
+Owner/reviewer accepts Phase 0 or requests specific changes. After merge, Product Vision should combine focused external research with explicit hypotheses and choose the cheapest credible test for the highest-risk product assumption before deep worldbuilding.
