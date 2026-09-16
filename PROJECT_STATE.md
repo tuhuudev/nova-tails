@@ -14,16 +14,16 @@ Obsolete decisions become `DEPRECATED` rather than being silently erased.
 
 Nothing is permanently locked yet. The project is deliberately still validating architecture and product assumptions.
 
-## APPROVED DIRECTION
+## APPROVED ARCHITECTURE DIRECTION
 
 - Build an original multi-species sci-fi/fantasy character universe.
-- Shared master character identity should drive game data, 2D art and printable 3D adaptations.
-- Printable figures should favor modular, color-separated FDM construction and practical assembly as a current direction, with actual manufacturing rules deferred to physical tests.
-- AI is an ideation/production assistant; reviewed repository canon remains authoritative.
-- Do not mass-produce characters/assets until a vertical slice validates the systems and asset pipeline.
-- Use short-lived, purpose-specific branches and reviewed PRs for significant canonical changes.
+- When characters span outputs, one reviewed master identity should drive game/2D/3D adaptations rather than allowing independent identity drift.
+- AI is an ideation/production assistant; reviewed repository state remains authoritative.
+- Do not mass-produce characters/assets until a vertical slice validates relevant systems and pipeline assumptions.
+- Use short-lived, purpose-specific branches and reviewed PRs for significant changes.
 - Keep human-readable rationale, machine-readable canon, schemas, prompts and assets as distinct responsibilities.
 - Avoid premature Git LFS/schema/automation complexity until real prototype/asset needs exist.
+- Treat the roadmap as risk-driven; use cheap prototypes/tests early when they can invalidate a risky assumption faster than more documentation.
 
 ## DRAFT / PRODUCT HYPOTHESES
 
@@ -42,6 +42,8 @@ These are deliberately **not** resolved inside the Phase 0 foundation PR:
 - Evolution forms and branching progression.
 - Boss phase + Break mechanics.
 - Three-slot equipment direction: Weapon / Armor / Accessory.
+- Role of physical 3D printing in the actual product (core pillar vs extension vs later layer).
+- Modular/color-separated/no-AMS-friendly FDM as the preferred physical design direction if the physical layer is retained.
 
 These hypotheses will move through dedicated design branches/PRs rather than being silently promoted by architecture documentation.
 
@@ -54,11 +56,11 @@ Current concept demonstrates a candidate physical-design direction:
 - small stylized fox/scout character;
 - approximately three base print colors;
 - roughly 10–14 major printable parts target;
-- physical seams should correspond to color/material boundaries;
-- optional accessories should not make the base figure difficult to manufacture;
-- identity should remain consistent between 2D/game/3D adaptations.
+- physical seams intended to correspond to color/material boundaries;
+- optional accessories intended not to make the base figure difficult to manufacture;
+- identity intended to remain consistent between 2D/game/3D adaptations.
 
-MOMO is a proof of concept, not the visual template for the universe and not yet a fully canonical production character.
+MOMO is a proof of concept, not the visual template for the universe and not yet a fully canonical production character. Its printability assumptions are not proven until a real model is engineered, sliced, printed and assembled.
 
 ## MAJOR UNKNOWN / MUST VALIDATE
 
@@ -70,7 +72,7 @@ MOMO is a proof of concept, not the visual template for the universe and not yet
 6. World conflict and narrative motivation.
 7. Character taxonomy complexity.
 8. Sustainable 2D → 3D adaptation pipeline.
-9. Actual A1 mini connector/tolerance/manufacturing standards from physical tests.
+9. Actual target-printer connector/tolerance/manufacturing standards from physical tests.
 10. IP/name/similarity review process.
 11. Whether the game concept is fun without relying on collection/progression rewards.
 12. Whether physical printing is core product, extension or later layer.
@@ -87,6 +89,7 @@ MOMO is a proof of concept, not the visual template for the universe and not yet
 - [x] Master Architecture v0.1 hardened to separate durable principles from product hypotheses
 - [x] Roadmap revised around risk-reduction/prototype gates
 - [x] Product Vision removed from Phase 0 PR so it can receive a dedicated review
+- [x] Physical-collectible direction moved back to REVIEW rather than prematurely treating it as product canon
 - [ ] Phase 0 foundation PR reviewed/accepted and merged
 - [ ] `main` protection/ruleset configured when repository permissions/workflow allow it
 
