@@ -1,6 +1,6 @@
 # NOVA TAILS
 
-> Working title. Current product hypothesis: a distinctive original multi-species sci-fi/fantasy character universe with potential game, 2D and modular FDM-printable 3D adaptations. Product Vision still needs to validate audience, differentiation, primary product and output priorities. Originality/IP risk also requires review; it is not guaranteed by AI generation.
+> Working title. Current product hypothesis: a distinctive original multi-species sci-fi/fantasy character universe capable of supporting multiple adaptations over time. Product Vision still needs to validate audience, differentiation, primary product and output priorities. Originality/IP risk also requires review; it is not guaranteed by AI generation.
 
 ## Current phase
 
@@ -54,14 +54,12 @@ After Phase 0 is reviewed and merged:
 ```text
 Product Vision + targeted evidence
 → Core Loop
-→ Minimum World Architecture
-→ Minimum Character Taxonomy
-→ Visual Identity Proof
-→ Interaction/Combat Prototype
-→ Mathematical/Data Model
-→ Vertical Slice
-→ Simulation / Physical Asset Proof (if retained)
-→ Scale only after validation
+→ minimum world / taxonomy / visual work required by the product
+→ interaction prototype as early as useful
+→ structured data / math when behavior is known
+→ vertical slice
+→ simulation / physical proof only for retained pillars
+→ scale only after validation
 ```
 
 This is a risk/dependency sequence, not strict waterfall. A cheap prototype may move earlier if it answers a critical unknown faster than more documentation.
