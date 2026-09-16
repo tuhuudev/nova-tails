@@ -1,10 +1,12 @@
 # Contributing to NOVA TAILS
 
-NOVA TAILS is currently a small, AI-assisted project, but repository discipline should scale without adding enterprise ceremony too early.
+**Status: REVIEW — proposed workflow until Phase 0 is accepted.**
+
+The goal is repository discipline that can scale without adding enterprise ceremony too early.
 
 ## Source-of-truth rule
 
-The repository is the authoritative project record once changes are reviewed/accepted. `main` represents the latest accepted baseline, not a claim that every line is locked canon. `DRAFT`/`REVIEW` material may be retained on `main` as visible hypotheses/TODOs.
+After acceptance, the repository is the authoritative project record. `main` represents the latest accepted baseline, not a claim that every line is locked canon. `DRAFT`/`REVIEW` material may be retained on `main` as visible hypotheses/TODOs.
 
 `APPROVED` means an accepted current decision/direction. Concrete entity facts become canonical when the relevant entity/system is approved and represented as canonical data. `LOCKED` is a stronger dependency contract.
 
