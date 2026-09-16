@@ -1,89 +1,94 @@
 # NOVA TAILS — Project State
 
-**Project version:** 0.2.0-dev  
-**Phase:** Phase 1 — Product Vision & Evidence  
+**Project version:** 0.3.0-dev  
+**Phase:** Phase 2 — Master Asset Architecture  
 **Updated:** 2026-09-16  
-**Baseline:** Phase 0 accepted via PR #1 / squash commit `f8789431cee5c34b70f029079427436941828883`
+**Baseline:** Product Vision v0.1 on main; architecture work under review on `design/master-asset-architecture-v0.1`.
 
 ## ACCEPTED FOUNDATION
 
 - Repository workflow/canon governance is the accepted baseline.
 - Architecture before mass content production.
-- Use risk-driven research/prototypes rather than waterfall documentation.
 - AI proposes; reviewed repository state is authoritative.
 - Separate rationale, canonical structured data, contracts, prompts and retained assets.
-- Delay exhaustive schemas/IDs/asset registries/LFS until real requirements exist.
-- If multiple adaptations retain the same identity, preserve one master identity.
 - Originality/rights must be validated rather than assumed.
+- Manufacturing rules require real physical evidence when printing is retained.
 
-## LOCKED
+## CURRENT STRATEGIC DIRECTION — REVIEW
 
-Nothing is permanently locked yet.
+**Character/IP-first asset system.**
 
-## CURRENT PRODUCT VISION — REVIEW
+The IP asset system is treated as the platform. Game, print, card/2D and content are downstream consumers/adapters of shared character identity/design sources.
 
-Working strategic hypothesis:
+This does not require every output lane to ship and does not validate cross-output market value.
 
-> NOVA TAILS is a character/IP system whose distinctive identities can survive across digital and physical adaptations; the first product should be whichever small experience proves that people care about those identities and want to interact with/collect them.
+## MASTER ASSET ARCHITECTURE — IN PROGRESS
 
-This is not yet accepted canon.
+Implemented on the current design branch:
+- L0 IP Canon / L1 Master Design / L2 Adaptations / L3 Deliverables model;
+- character identity JSON Schema v0.1;
+- game, print, card/2D and content adapter contracts;
+- explicit dependency/version model;
+- one DRAFT reference identity (`NT-CHAR-001`, Spirit direction);
+- initial card/2D and print adapter manifests;
+- reference-character architecture proof plan.
 
-## PRODUCT OPTIONS UNDER REVIEW
+Key rule: single source of truth means one identity/design contract, **not one universal binary file**.
 
-1. Game-first character universe.
-2. Character/IP-first collectible ecosystem.
-3. Printable-collectible-first.
-4. Content-first validation/audience building.
+## CHARACTER EXPERIMENT EVIDENCE
 
-Do not assume these must all survive.
+One real participant pilot was completed (`n=1`). Treat it as exploratory issue discovery only, not validation or market evidence.
 
-## HIGHEST-RISK ASSUMPTIONS
+Observed:
+- Scout and Guardian were grouped/evolution-like;
+- Scout triggered a Pokémon association;
+- Spirit was perceived as categorically different;
+- Wild communicated speed/aggression and generated further-interest intent;
+- participant mentioned combination + upgrading as desired interaction.
 
-1. **Character desirability:** strangers can recognize, remember and want more of the identities.
-2. **Differentiation:** concept is distinguishable from crowded cute/stylized creature/robot space.
-3. **Core interaction:** if game is retained, repeated interaction works without gacha/reward scaffolding.
-4. **Physical viability:** if print is retained, unknown original characters are desirable and reliably manufacturable.
-5. **Cross-output leverage:** shared identity creates more value than complexity.
-
-## CURRENT EVIDENCE
-
-- 2025 mobile-market examples show active use of hybrid/simple-core + deeper-meta structures; this does not validate a generic NOVA TAILS gacha/card battler.
-- MakerWorld has creator commercial-license mechanisms and explicit originality/authorization requirements, making printable originals a plausible but unvalidated distribution/business extension.
-- A1 mini real build volume is 180 × 180 × 180 mm; any A1-mini manufacturing standard must ultimately be physically tested.
-
-See `docs/research/PRODUCT_VISION_EVIDENCE_2026-09-16.md`.
+Do not fabricate P02+ data. Additional human evidence can be added later.
 
 ## DRAFT / UNVALIDATED
 
 - working name NOVA TAILS;
-- card battler / character-collection RPG;
-- gacha;
-- five-character team;
-- auto/semi-auto combat;
-- cultivation;
-- Nova Core / The Fracture;
-- origin/faction/class/role/element counts;
-- progression/equipment models;
-- 3D printing as core product pillar;
-- MOMO as production character.
+- all experiment character directions as production canon;
+- `NT-CHAR-001` as production/flagship character;
+- game/card battler/gacha/combat model;
+- cultivation/evolution implementation;
+- lore taxonomy;
+- 3D printing as first commercial product;
+- cross-output leverage as a market-value claim;
+- final serialization/registry/LFS/DCC technology choices.
 
-## FIRST TEST — PROPOSED
+## CURRENT PROOF
 
-**Test A: Character desirability / identity.**
+**Reference Character Architecture Proof**
 
-Use 3–5 deliberately diverse character concepts at comparable presentation quality. Test with people outside the project for:
-- unaided recall;
-- recognizable signature/silhouette;
-- perceived distinctiveness;
-- preference reason;
-- desire to see/interact with one again.
+Use one DRAFT identity to stress-test at least two materially different adapters before scaling roster.
 
-Failure signal: responses are mainly generic “cute/cool” and identities are not remembered/distinguished.
+Preferred reference: Spirit direction because its broken-orbit structure creates a useful cross-medium constraint. This is an architecture choice, not a market ranking.
 
-## NEXT DECISION
+### DONE
+- architecture responsibilities defined;
+- identity schema defined;
+- adapter contracts defined;
+- dependency/version semantics defined;
+- DRAFT reference identity instance created;
+- card/2D adapter manifest created;
+- print adapter manifest created.
 
-Review Product Vision v0.1 and decide whether Test A is the correct first risk-reduction experiment. If accepted, create a dedicated experiment branch and define protocol before generating more characters.
+### NEXT
+1. Validate the DRAFT identity instance against schema.
+2. Produce/reference a 2D adaptation while preserving the broken-orbit invariant.
+3. Design the physical adaptation/part strategy without inventing untested tolerances.
+4. Exercise dependency impact with compatible vs identity-breaking upstream changes.
+5. Decide whether architecture passes or needs revision.
 
 ## DO NOT DO YET
 
-Do not deepen lore, lock combat, build economy/gacha, generate a large roster, or engineer a production STL catalog before the first desirability/differentiation evidence exists.
+- Do not create a large roster.
+- Do not deepen game economy/gacha/combat.
+- Do not create exhaustive empty asset trees.
+- Do not declare print tolerances/connector standards without physical tests.
+- Do not promote the Spirit reference to canon because it is convenient for architecture testing.
+- Do not let generated prompts/outputs become competing sources of truth.
