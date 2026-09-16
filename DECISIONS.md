@@ -105,15 +105,15 @@ Roadmap phases express dependency/risk order. Targeted research or a cheap proto
 **Status:** APPROVED  
 **Date:** 2026-09-16
 
-If the project pursues an original IP, neither AI generation nor internal design review can guarantee absence of third-party rights. Names and production/release designs require similarity/name research and documented human review; formal legal review can be added where commercial risk justifies it.
+If the project aims to create original IP, neither AI generation nor internal design review can guarantee absence of third-party rights. Names and production/release designs require similarity/name research and documented human review; formal legal review can be added where commercial risk justifies it.
 
 ---
 
-## ADR-0012 — Distinctive original universe/IP as product hypothesis
+## ADR-0012 — Distinctive universe/IP as product hypothesis
 **Status:** REVIEW / DEFERRED TO PRODUCT VISION  
 **Date:** 2026-09-16
 
-Hypothesis: center the project on a distinctive original multi-species sci-fi/fantasy universe/IP, initially explored through character-centric concepts and capable of supporting multiple adaptations over time. Product Vision must validate audience, primary product, differentiation and output priorities using targeted evidence.
+Hypothesis: center the project on a distinctive multi-species sci-fi/fantasy universe/IP intended to become original, initially explored through character-centric concepts and capable of supporting multiple adaptations over time. Product Vision must validate audience, primary product, differentiation and output priorities; IP review validates originality/rights risk separately.
 
 ---
 
