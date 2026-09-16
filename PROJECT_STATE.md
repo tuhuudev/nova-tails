@@ -22,7 +22,7 @@ Nothing is permanently locked yet. This is intentional.
 - Do not mass-produce content/assets until a vertical slice/equivalent proof validates relevant product/system/pipeline assumptions.
 - Use short-lived, purpose-specific branches and reviewed PRs for significant changes.
 - Keep human-readable rationale, machine-readable structured/canonical data, validation contracts, prompts and assets as distinct responsibilities.
-- Defer serialization/schema technology and Git LFS until real prototype/tooling/asset requirements exist.
+- Defer serialization/schema technology, stable-ID format, asset-registry naming and Git LFS until real prototype/tooling/asset requirements exist.
 - Treat the roadmap as risk-driven; use external research and cheap prototypes/tests when they can materially change a decision faster than more documentation.
 - After Product Vision/Core Experience identify the highest-risk assumption, prototype/test it before deep content/worldbuilding.
 - Treat originality and third-party-rights risk as something to validate, not something AI can guarantee.
@@ -85,7 +85,7 @@ MOMO demonstrates a candidate physical-design direction (small stylized fox/scou
 - [x] Product Vision gate includes targeted external evidence
 - [x] Originality/IP language requires validation rather than implying guarantee
 - [x] Early highest-risk prototype/test is an explicit governance decision
-- [x] Data serialization/schema technology deliberately deferred until real requirements
+- [x] Data serialization/schema, stable-ID format and asset-registry naming deliberately deferred until real requirements
 - [ ] Phase 0 owner/reviewer acceptance and merge
 - [ ] `main` protection/ruleset when repository permissions/workflow allow it
 
@@ -99,7 +99,7 @@ After Phase 0 acceptance/merge:
 
 ## DO NOT DO YET
 
-Do not mass-generate roster/skills/items/campaign/STL; finalize gacha/monetization; choose exhaustive data schemas/serialization without requirements; or lock placeholder balance/manufacturing values.
+Do not mass-generate roster/skills/items/campaign/STL; finalize gacha/monetization; choose exhaustive data/ID/asset naming schemes without requirements; or lock placeholder balance/manufacturing values.
 
 ## NEXT DECISION
 
