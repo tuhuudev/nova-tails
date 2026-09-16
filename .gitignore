@@ -1,0 +1,55 @@
+# OS
+.DS_Store
+Thumbs.db
+
+# Editors / IDE
+.idea/
+.vscode/
+*.swp
+*.swo
+
+# Environment / secrets
+.env
+.env.*
+!.env.example
+*.pem
+*.key
+
+# Logs / temp
+*.log
+.tmp/
+tmp/
+temp/
+.cache/
+
+# JavaScript / TypeScript (future prototype/tools)
+node_modules/
+dist/
+build/
+coverage/
+.nx/
+.angular/
+.vite/
+
+# Python (future simulation/tools)
+__pycache__/
+*.py[cod]
+.venv/
+venv/
+.pytest_cache/
+
+# Local generated/exploration output
+artifacts/local/
+assets/_scratch/
+assets/_generated/
+renders/_temp/
+exports/_temp/
+
+# Slicer / manufacturing temporary files
+*.gcode
+*.bgcode
+
+# NOTE:
+# Do not globally ignore STL/3MF/BLEND/source-art extensions yet.
+# Approved physical/source assets may need version control later.
+# Storage/LFS decisions are governed by docs/ASSET_STORAGE_POLICY.md.
