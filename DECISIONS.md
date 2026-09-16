@@ -27,9 +27,6 @@ Revisit trigger
 ### Decision
 The Git repository is the authoritative project record after review. `main` is the latest reviewed baseline and may intentionally contain explicitly marked draft/review hypotheses. Chat/AI output does not become authoritative merely by being generated.
 
-### Revisit trigger
-If project scale requires a dedicated content-management/database system; Git should still retain versioned schemas/code/docs and decision history.
-
 ---
 
 ## ADR-0002 — Architecture before mass content
@@ -53,9 +50,6 @@ Cheap AI generation can create large amounts of internally inconsistent content 
 ### Decision
 When a character is adapted across outputs, game unit, 2D artwork and 3D printable figure should derive from one canonical character identity rather than becoming independently redesigned identities.
 
-### Impact
-Character specs should eventually separate locked identity features from output-specific adaptation rules.
-
 ---
 
 ## ADR-0004 — First game direction
@@ -70,7 +64,7 @@ An accessible character-collection RPG/card-battler may be a suitable first inte
 - fully manual turn-based;
 - smaller 3–4 unit party;
 - semi-auto/auto with manual decisions;
-- other low-complexity formats consistent with the IP.
+- other low-complexity formats consistent with the IP goal.
 
 ### Validation required
 Dedicated Product Vision review and cheap interaction prototype(s).
@@ -96,15 +90,13 @@ Each retained progression dimension must create a distinct decision/unlock/job. 
 **Date:** 2026-09-16
 
 ### Hypothesis
-A modular, color-separated FDM-printable collectible layer—ideally allowing base figures to be printed without AMS—could be a meaningful differentiator for the IP.
+A modular, color-separated FDM-printable collectible layer—ideally allowing base figures to be printed without AMS—could be a meaningful differentiator.
 
 ### Why not approved yet
-We have design proof-of-concept work, but have not yet decided whether physical printing is a core product pillar, extension or later layer, and manufacturing rules have not been validated on representative physical prototypes.
+We have design proof-of-concept work, but have not decided whether physical printing is a core product pillar, extension or later layer, and manufacturing rules have not been validated on representative physical prototypes.
 
 ### Validation required
-1. Product Vision decision on the role of physical collectibles.
-2. Physical prints of contrasting character archetypes before locking manufacturing standards.
-3. Measured connector/tolerance/detail results before canonical manufacturing dimensions.
+Product Vision decision plus representative physical prints before locking manufacturing standards.
 
 ---
 
@@ -116,16 +108,8 @@ We have design proof-of-concept work, but have not yet decided whether physical 
 ### Decision
 Use `main` as reviewed project baseline and short-lived purpose-specific branches (`design/`, `feature/`, `character/`, `balance/`, `asset/`, `tooling/`, `fix/`, `chore/`). Significant changes to reviewed state go through focused PRs.
 
-### Alternatives considered
-- permanent `develop` branch;
-- one branch per contributor;
-- committing AI changes directly to `main`.
-
 ### Why
-The current project/team size does not justify GitFlow-style permanent integration branches. Focused branches make review, rollback and dependency reasoning easier.
-
-### Revisit trigger
-A larger team/release process demonstrates a concrete need for release/integration branches.
+The current project/team size does not justify permanent integration branches. Focused branches make review, rollback and dependency reasoning easier.
 
 ---
 
@@ -135,16 +119,7 @@ A larger team/release process demonstrates a concrete need for release/integrati
 **Date:** 2026-09-16
 
 ### Decision
-Separate responsibilities as follows:
-- `docs/` explains intent/rationale and may contain explicitly marked hypotheses;
-- `data/` stores machine-readable canonical/structured instances once needed;
-- `schemas/` defines validity/contracts;
-- `prompts/` derives generation instructions from reviewed canon/context;
-- `assets/` stores intentionally retained project assets under storage policy;
-- implementation/simulator/tools consume reviewed contracts rather than redefining canon silently.
-
-### Validation required
-The first prototype/vertical-slice schemas/data should demonstrate that the split is useful rather than bureaucratic.
+Separate responsibilities: `docs/` for intent/rationale/hypotheses; `data/` for machine-readable structured/canonical instances when needed; `schemas/` for validity/contracts; `prompts/` for derived generation instructions; `assets/` for intentionally retained project assets; implementation/tools consume reviewed contracts rather than silently redefining canon.
 
 ---
 
@@ -154,11 +129,7 @@ The first prototype/vertical-slice schemas/data should demonstrate that the spli
 **Date:** 2026-09-16
 
 ### Decision
-Define storage/schema policy now, but delay Git LFS configuration and detailed entity schemas until representative physical assets and prototype data exist.
-
-### Revisit trigger
-- first structured product/game-data slice for schemas;
-- representative large binary assets for LFS/storage.
+Define storage/schema policy now, but delay Git LFS configuration and detailed entity schemas until representative binary assets and prototype data exist.
 
 ---
 
@@ -173,5 +144,15 @@ Roadmap phases express dependency/risk order, not a requirement to complete larg
 ### Why
 The project must avoid replacing implementation/product risk with excessive worldbuilding/design documentation.
 
+---
+
+## ADR-0011 — Originality is a goal with validation, not a guaranteed property
+
+**Status:** APPROVED  
+**Date:** 2026-09-16
+
+### Decision
+The project aims to build a distinctive original IP, but neither AI generation nor internal design review can guarantee absence of third-party rights. Names and production/release designs require similarity/name research and documented human review; formal legal review can be added where commercial risk justifies it.
+
 ### Impact
-Product Vision and Core Loop should identify the highest-risk assumptions and select the cheapest credible validation method before expanding content.
+Do not describe a generated concept as legally cleared merely because it was generated from an original prompt. Preserve provenance and substantive human design decisions.
