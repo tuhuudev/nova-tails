@@ -1,0 +1,24 @@
+NOVA TAILS — DERIVED REFERENCE CONTEXT
+character_id: NT-CHAR-001
+character_revision: 0.1
+lifecycle: DRAFT
+purpose: architecture proof fixture only; not production canon
+
+IDENTITY PREMISE
+A floating non-animal entity organized around a central core and an incomplete asymmetric orbit.
+
+PERSONALITY ANCHORS
+serene; alien; controlled
+
+IDENTITY INVARIANTS
+- central floating core remains visually dominant
+- orbit creates visible negative space around the core
+- orbit is incomplete/asymmetric rather than a perfect halo
+- identity must not collapse into a normal grounded animal silhouette
+- broken orbit is structural body read, not decorative VFX
+
+ADAPTABLE
+pose/orbit phase; expression cues; surface detail; render lighting; medium-specific segmentation
+
+RULE
+Any proposal that changes an invariant is an upstream identity-change proposal and must not be silently accepted by an adapter or generated output.
