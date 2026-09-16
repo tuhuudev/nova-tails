@@ -14,7 +14,7 @@ Chat/AI outputs are proposals until reviewed and intentionally captured through 
 
 1. Architecture before mass content production.
 2. Validate product/core interaction before building a large content library.
-3. When an identity/character spans outputs, one master identity should feed its adaptations.
+3. If an identity/character is retained across multiple outputs, one master identity should feed those adaptations; Product Vision is not required to retain every output.
 4. AI generates proposals; it does not directly define canon.
 5. Every important decision is reviewable and traceable.
 6. Manufacturing standards must come from real physical tests if printable collectibles remain in scope.
