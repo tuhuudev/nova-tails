@@ -13,7 +13,7 @@
 
 ## LOCKED
 
-Nothing is permanently locked yet. The project is deliberately still validating architecture and product assumptions.
+Nothing is permanently locked yet. This is intentional.
 
 ## APPROVED ARCHITECTURE / GOVERNANCE DIRECTION
 
@@ -26,13 +26,12 @@ Nothing is permanently locked yet. The project is deliberately still validating 
 - Treat the roadmap as risk-driven; use external research and cheap prototypes/tests when they can materially change a decision faster than more documentation.
 - Treat originality and third-party-rights risk as something to validate, not something AI can guarantee.
 
-## REVIEW / PROJECT GOAL
+## REVIEW / PRODUCT GOAL
 
-- Develop a distinctive original multi-species sci-fi/fantasy character universe. This remains a project/product goal to be sharpened during Product Vision, not a claim of legal clearance or market differentiation.
+- Distinctive original multi-species sci-fi/fantasy character universe capable of supporting multiple adaptations over time. Product Vision must still validate target audience, differentiation, primary product and output priorities.
 
-## DRAFT / PRODUCT HYPOTHESES
+## DRAFT PRODUCT/DESIGN HYPOTHESES
 
-Not resolved by Phase 0:
 - working name **NOVA TAILS** (name/legal clearance incomplete);
 - character-collection/card-battler as first interactive product;
 - gacha/hero acquisition;
@@ -78,12 +77,12 @@ MOMO demonstrates a candidate physical-design direction (small stylized fox/scou
 - [x] Asset storage policy
 - [x] PR review template
 - [x] Baseline `.gitignore`
-- [x] Master Architecture separates durable principles from hypotheses
+- [x] Master Architecture separates durable principles from product hypotheses
 - [x] Roadmap is risk/evidence/prototype driven rather than waterfall
 - [x] Product Vision removed from Phase 0 PR for dedicated review
 - [x] Physical-collectible direction returned to REVIEW
 - [x] Product Vision gate includes targeted external evidence
-- [x] Originality/IP language corrected to require validation rather than imply guarantee
+- [x] Originality/IP language requires validation rather than implying guarantee
 - [x] Internal architecture review completed; no remaining blocking governance/architecture inconsistency identified
 - [ ] Owner acceptance / merge of Phase 0 foundation PR
 - [ ] `main` protection/ruleset when repository permissions/workflow allow it
@@ -93,12 +92,10 @@ MOMO demonstrates a candidate physical-design direction (small stylized fox/scou
 After Phase 0 acceptance/merge:
 1. `design/product-vision-v0.1`
 2. `design/core-loop-v0.1`
-3. `design/world-architecture-v0.1`
-4. `design/character-taxonomy-v0.1`
-5. `design/visual-bible-v0.1`
-6. interaction/combat prototype branch if that remains the selected product direction.
+3. minimum world/taxonomy/visual work as required by the selected product;
+4. interaction prototype as early as useful to test the highest-risk assumption.
 
-This is risk ordering, not waterfall; prototypes can move earlier when they answer a critical unknown faster.
+This is risk ordering, not waterfall.
 
 ## DO NOT DO YET
 
