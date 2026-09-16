@@ -1,0 +1,43 @@
+{
+  "schema_version": "0.1",
+  "character_id": "NT-CHAR-001",
+  "revision": "0.1",
+  "lifecycle": "DRAFT",
+  "working_name": "Spirit Reference",
+  "identity": {
+    "premise": "A floating non-animal identity organized around a central core and an incomplete orbital structure.",
+    "personality_anchors": ["serene", "alien"],
+    "world_refs": []
+  },
+  "visual_contract": {
+    "topology": "Ungrounded central core with structurally separated orbital masses; no conventional quadruped body plan.",
+    "silhouette_invariants": [
+      "The character reads as floating rather than standing on animal-like legs.",
+      "The orbit creates meaningful negative space around the central core.",
+      "The orbital structure is visibly incomplete or asymmetric rather than a perfect halo."
+    ],
+    "signature_features": [
+      {
+        "id": "broken-orbit",
+        "description": "An incomplete asymmetric orbital structure whose gaps and offset masses define the identity around the central core.",
+        "criticality": "identity-critical"
+      }
+    ],
+    "material_intent": [
+      "Central core and orbital masses should read as materially related but visually separable."
+    ],
+    "palette_tokens": [],
+    "adaptable_properties": [
+      "pose/orbit rotation within preserved broken-orbit read",
+      "facial or core expression",
+      "surface detail density",
+      "render lighting",
+      "production geometry density",
+      "print segmentation and connector strategy"
+    ]
+  },
+  "evolution_contract": null,
+  "provenance": {
+    "notes": "Derived from the Spirit direction in Character Desirability Experiment v0.1 solely as a DRAFT architecture reference. It is not production canon or a flagship selection."
+  }
+}
