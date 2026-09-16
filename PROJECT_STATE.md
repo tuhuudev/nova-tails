@@ -15,9 +15,8 @@
 
 Nothing is permanently locked yet. The project is deliberately still validating architecture and product assumptions.
 
-## APPROVED ARCHITECTURE DIRECTION
+## APPROVED ARCHITECTURE / GOVERNANCE DIRECTION
 
-- Project goal: develop a distinctive original multi-species sci-fi/fantasy character universe; originality/rights clearance is a validation goal, not an AI guarantee.
 - When characters span outputs, one reviewed master identity should drive adaptations rather than allowing independent identity drift.
 - AI is an ideation/production assistant; the repository is the authoritative project record after review.
 - Do not mass-produce characters/assets until a vertical slice/equivalent proof validates relevant systems and pipeline assumptions.
@@ -25,6 +24,11 @@ Nothing is permanently locked yet. The project is deliberately still validating 
 - Keep human-readable rationale, machine-readable canon, schemas, prompts and assets as distinct responsibilities.
 - Avoid premature Git LFS/schema/automation complexity until real prototype/asset needs exist.
 - Treat the roadmap as risk-driven; use external research and cheap prototypes/tests when they can materially change a decision faster than more documentation.
+- Treat originality and third-party-rights risk as something to validate, not something AI can guarantee.
+
+## REVIEW / PROJECT GOAL
+
+- Develop a distinctive original multi-species sci-fi/fantasy character universe. This remains a project/product goal to be sharpened during Product Vision, not a claim of legal clearance or market differentiation.
 
 ## DRAFT / PRODUCT HYPOTHESES
 
@@ -80,7 +84,7 @@ MOMO demonstrates a candidate physical-design direction (small stylized fox/scou
 - [x] Physical-collectible direction returned to REVIEW
 - [x] Product Vision gate includes targeted external evidence
 - [x] Originality/IP language corrected to require validation rather than imply guarantee
-- [x] Internal architecture review completed; no remaining blocking design inconsistency identified
+- [x] Internal architecture review completed; no remaining blocking governance/architecture inconsistency identified
 - [ ] Owner acceptance / merge of Phase 0 foundation PR
 - [ ] `main` protection/ruleset when repository permissions/workflow allow it
 
