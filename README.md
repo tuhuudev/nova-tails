@@ -6,9 +6,9 @@
 
 **Phase 0 — Repository & Architecture Foundation (v0.1)**
 
-The repository is the source of truth for reviewed project decisions. Chat/AI outputs are proposals until reviewed and promoted through repository workflow.
+The repository is the source of truth for project history and reviewed decisions. The `main` branch represents the latest reviewed baseline; only content explicitly marked `APPROVED` or `LOCKED` is canonical. Draft material may still exist on `main` when intentionally retained as a visible hypothesis.
 
-The exact game/product direction is still being validated. Do not read current gameplay/lore hypotheses as finished canon.
+Chat/AI outputs are proposals until reviewed and promoted through repository workflow. The exact game/product direction is still being validated.
 
 ## Project principles
 
@@ -20,25 +20,26 @@ The exact game/product direction is still being validated. Do not read current g
 6. 3D standards must ultimately come from real manufacturing tests.
 7. Every game system should create a meaningful decision or serve a clear product purpose.
 8. Avoid premature complexity in schemas, storage, branching and content volume.
+9. Use prototypes/tests to attack high-risk assumptions early rather than treating the roadmap as waterfall.
 
 ## Canon status
 
 - `IDEA` — exploratory.
-- `DRAFT` — being designed.
-- `REVIEW` — ready for explicit review.
-- `APPROVED` — accepted current direction.
+- `DRAFT` — being designed; not canon.
+- `REVIEW` — ready for explicit review; not canon yet.
+- `APPROVED` — accepted current canon/direction.
 - `LOCKED` — dependency contract; changing it requires impact review.
-- `DEPRECATED` — retained for history but no longer current.
+- `DEPRECATED` — retained for history but no longer active canon.
 
 ## Repository map
 
 Current foundation files:
 
 - `PROJECT_STATE.md` — current project snapshot, unknowns and next gate.
-- `ROADMAP.md` — gated pre-production → validation → production roadmap.
-- `DECISIONS.md` — high-impact architecture/design decisions.
+- `ROADMAP.md` — risk-reduction gates from pre-production to production.
+- `DECISIONS.md` — high-impact architecture/design decisions and hypotheses.
 - `CONTRIBUTING.md` — branch, PR, commit and review workflow.
-- `docs/MASTER_ARCHITECTURE.md` — high-level system boundaries/hypotheses.
+- `docs/MASTER_ARCHITECTURE.md` — durable system boundaries plus clearly marked candidate models.
 - `docs/CANON_AND_DATA_POLICY.md` — ownership between docs/data/schema/code/prompts.
 - `docs/ASSET_STORAGE_POLICY.md` — binary/generated/3D storage rules.
 
@@ -51,15 +52,17 @@ After Phase 0 is reviewed and merged:
 ```text
 Product Vision
 → Core Loop
-→ World Architecture
-→ Character Taxonomy
-→ Visual Bible
+→ Minimum World Architecture
+→ Minimum Character Taxonomy
+→ Visual Identity Proof
 → Combat Prototype
-→ Mathematical Combat Model
+→ Mathematical/Data Model
 → Vertical Slice
 → Simulation / Physical Asset Proof
 → Scale only after validation
 ```
+
+This is a risk/dependency sequence, not strict waterfall. A cheap prototype may move earlier if it answers a critical unknown faster than more documentation.
 
 Each major step should normally use a dedicated short-lived branch and focused PR.
 
