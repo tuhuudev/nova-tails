@@ -37,9 +37,6 @@ The Git repository is the authoritative project record after review. `main` is t
 ### Decision
 Do not create a large roster, skill library, equipment catalog or printable collection before validating architecture and a vertical slice/equivalent proof.
 
-### Why
-Cheap AI generation can create large amounts of internally inconsistent content and increase sunk cost before core assumptions are proven.
-
 ---
 
 ## ADR-0003 — Shared master character identity
@@ -48,7 +45,7 @@ Cheap AI generation can create large amounts of internally inconsistent content 
 **Date:** 2026-09-16
 
 ### Decision
-When a character is adapted across outputs, game unit, 2D artwork and 3D printable figure should derive from one canonical character identity rather than becoming independently redesigned identities.
+When a character is adapted across outputs, those adaptations should derive from one canonical character identity rather than becoming independently redesigned identities.
 
 ---
 
@@ -59,12 +56,6 @@ When a character is adapted across outputs, game unit, 2D artwork and 3D printab
 
 ### Hypothesis
 An accessible character-collection RPG/card-battler may be a suitable first interactive product. Five-character teams and semi-auto/auto combat are hypotheses, not architecture decisions.
-
-### Alternatives to test
-- fully manual turn-based;
-- smaller 3–4 unit party;
-- semi-auto/auto with manual decisions;
-- other low-complexity formats consistent with the IP goal.
 
 ### Validation required
 Dedicated Product Vision review and cheap interaction prototype(s).
@@ -92,9 +83,6 @@ Each retained progression dimension must create a distinct decision/unlock/job. 
 ### Hypothesis
 A modular, color-separated FDM-printable collectible layer—ideally allowing base figures to be printed without AMS—could be a meaningful differentiator.
 
-### Why not approved yet
-We have design proof-of-concept work, but have not decided whether physical printing is a core product pillar, extension or later layer, and manufacturing rules have not been validated on representative physical prototypes.
-
 ### Validation required
 Product Vision decision plus representative physical prints before locking manufacturing standards.
 
@@ -107,9 +95,6 @@ Product Vision decision plus representative physical prints before locking manuf
 
 ### Decision
 Use `main` as reviewed project baseline and short-lived purpose-specific branches (`design/`, `feature/`, `character/`, `balance/`, `asset/`, `tooling/`, `fix/`, `chore/`). Significant changes to reviewed state go through focused PRs.
-
-### Why
-The current project/team size does not justify permanent integration branches. Focused branches make review, rollback and dependency reasoning easier.
 
 ---
 
@@ -141,9 +126,6 @@ Define storage/schema policy now, but delay Git LFS configuration and detailed e
 ### Decision
 Roadmap phases express dependency/risk order, not a requirement to complete large documents sequentially. When targeted external research or a cheap prototype/test can invalidate a risky assumption faster than documentation, use it and feed evidence back into the relevant decision.
 
-### Why
-The project must avoid replacing implementation/product risk with excessive worldbuilding/design documentation.
-
 ---
 
 ## ADR-0011 — Originality is a goal with validation, not a guaranteed property
@@ -152,7 +134,20 @@ The project must avoid replacing implementation/product risk with excessive worl
 **Date:** 2026-09-16
 
 ### Decision
-The project aims to build a distinctive original IP, but neither AI generation nor internal design review can guarantee absence of third-party rights. Names and production/release designs require similarity/name research and documented human review; formal legal review can be added where commercial risk justifies it.
+If the project pursues an original IP, neither AI generation nor internal design review can guarantee absence of third-party rights. Names and production/release designs require similarity/name research and documented human review; formal legal review can be added where commercial risk justifies it.
 
-### Impact
-Do not describe a generated concept as legally cleared merely because it was generated from an original prompt. Preserve provenance and substantive human design decisions.
+---
+
+## ADR-0012 — Distinctive original character universe as project goal
+
+**Status:** REVIEW / DEFERRED TO PRODUCT VISION  
+**Date:** 2026-09-16
+
+### Hypothesis
+The project should center on a distinctive original multi-species sci-fi/fantasy character universe capable of supporting more than one adaptation/output over time.
+
+### Why not approved yet
+This direction is strongly supported by existing exploration, but Product Vision still needs to define the target audience, primary product, differentiation and which outputs matter first.
+
+### Validation required
+Targeted adjacent-market/product research and Product Vision review.
