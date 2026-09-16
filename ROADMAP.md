@@ -1,231 +1,142 @@
 # NOVA TAILS — Master Roadmap
 
 **Status:** REVIEW  
-**Strategy:** foundation → product hypothesis → playable proof → vertical slice → production.
+**Strategy:** foundation → evidence-backed product hypothesis → cheapest useful proof → vertical slice → production.
 
-The roadmap is a sequence of **risk-reduction gates**, not a promise to finish every document before prototyping. If evidence invalidates an earlier assumption, return to the relevant decision rather than protecting sunk work.
+This is a **risk map, not waterfall**. Product Vision decides which later systems are actually required. A cheap prototype may move ahead of world/taxonomy documentation when it answers a critical unknown faster.
 
 ## Phase 0 — Repository & Architecture Foundation
 
-**Goal:** establish a maintainable source of truth and review discipline without overengineering.
+Goal: maintainable reviewed project record without overengineering.
 
-Deliverables:
-- repository/project-state baseline;
-- status/version/ADR policy;
-- short-lived branch + focused PR workflow;
-- canon/data ownership policy;
-- asset-storage policy;
-- baseline ignore/security hygiene;
-- master architecture boundary.
+Deliverables: project state, lifecycle/ADR policy, short-lived branch + focused PR workflow, canon/data ownership, asset-storage policy, baseline ignore/security hygiene and architecture boundaries.
 
-**Exit gate:** every important decision has a clear owner/location/status; product hypotheses are visibly separated from durable architecture; future work can be reviewed without relying on chat history.
+**Exit gate:** important decisions have clear location/status; hypotheses are separated from durable architecture; future work can be reviewed without relying on chat history.
 
-**Explicit non-goals:** exhaustive folder tree, exhaustive schemas, Git LFS setup, CI/CD platform, large content catalog.
+**Non-goals:** exhaustive folders/schemas, Git LFS, CI/CD platform, large content catalog.
 
 ## Phase 1 — Product Vision & Evidence
 
-Define only what is needed to decide whether the product hypothesis deserves prototyping:
-- target player/problem/fantasy;
-- primary platform assumption;
-- core product pillars;
-- first interactive product boundary;
+Resolve enough to decide what deserves prototyping:
+- target audience/player and core fantasy/value;
+- primary platform/context;
+- primary product format;
+- differentiation;
+- which outputs are core vs optional/later;
 - role of collection/acquisition;
-- role of 3D printing;
-- business/market assumptions only where they affect design;
+- role of physical printing;
+- business/market constraints only where design-relevant;
 - pivot/cancellation criteria.
 
-Run targeted external research where it can materially change a decision. Candidate questions:
-- adjacent games/products and what player need they serve;
-- genre/platform expectations;
-- differentiation risk;
-- physical-digital collectible precedents if print remains a candidate pillar;
-- monetization/platform/legal constraints only if acquisition/gacha becomes likely.
+Use targeted external research for adjacent products/genres, expectations, differentiation and relevant platform/physical-digital precedents. Research must end in a decision, hypothesis or test—not a giant competitor spreadsheet.
 
-Do not turn this into a giant competitor spreadsheet. Research must end in a decision, hypothesis or test.
+**Exit gate:** clear target/product/value/boundaries, evidence supporting the direction and explicit high-risk assumptions.
 
-**Exit gate:** we can explain who the first product is for, what value/fantasy it offers, what we deliberately are not building, what evidence supports the direction and which assumptions must still be tested.
+## Phase 2 — Core Loop / Core Experience
 
-## Phase 2 — Core Loop
+Define the minimum repeated experience appropriate to the selected product. For a game hypothesis this may include encounter → decision/build → feedback/reward → progression → next challenge. Acquisition belongs here only if Phase 1 retains it.
 
-Design the minimum repeated player loop on paper/low-fidelity flow:
-- encounter/battle if retained;
-- meaningful player decision/team adjustment;
-- reward/feedback;
-- progression/build if retained;
-- next challenge;
-- acquisition only if Product Vision still requires it.
+**Exit gate:** repeated use/play has value beyond receiving more currency/content.
 
-**Exit gate:** repeated use/play has a reason beyond receiving more currency/content.
+## Phase 3 — Cheapest High-Risk Prototype
 
-## Phase 3 — Minimum World Architecture
+Before large worldbuilding, identify the assumption most likely to invalidate the product and build the cheapest credible test.
 
-Define only world rules needed to support the first playable/vertical slice:
-- premise/conflict;
-- player role;
-- origin of playable beings/enemies;
-- one first-world context;
-- enough faction/world logic to make characters and enemies coherent.
+Examples:
+- low-fidelity interaction/combat prototype;
+- clickable UX flow;
+- paper/card simulation;
+- character desirability/concept test;
+- 2D→3D physical proof if physical differentiation is the highest-risk pillar.
 
-Nova Core, The Fracture, six domains and larger cosmology remain replaceable hypotheses until reviewed.
+**GATE A — CORE PRODUCT:** if the core promise is not understandable/promising without reward scaffolding, revise Phase 1/2.
 
-**Exit gate:** the first playable's goals, characters and enemies have coherent narrative reasons to exist. Full campaign/world bible is not required.
+## Phase 4 — Minimum World Architecture — CONDITIONAL DEPTH
 
-## Phase 4 — Minimum Character Taxonomy
+Define only world rules needed by the selected product/prototype: premise/conflict, player/user role, one initial setting and enough world logic for characters/challenges. Nova Core/The Fracture/six domains remain replaceable hypotheses.
 
-Stress-test taxonomy using a small deliberately diverse set rather than designing the whole universe.
+Full campaign/cosmology is not required.
 
-Candidate dimensions:
-- origin/species identity;
-- faction/world identity;
-- combat identity if applicable;
-- element if interaction requires it;
-- body archetype/signature;
-- stable identity/evolution inheritance if applicable.
+## Phase 5 — Minimum Character Taxonomy — CONDITIONAL DEPTH
 
-**Exit gate:** approximately six intentionally different test characters can be described without contradictions or redundant taxonomy dimensions.
+Stress-test a small diverse set. Candidate dimensions include origin, world identity, interaction/combat identity, visual DNA and stable identity/inheritance. Remove dimensions that do not create useful design/product decisions.
 
-## Phase 5 — Visual Identity Proof
+## Phase 6 — Visual Identity Proof
 
-Define only enough visual system to keep the vertical-slice characters coherent and distinct:
-- universe-level visual DNA;
-- silhouette/shape principles;
-- candidate faction/material language where needed;
-- identity-lock rules;
-- cross-output adaptation principles;
-- internal/external similarity review where appropriate.
+Define enough visual system to make representative characters coherent/distinct and preserve identity across retained outputs. Include similarity review where appropriate.
 
-**Exit gate:** multiple character concepts can look different while still feeling related, and retained cross-output identity survives adaptation.
+## Phase 7 — Interaction / Combat Model — IF RETAINED
 
-## Phase 6 — Interaction / Combat First Playable
+If the first product is a character battler, prototype team size, targeting/action model, ability/resource vocabulary and one meaningful encounter mechanic with placeholders. Do not implement full progression/economy first.
 
-Build the cheapest functional proof with placeholder visuals.
+## Phase 8 — Math + Structured Data — WHEN BEHAVIOR IS KNOWN
 
-If combat remains the core interaction, test competing assumptions rather than implementing the full progression/economy stack:
-- team size;
-- formation/targeting if relevant;
-- turn/action model;
-- basic/skill/ultimate vocabulary only if useful;
-- energy/resource only if needed;
-- minimal status/control;
-- one simple encounter/boss mechanic.
+Formalize only the stats/formulas/contracts the working prototype needs. Extract first schemas from real behavior rather than predicting every field.
 
-**GATE A — CORE PRODUCT:** if the core interaction is not understandable and promising without collection/progression rewards, revise Product Vision/Core Loop before continuing.
+## Phase 9 — Progression Proof — IF RETAINED
 
-## Phase 7 — Mathematical Interaction Model
+Test the smallest set that creates distinct decisions. Current Level/Cultivation/Evolution/Skill/Equipment ideas are candidates, not requirements. Merge/remove duplicate stat-inflation layers.
 
-Only after a promising interaction model exists, formalize the minimum required math: stats, damage/defense/action economy, resources, status/control and encounter resistance mechanics as applicable.
+## Phase 10 — Equipment / Build Layer — IF RETAINED
 
-All numbers remain tunable until simulation/playtest.
+Introduce only when the core interaction has meaningful build decisions. Weapon/Armor/Accessory is a candidate, not a requirement.
 
-## Phase 8 — Structured Game Data & First Schemas
+## Phase 11 — Economy — IF RETAINED
 
-Extract schemas from the working prototype rather than predicting every future field. Candidate first contracts may include Character, Ability, Enemy/Encounter and later Equipment.
+Map every resource as source → inventory → sink. No currency without a distinct job.
 
-**Exit gate:** prototype content can be represented consistently as data and validated automatically.
+## Phase 12 — Acquisition / Gacha — IF RETAINED
 
-## Phase 9 — Progression Proof
+Decide only after core product/progression exists. If gacha remains likely, separately research rates/pity/duplicates/transparency plus applicable platform/legal/age-market constraints before release. Gacha is not an architecture default.
 
-Test the smallest progression set that creates distinct decisions. Current candidates include Level, Cultivation/Breakthrough, Evolution, Skill choices and Equipment. Do not assume all survive. Merge/remove systems that duplicate stat inflation.
+## Phase 13 — Representative Content Set
 
-## Phase 10 — Equipment Proof
+Create only enough characters/challenges/world content to teach and demonstrate the retained core systems. Counts are capacity targets, not canon.
 
-Introduce equipment only after interaction/build decisions exist. Weapon / Armor / Accessory is a candidate, not a requirement.
+## Phase 14 — Capstone Encounter / Experience
 
-**Exit gate:** retained items create meaningful trade-offs/build changes rather than merely larger numbers.
+Build one representative capstone that combines earlier learned mechanics/ideas and creates decisions rather than only increasing numbers.
 
-## Phase 11 — Economy Model
+## Phase 15 — Vertical Slice
 
-Map every retained resource as source → inventory → sink and model pacing/bottlenecks. Do not add currencies without a distinct job.
+Build one coherent representative slice of the selected product with representative UI, characters/content, core loop and only the progression/assets actually retained.
 
-## Phase 12 — Acquisition / Gacha Decision
+**GATE B — PRODUCT:** test with users/players before scaling.
 
-Only after core product/progression exist, decide whether gacha is actually required. If retained, separately research/design rates, pity, duplicate handling, transparency, platform/legal/age-market implications and monetization boundaries before release.
+## Phase 16 — Simulation / Telemetry — AS NEEDED
 
-Gacha is a product/business decision, not an architectural default.
+Use deterministic simulation when the system is data-driven enough for balance analysis; use telemetry when real users/builds exist. Neither replaces qualitative playtesting.
 
-## Phase 13 — First-World Enemy / Challenge Ecosystem
+## Phase 17 — Physical Asset Proof — IF RETAINED
 
-If combat is retained, create only enough enemies/challenges to teach the first world's mechanics: roughly 6–10 normals and 1–2 elites is a capacity hypothesis, not canon.
+Validate a tiny representative sample through source design/model → print adaptation → slice → print → assembly → review. No tolerance/detail/manufacturing rule becomes locked before physical evidence.
 
-## Phase 14 — Boss / Capstone Encounter Proof
+## Phase 18 — Manufacturing Bible — IF RETAINED
 
-Build one capstone encounter that tests mechanics taught earlier. It should create decisions rather than function as an enlarged HP/stat pool.
+Record only proven physical rules after the proof milestone.
 
-## Phase 15 — Small Test Roster
+## Phase 19 — Asset Registry / Storage Scaling — WHEN NEEDED
 
-Finalize only the roster required for the vertical slice (roughly six is a current capacity hypothesis), covering substantially different identity/play patterns.
+Introduce stable asset IDs and Git LFS/external storage only when real asset count/size/history justifies them.
 
-Each retained character should have stable identity, product/game purpose, minimal progression if applicable, visual identity spec and adaptation requirements.
+## Phase 20 — AI Pipeline — AFTER STABILITY
 
-## Phase 16 — Vertical Slice
-
-Target, subject to earlier findings:
-- 1 coherent world/biome;
-- enough content to demonstrate the loop;
-- small representative playable roster;
-- representative challenges/enemies;
-- 1 capstone encounter;
-- limited progression/equipment only if retained;
-- representative UI;
-- representative visual identity;
-- representative cross-output adaptation only for product pillars retained in Product Vision.
-
-**GATE B — PRODUCT:** external/internal playtest before scaling.
-
-## Phase 17 — Balance Simulator
-
-When the interaction/combat model is sufficiently deterministic/data-driven, build batch simulation. Simulation complements playtesting; it does not decide whether gameplay feels good.
-
-## Phase 18 — Telemetry
-
-Instrument the playable slice only when there are actual players/builds worth measuring.
-
-## Phase 19 — Physical Asset Proof — CONDITIONAL
-
-Only if Product Vision retains physical collectibles, use a very small sample to validate:
-
-`Master Identity → 2D/reference → source 3D → print adaptation → split → slice → print → assemble → review`
-
-No connector/tolerance/detail rule becomes locked until measured on real prints.
-
-## Phase 20 — 3D Manufacturing Bible — CONDITIONAL
-
-Only after Physical Asset Proof, record proven rules for scale, detail/wall thickness, tolerance, support/orientation, color/part count, connector families, bases and target-printer constraints.
-
-## Phase 21 — Asset Registry
-
-Introduce stable asset IDs/dependencies when real production assets begin multiplying. Do not build a registry system for hypothetical assets.
-
-## Phase 22 — Storage Scaling
-
-Keep text/data/code in normal Git. Re-evaluate Git LFS or external object storage using representative real asset sizes/history.
-
-## Phase 23 — AI Pipeline
-
-Automate only stable/repetitive work:
+Automate stable/repetitive work only:
 
 `Reviewed Canon → Context → Prompt → AI Proposal → Validation → Human Review → Approved Canon/Asset Registry`
 
-Avoid automating unstable design decisions merely to generate more content faster.
+Do not automate unstable design decisions merely to generate more content faster.
 
-## Phase 24 — IP / Similarity Gate
+## Phase 21 — IP / Similarity / Release Gate
 
-Before production-scale release of names/characters/assets:
-- internal silhouette/signature comparison;
-- external name/design research;
-- documented human review;
-- provenance/version history.
+Before production-scale release of names/characters/assets: internal comparison, external name/design research, provenance/human review and formal legal review where commercial risk justifies it. This reduces risk; it cannot guarantee zero infringement.
 
-This reduces risk; it cannot guarantee zero infringement. Formal legal review can be added where commercial risk justifies it.
+## Production Gate
 
-## Phase 25 — External Playtest / Production Gate
+Scale only if evidence supports the **retained** pillars: understandable/compelling core experience, meaningful decisions, desirable/distinct characters where relevant, sufficient world context, manageable progression/economy where relevant, repeatable asset pipeline, physical viability where retained, and maintainable technical/data architecture.
 
-Observe users/players without coaching and measure comprehension, decisions, failure reasons, character desirability and replay motivation as applicable.
-
-Scale only if evidence supports the retained pillars: coherent core loop, meaningful decisions, desirable/distinct characters, sufficient world context, manageable progression/economy if applicable, repeatable asset pipeline, physically viable print adaptation if retained, and maintainable data/technical architecture.
-
-If a major pillar fails, revise or remove it rather than compensating with more content.
+If a pillar fails, revise or remove it rather than compensating with more content.
 
 ## Production
 
-Expand incrementally and world-by-world. Any roster/content counts discussed before this gate are capacity hypotheses, not commitments.
+Expand incrementally. Any roster/world/item counts discussed before this gate are hypotheses, not commitments.
