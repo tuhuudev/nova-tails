@@ -84,10 +84,10 @@ Validation
   ↓
 Human Review
   ↓
-Approved Canon / Asset Registry (when applicable)
+Approved Canon / retained output
 ```
 
-Prompts are derived artifacts. Prompt text must never silently override canon.
+Prompts are derived artifacts. Prompt text must never silently override canon. Asset registries/automation are optional later mechanisms, introduced only when scale requires them.
 
 ## 11. Proposed validation gates
 
