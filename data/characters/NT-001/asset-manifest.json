@@ -1,0 +1,45 @@
+{
+  "characterId": "NT-001",
+  "version": "0.1.0",
+  "status": "CANDIDATE",
+  "assets": [
+    {
+      "assetId": "NT001-CONCEPT-001",
+      "assetType": "concept_sheet",
+      "purpose": "early visual exploration and provenance",
+      "version": "0.1.0",
+      "status": "CANDIDATE",
+      "path": "assets/characters/NT-001/01_reference/concept/NT-001_concept_v001.png",
+      "source": {"method": "ai_generated", "parentAssetIds": [], "generatorOrTool": "ChatGPT image generation"},
+      "validation": {"visualDNA": "pending", "crossView": "not_applicable", "production": "pending", "runtime": "not_applicable", "print": "not_applicable"},
+      "derivedAssetIds": ["NT001-CONCEPT-002"],
+      "notes": "Selected early sheet; binary retention/upload still must follow storage policy."
+    },
+    {
+      "assetId": "NT001-CONCEPT-002",
+      "assetType": "character_bible_prototype",
+      "purpose": "vertical-slice overview; not modeling reference",
+      "version": "0.2.0",
+      "status": "CANDIDATE",
+      "path": "assets/characters/NT-001/01_reference/concept/NT-001_character_bible_v002.png",
+      "source": {"method": "ai_generated", "parentAssetIds": ["NT001-CONCEPT-001"], "generatorOrTool": "ChatGPT image generation"},
+      "validation": {"visualDNA": "pending", "crossView": "fail", "production": "pending", "runtime": "not_applicable", "print": "not_applicable"},
+      "derivedAssetIds": [],
+      "notes": "Useful overview but independent rendered views are not trusted as aligned orthographic geometry."
+    }
+  ],
+  "plannedProductionAssets": [
+    "NT001-REF-FRONT-001",
+    "NT001-REF-SIDE-L-001",
+    "NT001-REF-SIDE-R-001",
+    "NT001-REF-BACK-001",
+    "NT001-REF-TOP-001",
+    "NT001-REF-BOTTOM-001",
+    "NT001-REF-ANATOMY-001",
+    "NT001-REF-DIMENSIONS-001",
+    "NT001-REF-MATERIALS-001",
+    "NT001-3D-AUTHORING-001",
+    "NT001-3D-RUNTIME-001",
+    "NT001-3D-PRINT-001"
+  ]
+}

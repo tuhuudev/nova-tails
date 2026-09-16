@@ -1,0 +1,75 @@
+{
+  "characterId": "NT-001",
+  "stage": 1,
+  "version": "0.2.0",
+  "status": "CANDIDATE",
+  "coordinateSystem": {
+    "units": "normalized",
+    "totalPhysicalBodyHeight": 1.0,
+    "groundPlane": 0.0,
+    "note": "No millimeter dimensions are canon at this stage. FX beyond physical silhouette are excluded from dimensional authority."
+  },
+  "symmetry": {
+    "body": "approximately bilateral",
+    "exceptions": [],
+    "rule": "Asymmetry must be intentional and documented; AI view-to-view drift is not design asymmetry."
+  },
+  "lockedIdentity": ["EAR_SHAPE", "FOREHEAD_MARK", "TAIL_SPLIT"],
+  "geometryVsFx": {
+    "ears": "Physical ear/fur geometry carries the flame-like silhouette; glow is optional FX.",
+    "tail": "One physical tail root splits into two persistent physical flame-shaped lobes. Both lobes remain recognizable with FX disabled.",
+    "foreheadMark": "Centered surface marking/inlay identity; not dependent on glow.",
+    "rule": "NT-001 must remain recognizable in unlit/clay render and physical print."
+  },
+  "tailTopology": {
+    "rootCount": 1,
+    "branchCount": 2,
+    "splitType": "physical",
+    "symmetryIntent": "bilateral",
+    "fxRequiredForIdentity": false,
+    "status": "RESOLVED_FOR_PROTOTYPE"
+  },
+  "earConstruction": {
+    "outerEar": "physical fur/ear geometry",
+    "innerFlameShape": "physical fur/ear geometry",
+    "elementGlow": "optional FX",
+    "fxRequiredForIdentity": false,
+    "status": "RESOLVED_AT_RULE_LEVEL"
+  },
+  "requiredViews": ["front", "left_side", "right_side", "back", "top", "bottom"],
+  "requiredLandmarks": ["ground", "paw_top", "shoulder", "hip", "eye_center", "ear_base", "ear_tip", "nose_tip", "tail_root", "tail_max_envelope", "forehead_mark_center"],
+  "crossViewConstraints": [
+    "same neutral standing pose",
+    "same body revision",
+    "same ground line",
+    "same normalized scale",
+    "front and back widths reconcile",
+    "left and right body lengths reconcile",
+    "tail root location reconciles in side/back/top",
+    "ear base and tip landmarks reconcile in front/side/back",
+    "marking placement is identical rather than reinterpreted",
+    "no perspective hero lens",
+    "no environmental lighting used to define geometry"
+  ],
+  "openGeometryDecisions": [
+    {
+      "id": "BACK_MARKING",
+      "question": "Whether the current back marking is retained as an optional marking or removed from the master design.",
+      "blocking": false
+    },
+    {
+      "id": "FIGURE_SCALE",
+      "question": "Final physical prototype scale in millimeters.",
+      "blocking": false,
+      "deferUntil": "3D blockout and print feasibility"
+    }
+  ],
+  "currentReferencePack": {
+    "version": "0.1",
+    "status": "CANDIDATE",
+    "sourceType": "ai_generated_composite_and_extracted_views",
+    "crossViewValidation": "PENDING",
+    "important": "Text such as APPROVED FOR 3D BLOCKOUT appearing inside generated artwork is not authoritative project status."
+  },
+  "promotionRule": "Do not mark any orthographic view APPROVED until the six-view pack passes cross-view reconciliation. Approval for 3D blockout is distinct from CANON character status."
+}

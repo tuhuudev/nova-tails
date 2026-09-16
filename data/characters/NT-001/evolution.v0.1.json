@@ -1,0 +1,32 @@
+{
+  "characterId": "NT-001",
+  "status": "CANDIDATE",
+  "version": "0.1.0",
+  "lineage": {
+    "stages": [
+      {
+        "stage": 1,
+        "workingLabel": "Spark Pup",
+        "intent": ["cute", "compact", "approachable", "energetic"],
+        "preserve": ["EAR_SHAPE", "FOREHEAD_MARK", "TAIL_SPLIT"],
+        "development": []
+      },
+      {
+        "stage": 2,
+        "workingLabel": "Blaze Runner",
+        "intent": ["agile", "adventurous", "transitional"],
+        "preserve": ["EAR_SHAPE", "FOREHEAD_MARK", "TAIL_SPLIT"],
+        "development": ["longer limbs", "balanced head-body ratio", "increased tail volume", "stronger directional markings", "moderately increased flame intensity"]
+      },
+      {
+        "stage": 3,
+        "workingLabel": "Nova Guardian",
+        "intent": ["mature", "powerful", "protective"],
+        "preserve": ["EAR_SHAPE", "FOREHEAD_MARK", "TAIL_SPLIT"],
+        "development": ["stronger chest and limbs", "mature facial proportions", "high flame complexity", "larger split-tail silhouette", "optional natural crest development"]
+      }
+    ],
+    "forbiddenAcrossLineage": ["wings", "generic single tail replacing split-tail identity", "removal of forehead identity mark"],
+    "reviewRule": "Stage 2 must visibly bridge Stage 1 and Stage 3. All stage labels and detailed visual developments remain candidate until reviewed against generated references and downstream 3D feasibility."
+  }
+}

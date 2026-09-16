@@ -1,0 +1,75 @@
+{
+  "characterId": "NT-001",
+  "stage": 1,
+  "assetId": "NT001-3D-BLOCKOUT-001",
+  "version": "0.1.0",
+  "status": "DEPRECATED",
+  "purpose": "Resolve cross-view ambiguity using one shared 3D volume before detailed sculpt, rigging or print adaptation.",
+  "authoritativeInputs": [
+    "data/characters/NT-001/production-reference.v0.1.json",
+    "data/characters/NT-001/character.json",
+    "docs/phase-1/NT-001_CROSS_VIEW_RECONCILIATION_v0.1.md"
+  ],
+  "modelingRules": {
+    "symmetry": "bilateral",
+    "detailLevel": "primary_and_secondary_forms_only",
+    "furSculpt": false,
+    "texturesRequired": false,
+    "vfxRequired": false,
+    "productionTopologyRequired": false,
+    "physicalEarGeometry": true,
+    "tailRootCount": 1,
+    "tailLobeCount": 2,
+    "tailSplitPhysical": true,
+    "wingsAllowed": false
+  },
+  "requiredObjects": [
+    "BODY_BLOCKOUT",
+    "HEAD_BLOCKOUT",
+    "EAR_L_BLOCKOUT",
+    "EAR_R_BLOCKOUT",
+    "EYE_L_BLOCKOUT",
+    "EYE_R_BLOCKOUT",
+    "LEG_FL_BLOCKOUT",
+    "LEG_FR_BLOCKOUT",
+    "LEG_RL_BLOCKOUT",
+    "LEG_RR_BLOCKOUT",
+    "TAIL_ROOT_BLOCKOUT",
+    "TAIL_L_BLOCKOUT",
+    "TAIL_R_BLOCKOUT"
+  ],
+  "optionalObjects": ["FOREHEAD_MARK_GUIDE", "MUZZLE_GUIDE", "PAW_GUIDES"],
+  "cameraSet": [
+    "CAM_FRONT_ORTHO",
+    "CAM_LEFT_ORTHO",
+    "CAM_RIGHT_ORTHO",
+    "CAM_BACK_ORTHO",
+    "CAM_TOP_ORTHO",
+    "CAM_BOTTOM_ORTHO",
+    "CAM_3Q_FRONT",
+    "CAM_3Q_REAR"
+  ],
+  "qa": {
+    "mustReadWithoutMaterials": true,
+    "mustReadWithoutFx": true,
+    "mustPreserve": ["EAR_SHAPE", "FOREHEAD_MARK placement", "TAIL_SPLIT"],
+    "mustCheck": [
+      "head width/depth",
+      "muzzle length",
+      "ear base/depth",
+      "body length/depth",
+      "paw spacing/contact",
+      "tail root transition",
+      "two-lobe tail envelope",
+      "center of mass plausibility"
+    ]
+  },
+  "promotion": {
+    "nextStatus": "APPROVED_FOR_SCULPT",
+    "requires": [
+      "eight required blockout renders",
+      "cross-view projection review",
+      "no unresolved identity-critical geometry conflict"
+    ]
+  }
+}
