@@ -53,6 +53,15 @@ Do not assume these must all survive.
 
 See `docs/research/PRODUCT_VISION_EVIDENCE_2026-09-16.md`.
 
+## NT-001 / PYROX INTAKE — REVIEW
+
+- A retained candidate record exists at `data/characters/NT-001/character.json` (NT-001 / Pyrox, v0.1.0, `CANDIDATE`).
+- The known selected-concept, production-reference, orthographic and per-view asset context is indexed at `data/assets/NT-001.asset-manifest.json`.
+- No corresponding binary asset was present in the local clone at intake. The manifest records them as `MISSING_LOCAL`; it does not promote their reported Library status to project canon.
+- `docs/production/NT-001_PYROX_INTAKE_AND_3D_HANDOFF.md` defines the safe import target and the conditional 3D handoff.
+
+This intake does **not** override the Product Vision/Test A gate or authorize production-scale 3D work.
+
 ## DRAFT / UNVALIDATED
 
 - working name NOVA TAILS;
@@ -83,6 +92,10 @@ Failure signal: responses are mainly generic “cute/cool” and identities are 
 ## NEXT DECISION
 
 Review Product Vision v0.1 and decide whether Test A is the correct first risk-reduction experiment. If accepted, create a dedicated experiment branch and define protocol before generating more characters.
+
+## TEST A PREPARATION — READY TO RUN
+
+`docs/experiments/TEST_A_CHARACTER_DESIRABILITY_v0.1.md` and `data/experiments/test-a-character-desirability-template.csv` now provide the protocol and anonymous-result template for the proposed first test. Execution remains blocked until the retained NT-001 source assets are imported and comparable candidate presentation boards are available. Results must be reviewed before changing Pyrox's candidate status or authorizing a 3D blockout.
 
 ## DO NOT DO YET
 

@@ -1,0 +1,77 @@
+{
+  "manifestVersion": "0.1.0",
+  "characterId": "NT-001",
+  "characterName": "Pyrox",
+  "status": "INTAKE_PENDING_BINARY_IMPORT",
+  "updated": "2026-09-16",
+  "sourceOfTruth": {
+    "identity": "data/characters/NT-001/character.json",
+    "assetRecords": "this manifest",
+    "binaryRoot": "assets/characters/NT-001"
+  },
+  "assets": [
+    {
+      "id": "NT001-CONCEPT-001",
+      "kind": "concept",
+      "version": "0.1.0",
+      "expectedPath": "assets/characters/NT-001/concept/NT-001_concept_v001.png",
+      "binaryStatus": "MISSING_LOCAL",
+      "reviewStatus": "CANDIDATE",
+      "provenance": "Repository character record",
+      "sha256": null
+    },
+    {
+      "id": "NT001-PRODREF-010",
+      "kind": "production-reference-sheet",
+      "version": "1.0.0",
+      "expectedPath": "assets/characters/NT-001/reference/NT001_PRODUCTION_REFERENCE_v1.0.png",
+      "binaryStatus": "MISSING_LOCAL",
+      "reviewStatus": "PROPOSAL",
+      "provenance": "ChatGPT Library context, 2026-09-16",
+      "sha256": null
+    },
+    {
+      "id": "NT001-ORTHO-010",
+      "kind": "orthographic-candidate",
+      "version": "1.0.0",
+      "expectedPath": "assets/characters/NT-001/turnaround/NT001_ORTHOGRAPHIC_CANDIDATE_v1.0.png",
+      "binaryStatus": "MISSING_LOCAL",
+      "reviewStatus": "PROPOSAL",
+      "provenance": "ChatGPT Library context, 2026-09-16; reported as approved for 3D blockout",
+      "sha256": null
+    },
+    {
+      "id": "NT001-VIEW-FRONT-010",
+      "kind": "view-reference",
+      "view": "front",
+      "version": "1.0.0",
+      "expectedPath": "assets/characters/NT-001/reference/NT001_REFERENCE_FRONT_v1.0.png",
+      "binaryStatus": "MISSING_LOCAL",
+      "reviewStatus": "PROPOSAL",
+      "provenance": "ChatGPT Library context, 2026-09-16",
+      "sha256": null
+    },
+    {
+      "id": "NT001-VIEW-LEFT-010",
+      "kind": "view-reference",
+      "view": "left",
+      "version": "1.0.0",
+      "expectedPath": "assets/characters/NT-001/reference/NT001_REFERENCE_LEFT_v1.0.png",
+      "binaryStatus": "MISSING_LOCAL",
+      "reviewStatus": "PROPOSAL",
+      "provenance": "ChatGPT Library context, 2026-09-16",
+      "sha256": null
+    },
+    {
+      "id": "NT001-VIEW-BACK-010",
+      "kind": "view-reference",
+      "view": "back",
+      "version": "1.0.0",
+      "expectedPath": "assets/characters/NT-001/reference/NT001_REFERENCE_BACK_v1.0.png",
+      "binaryStatus": "MISSING_LOCAL",
+      "reviewStatus": "PROPOSAL",
+      "provenance": "ChatGPT Library context, 2026-09-16",
+      "sha256": null
+    }
+  ]
+}
