@@ -86,8 +86,9 @@ MOMO demonstrates a candidate physical-design direction (small stylized fox/scou
 - [x] Originality/IP language requires validation rather than implying guarantee
 - [x] Early highest-risk prototype/test is an explicit governance decision
 - [x] Data serialization/schema, stable-ID format and asset-registry naming deliberately deferred until real requirements
+- [x] Repository ruleset state checked: no rulesets are currently configured
 - [ ] Phase 0 owner/reviewer acceptance and merge
-- [ ] `main` protection/ruleset when repository permissions/workflow allow it
+- [ ] Configure `main` protection/ruleset when repository permissions/workflow allow it
 
 ## NEXT MILESTONES
 
