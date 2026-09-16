@@ -1,0 +1,17 @@
+{
+  "schema_version": "0.1",
+  "adapter_id": "print/NT-CHAR-001/reference",
+  "lane": "print",
+  "character_id": "NT-CHAR-001",
+  "character_revision": "0.1",
+  "master_design_revision": null,
+  "adapter_version": "0.1",
+  "preserved_invariants": ["central core remains dominant", "broken asymmetric orbit", "orbit negative space", "non-grounded identity read"],
+  "allowed_transformations": ["part segmentation", "hidden supports/stand interface", "feature thickening", "connector geometry", "micro-detail simplification", "orbit pose adjustment for stability"],
+  "validation": {
+    "status": "PLANNED",
+    "gates": ["A1-mini build-volume check", "manifold/slicer check", "signature survives segmentation", "real print and assembly before tolerance standards"]
+  },
+  "deliverables": [],
+  "provenance": {"notes": "Architecture proof manifest only. No connector dimensions or tolerances are canon until physical testing."}
+}
