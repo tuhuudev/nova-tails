@@ -4,18 +4,24 @@
 
 ## Purpose
 
-Prevent documentation, game data, AI prompts, generated assets and implementation code from becoming conflicting sources of truth as the project grows.
+Prevent documentation, structured data, AI prompts, generated assets and implementation code from becoming conflicting sources of truth as the project grows.
+
+## Reviewed baseline vs canon
+
+The repository records both reviewed decisions and explicitly retained hypotheses. `main` is therefore the latest **reviewed baseline**.
+
+Only material with lifecycle status `APPROVED` or `LOCKED` is active canon. `IDEA`, `DRAFT` and `REVIEW` are not canon even when their files are present on `main`.
 
 ## Ownership model
 
 ```text
-DECISIONS / BIBLES          explain WHY
+APPROVED DECISIONS / BIBLES  explain WHY / constraints
         ↓
-CANON DATA                  records WHAT IS TRUE
+CANON DATA                  records concrete WHAT IS TRUE
         ↓
 SCHEMAS                     define WHAT IS VALID
         ↓
-IMPLEMENTATION              defines executable behavior
+IMPLEMENTATION              executes reviewed contracts
         ↓
 OUTPUTS                     game UI / 2D / 3D / content
 ```
@@ -25,9 +31,9 @@ Prompts consume this chain. They do not sit above it.
 ## Directory responsibilities
 
 ### `docs/`
-Human-readable intent, rationale, rules, design constraints and ADRs.
+Human-readable intent, rationale, rules, design constraints and ADRs. Docs may contain explicitly marked non-canonical hypotheses.
 
-A prose document may describe a concept before machine-readable data exists. Once a canonical entity is represented in `data/`, the entity's concrete values should be read from data rather than duplicated inconsistently across many docs.
+Once a canonical entity is represented in `data/`, concrete entity values should be read from data rather than duplicated inconsistently across many docs.
 
 ### `data/`
 Machine-readable canonical instances, introduced when systems become stable enough to benefit from structured data.
@@ -48,30 +54,29 @@ data/
 Do not populate this tree with speculative bulk data during Architecture v0.1.
 
 ### `schemas/`
-Validation contracts for canonical data. Schemas should be introduced together with the first real structured-data slice, not invented in exhaustive detail before we know what the prototype needs.
+Validation contracts for canonical/structured data. Schemas should be extracted from the first real structured-data slice rather than exhaustively predicted now.
 
 ### `prompts/`
-Reusable generation instructions built from canon/context. Prompt templates may specify presentation or generation technique but must not redefine character/world/game facts.
+Reusable generation instructions built from reviewed canon/context. Prompt templates may specify presentation/generation technique but must not redefine character/world/game facts.
 
 ### `assets/`
-Binary/source/output assets. Asset files require stable registry IDs once production-scale asset work begins.
+Intentionally retained binary/source/output assets under asset-storage policy. Stable registry IDs become useful when production-scale assets begin multiplying.
 
 ### `src/`, `simulator/`, `tools/`
-Executable behavior. If code reveals ambiguity in a design rule, resolve the ambiguity in canon/design rather than silently letting implementation become a contradictory specification.
+Executable behavior. If implementation reveals ambiguity in a design rule, surface and reconcile it rather than silently allowing code to become contradictory canon.
 
 ## Canonical entity rule
 
-Every production entity should eventually have:
+Every production entity should eventually have only the metadata that proves useful, likely including:
 
 - stable ID;
 - lifecycle status;
 - schema version;
-- entity version where useful;
-- provenance/review state;
+- entity/asset version where useful;
 - dependencies/references;
 - locked identity fields where appropriate.
 
-Example character identity:
+Example shape only:
 
 ```yaml
 id: NT-ORG-FOX-001
@@ -86,11 +91,11 @@ locked_fields:
   - identity.species
 ```
 
-This is an example contract shape, not yet canonical MOMO data.
+This is not yet canonical MOMO data or a final schema.
 
-## Evolution inheritance
+## Evolution inheritance principle
 
-Evolution forms should inherit base identity and store deltas instead of duplicating the complete character.
+If evolution remains part of the product, forms should inherit base identity and store meaningful deltas rather than independently duplicating/reinventing the character.
 
 Conceptually:
 
@@ -102,13 +107,13 @@ FORM-02
 FORM-03
 ```
 
-Each form can record `ADD`, `REMOVE`, `MODIFY`, and `KEEP_LOCKED` semantics once the schema is designed.
+Exact inheritance representation is deferred until real data exists.
 
 ## Change propagation
 
-A canonical change must identify affected downstream systems.
+An approved canonical change should identify affected downstream systems.
 
-Example:
+Example only:
 
 ```text
 Character Element changes
@@ -125,20 +130,20 @@ Dependency automation is future tooling. During early phases this is a PR-review
 
 ## Status rules
 
-- `IDEA`: exploration only; may live outside canonical data.
-- `DRAFT`: represented but unstable.
-- `REVIEW`: candidate ready for explicit review.
-- `APPROVED`: current canonical direction.
-- `LOCKED`: downstream dependency contract; changing it requires impact analysis.
-- `DEPRECATED`: retained for history/migration but no longer active.
+- `IDEA`: exploration only; not canon.
+- `DRAFT`: represented but unstable; not canon.
+- `REVIEW`: candidate ready for explicit review; not canon yet.
+- `APPROVED`: active canonical direction/data.
+- `LOCKED`: active canon used as a downstream dependency contract; changing it requires impact analysis.
+- `DEPRECATED`: retained for history/migration but no longer active canon.
 
 ## Versioning
 
-Use project versioning pragmatically rather than forcing semantic versioning onto every note.
+Use versioning pragmatically rather than forcing semantic versioning onto every note.
 
-For canonical assets/entities where version matters:
+For assets/entities where version semantics become useful:
 
-- PATCH: correction that preserves identity/contract;
+- PATCH: correction preserving identity/contract;
 - MINOR: compatible detail/addition;
 - MAJOR: identity/contract-changing redesign.
 
@@ -146,24 +151,17 @@ Schema versions are independent of asset versions.
 
 ## No premature schema complexity
 
-Architecture v0.1 should define this policy but should **not** attempt to model every future field.
+Architecture v0.1 defines policy but intentionally does **not** model every future field.
 
-The first real schemas should be extracted from the vertical-slice needs. Candidate first schemas:
-
-1. Character
-2. Skill
-3. Enemy/Boss
-4. Equipment
-
-Economy/campaign schemas follow only when those systems are actually prototyped.
+First schemas should come from working prototype/vertical-slice needs. Likely candidates are Character, Ability/Skill, Enemy/Boss and later Equipment, but even this order may change with prototype findings.
 
 ## Conflict resolution
 
-When two sources disagree:
+When sources disagree:
 
-1. `LOCKED` reviewed decision/data wins over draft material.
-2. Newer `APPROVED` ADR supersedes older approved ADR when explicitly marked.
-3. Canonical structured data wins for concrete entity values once established.
+1. `LOCKED` reviewed decision/data wins over lower-status material unless explicitly being changed.
+2. Newer `APPROVED` ADR can supersede older approved ADR only when the relationship is explicit.
+3. Approved structured data wins for concrete entity values once established.
 4. Docs explain intent; update them if they contradict approved data.
 5. Prompt/generated output never overrides canon.
 6. Implementation differences must be surfaced and reconciled, not silently accepted.
