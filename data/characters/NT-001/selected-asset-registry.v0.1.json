@@ -5,8 +5,8 @@
   "storagePolicy": {
     "structuredSourceOfTruth": "git",
     "selectedBinarySource": "ChatGPT Library /NOVA_TAILS",
-    "gitBinaryStatus": "PARTIALLY_COMMITTED",
-    "note": "The selected concept and production-reference binaries have been checksum-verified and committed at their repo target paths. The remaining selected Library binaries are still identified here by stable filename and SHA-256 pending local import. Generated artwork is not canon by itself."
+    "gitBinaryStatus": "NT001_REFERENCE_BUNDLE_COMMITTED",
+    "note": "The selected concept, production-reference, orthographic candidate and extracted front/left/back reference binaries have been checksum-verified and committed at their repo target paths. Only the P03 research stimulus remains Library-only. Generated artwork is not canon by itself."
   },
   "assets": [
     {
