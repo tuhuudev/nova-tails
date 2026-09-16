@@ -17,7 +17,7 @@ Nothing is permanently locked yet. The project is deliberately still validating 
 
 ## APPROVED ARCHITECTURE DIRECTION
 
-- Build an original multi-species sci-fi/fantasy character universe.
+- Project goal: develop a distinctive original multi-species sci-fi/fantasy character universe; originality/rights clearance is a validation goal, not an AI guarantee.
 - When characters span outputs, one reviewed master identity should drive adaptations rather than allowing independent identity drift.
 - AI is an ideation/production assistant; the repository is the authoritative project record after review.
 - Do not mass-produce characters/assets until a vertical slice/equivalent proof validates relevant systems and pipeline assumptions.
@@ -29,7 +29,7 @@ Nothing is permanently locked yet. The project is deliberately still validating 
 ## DRAFT / PRODUCT HYPOTHESES
 
 Not resolved by Phase 0:
-- working name **NOVA TAILS** (legal/name clearance incomplete);
+- working name **NOVA TAILS** (name/legal clearance incomplete);
 - character-collection/card-battler as first interactive product;
 - gacha/hero acquisition;
 - five-character team;
@@ -60,7 +60,7 @@ MOMO demonstrates a candidate physical-design direction (small stylized fox/scou
 7. Character taxonomy complexity.
 8. Sustainable cross-output adaptation pipeline.
 9. Physical manufacturing standards if print is retained.
-10. IP/name/similarity review process.
+10. IP/name/similarity review process and eventual commercial-risk threshold for formal legal review.
 11. Whether the core product is compelling without reward scaffolding.
 12. Whether physical printing is core, extension or later layer.
 13. Which adjacent products/genres validate or challenge differentiation.
@@ -79,6 +79,7 @@ MOMO demonstrates a candidate physical-design direction (small stylized fox/scou
 - [x] Product Vision removed from Phase 0 PR for dedicated review
 - [x] Physical-collectible direction returned to REVIEW
 - [x] Product Vision gate includes targeted external evidence
+- [x] Originality/IP language corrected to require validation rather than imply guarantee
 - [x] Internal architecture review completed; no remaining blocking design inconsistency identified
 - [ ] Owner acceptance / merge of Phase 0 foundation PR
 - [ ] `main` protection/ruleset when repository permissions/workflow allow it
