@@ -8,7 +8,6 @@ Use this file for high-impact project decisions. Do not silently convert brainst
 ADR-XXXX — Title
 Status: DRAFT | REVIEW | APPROVED | LOCKED | DEPRECATED
 Date: YYYY-MM-DD
-
 Context
 Decision
 Alternatives considered
@@ -20,13 +19,13 @@ Revisit trigger
 
 ---
 
-## ADR-0001 — Repository is the source of truth
+## ADR-0001 — Repository is the authoritative reviewed project record
 
 **Status:** APPROVED  
 **Date:** 2026-09-16
 
 ### Decision
-The Git repository is the authoritative project record. AI/chat outputs remain proposals until intentionally captured and reviewed through repository workflow.
+The Git repository is the authoritative project record after review. `main` is the latest reviewed baseline and may intentionally contain explicitly marked draft/review hypotheses. Chat/AI output does not become authoritative merely by being generated.
 
 ### Revisit trigger
 If project scale requires a dedicated content-management/database system; Git should still retain versioned schemas/code/docs and decision history.
@@ -39,7 +38,7 @@ If project scale requires a dedicated content-management/database system; Git sh
 **Date:** 2026-09-16
 
 ### Decision
-Do not create a large roster, skill library, equipment catalog or printable collection before validating architecture and a vertical slice.
+Do not create a large roster, skill library, equipment catalog or printable collection before validating architecture and a vertical slice/equivalent proof.
 
 ### Why
 Cheap AI generation can create large amounts of internally inconsistent content and increase sunk cost before core assumptions are proven.
@@ -137,11 +136,10 @@ A larger team/release process demonstrates a concrete need for release/integrati
 
 ### Decision
 Separate responsibilities as follows:
-
 - `docs/` explains intent/rationale and may contain explicitly marked hypotheses;
-- `data/` stores machine-readable canonical instances once needed;
+- `data/` stores machine-readable canonical/structured instances once needed;
 - `schemas/` defines validity/contracts;
-- `prompts/` derives generation instructions from reviewed canon;
+- `prompts/` derives generation instructions from reviewed canon/context;
 - `assets/` stores intentionally retained project assets under storage policy;
 - implementation/simulator/tools consume reviewed contracts rather than redefining canon silently.
 
@@ -159,8 +157,8 @@ The first prototype/vertical-slice schemas/data should demonstrate that the spli
 Define storage/schema policy now, but delay Git LFS configuration and detailed entity schemas until representative physical assets and prototype data exist.
 
 ### Revisit trigger
-- first structured game-data slice for schemas;
-- Physical Asset Proof milestone for LFS/storage.
+- first structured product/game-data slice for schemas;
+- representative large binary assets for LFS/storage.
 
 ---
 
@@ -170,10 +168,10 @@ Define storage/schema policy now, but delay Git LFS configuration and detailed e
 **Date:** 2026-09-16
 
 ### Decision
-Roadmap phases express dependency/risk order, not a requirement to complete large documents sequentially. When a cheap prototype/test can invalidate a risky assumption faster than documentation, prototype earlier and feed evidence back into the relevant decision.
+Roadmap phases express dependency/risk order, not a requirement to complete large documents sequentially. When targeted external research or a cheap prototype/test can invalidate a risky assumption faster than documentation, use it and feed evidence back into the relevant decision.
 
 ### Why
-The project must avoid replacing implementation risk with excessive worldbuilding/design documentation.
+The project must avoid replacing implementation/product risk with excessive worldbuilding/design documentation.
 
 ### Impact
 Product Vision and Core Loop should identify the highest-risk assumptions and select the cheapest credible validation method before expanding content.
