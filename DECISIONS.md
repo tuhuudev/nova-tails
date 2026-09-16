@@ -31,7 +31,7 @@ The Git repository is authoritative after review. `main` is the latest reviewed 
 **Status:** APPROVED  
 **Date:** 2026-09-16
 
-Do not create a large roster, skill/item catalog, campaign or printable collection before validating architecture and a vertical slice/equivalent proof. Cheap generation is not evidence that generated content is worth producing.
+Do not create a large roster, skill/item catalog, campaign or printable collection before validating architecture and a representative end-to-end proof (vertical slice for a game, equivalent proof for another product). Cheap generation is not evidence that generated content is worth producing.
 
 ---
 
