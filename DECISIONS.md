@@ -124,12 +124,12 @@ Hypothesis: center the project on a distinctive multi-species sci-fi/fantasy uni
 
 ---
 
-## ADR-0013 — Prototype the highest-risk product assumption before deep content
+## ADR-0013 — Test the highest-risk product assumption before deep content
 **Current status:** REVIEW  
 **Target status:** APPROVED  
 **Date:** 2026-09-16
 
-After Product Vision/Core Experience identify the most dangerous assumption, create the cheapest credible prototype/test before investing in deep lore, exhaustive taxonomy or production content. The test type depends on the risk: interaction prototype, paper simulation, clickable flow, concept desirability test or physical proof.
+As soon as Product Vision/Core Experience provides enough information to identify the most dangerous assumption, create the cheapest credible prototype/test before investing in deep lore, exhaustive taxonomy or production content. The test may occur before later nominal roadmap phases. Test type depends on risk: interaction prototype, paper simulation, clickable flow, concept desirability test or physical proof.
 
 ### Why
 Architecture is valuable only if it reduces rework. Documentation that delays testing the assumption most likely to kill/change the product becomes a liability.
