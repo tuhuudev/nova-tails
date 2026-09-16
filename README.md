@@ -60,8 +60,8 @@ Product Vision + targeted evidence
 → scale only after validation
 ```
 
-The prototype can move earlier whenever it answers a critical unknown faster than documentation.
+This sequence is risk-driven rather than strict; the prototype/test can move earlier whenever evidence suggests that is cheaper or more informative.
 
 ## Current rule while reviewing Phase 0
 
-Do not expand the universe/content library yet. First accept or revise the foundation; then move to Product Vision rather than silently treating existing game/lore ideas as settled.
+Do not expand the universe/content library yet. First accept or revise the foundation; then move into evidence-backed Product Vision and testing rather than silently treating existing game/lore ideas as settled.
