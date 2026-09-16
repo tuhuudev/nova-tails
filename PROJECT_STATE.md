@@ -77,7 +77,7 @@ MOMO demonstrates a candidate physical-design direction (small stylized fox/scou
 - [x] Asset storage policy
 - [x] PR review template
 - [x] Baseline `.gitignore`
-- [x] Master Architecture separates durable principles from product hypotheses
+- [x] Master Architecture separates durable principles from hypotheses
 - [x] Roadmap is risk/evidence/prototype driven rather than waterfall
 - [x] Product Vision removed from Phase 0 PR for dedicated review
 - [x] Physical-collectible direction returned to REVIEW
@@ -90,10 +90,10 @@ MOMO demonstrates a candidate physical-design direction (small stylized fox/scou
 ## NEXT MILESTONES
 
 After Phase 0 acceptance/merge:
-1. `design/product-vision-v0.1`
-2. `design/core-loop-v0.1`
-3. minimum world/taxonomy/visual work as required by the selected product;
-4. interaction prototype as early as useful to test the highest-risk assumption.
+1. `design/product-vision-v0.1` — audience/product/differentiation/output priorities + targeted evidence.
+2. `design/core-loop-v0.1` — only after Product Vision has a viable hypothesis.
+3. A dedicated **cheapest high-risk prototype** branch should be created as soon as Product Vision/Core Loop identify the most dangerous assumption; it may occur before deeper world/taxonomy work.
+4. Minimum world/taxonomy/visual work is added only to the depth required by the selected product/prototype.
 
 This is risk ordering, not waterfall.
 
