@@ -5,7 +5,7 @@
 
 ## 1. Architecture model
 
-Current Product Vision hypothesis is a distinctive original character universe capable of supporting multiple adaptations. Phase 0 does **not** approve that market/product hypothesis; it only establishes how reviewed canon and adaptations should relate if the hypothesis is retained.
+Current Product Vision hypothesis is a distinctive original multi-species sci-fi/fantasy universe/IP, initially explored through character-centric concepts and potentially supporting multiple adaptations. Phase 0 does **not** approve that market/product hypothesis; it establishes how reviewed canon and adaptations should relate if retained.
 
 ```text
                  PROJECT / IP (working name)
@@ -14,28 +14,24 @@ Current Product Vision hypothesis is a distinctive original character universe c
                          |
           +--------------+--------------+
           |              |              |
-        WORLD        CHARACTER       SYSTEMS
-          |              |              |
-          +--------------+--------------+
+        WORLD        IDENTITY        SYSTEMS
                          |
-             MASTER CHARACTER IDENTITY
+              MASTER ENTITY/CHARACTER IDENTITY
                          |
               ADAPTATIONS (optional)
              /          |          \
            GAME         2D          3D
 ```
 
-No adaptation lane is automatically required to be a launch product. Product Vision decides priorities. Generated images/models are outputs, not source of truth.
-
-Originality/third-party-rights risk must be validated during design/release review; it is not guaranteed by AI generation or this architecture.
+No adaptation lane is automatically required to be a launch product. Product Vision decides priorities. Generated images/models are outputs, not source of truth. Originality/third-party-rights risk requires validation; it is not guaranteed by AI generation or this architecture.
 
 ## 2. Canon layers
 
 ### Universe Canon
 Reviewed cosmology/history/world/faction/culture/conflict/terminology when those systems exist.
 
-### Character Canon
-Reviewed stable identity and retained character constraints.
+### Identity / Character Canon
+Reviewed stable identities and retained constraints.
 
 ### Game Canon — conditional
 Interaction/combat/progression/abilities/stats/equipment/enemies/economy/acquisition only if the game direction retains them and they survive review/prototype.
@@ -51,9 +47,7 @@ Candidate terms/lists previously explored (Origin Domain, Organic/Mecha/Spirit/A
 
 ## 4. Durable taxonomy principle
 
-Avoid unnecessary coupling: if retained, species should not automatically determine combat class, and faction should not automatically determine species unless Product Vision/world design intentionally chooses such a constraint.
-
-Do not mass-populate candidate taxonomies before Product Vision/Core Loop/prototype review.
+Avoid unnecessary coupling: if retained, species should not automatically determine combat class, and faction should not automatically determine species unless Product Vision/world design intentionally chooses such a constraint. Do not mass-populate candidate taxonomies before product/prototype review.
 
 ## 5. Durable progression/equipment principle
 
@@ -65,13 +59,13 @@ Do not design exhaustive ability/stat schemas before a working prototype exposes
 
 ## 7. Encounter principle — conditional
 
-If the game uses enemies/bosses, they should teach/test mechanics and belong coherently to the world rather than functioning only as HP/stat bags. Normal/Elite/Boss subtype lists remain DRAFT.
+If the product/game uses enemies/bosses, they should teach/test mechanics and belong coherently to the world rather than functioning only as HP/stat bags. Existing subtype lists remain DRAFT.
 
 ## 8. Stable identity principle
 
-Production characters should receive stable IDs once taxonomy/registry needs them. Example format only: `NT-ORG-FOX-001`.
+Production identities should receive stable IDs once taxonomy/registry needs them. Example character ID format only: `NT-ORG-FOX-001`.
 
-If forms/evolution remain part of the product, forms should inherit base identity rather than independently redefining the character. Exact schema is intentionally deferred.
+If forms/evolution remain part of the product, forms should inherit base identity rather than independently redefining it. Exact schema is intentionally deferred.
 
 ## 9. Cross-output identity principle
 
@@ -114,4 +108,4 @@ Do not expand content simply because AI makes content cheap. Production begins o
 
 ## Phase 0 review boundary
 
-Phase 0 can approve the **architecture/governance principles** in this document without approving the proposed universe positioning, game format, world lore, taxonomy or physical-product role. Product Vision and subsequent focused reviews decide those.
+Phase 0 can approve the **architecture/governance principles** in this document without approving proposed universe positioning, game format, world lore, taxonomy or physical-product role. Product Vision and subsequent evidence/prototypes decide those.
