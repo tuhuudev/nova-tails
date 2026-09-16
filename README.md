@@ -19,7 +19,7 @@ Chat/AI outputs are proposals until reviewed and intentionally captured through 
 5. Every important decision is reviewable and traceable.
 6. Manufacturing standards must come from real physical tests if printable collectibles remain in scope.
 7. Every system layer should create a meaningful decision or serve a clear product purpose.
-8. Avoid premature complexity in schemas, storage, branching and content volume.
+8. Avoid premature complexity in schemas, data formats, storage, branching and content volume.
 9. Use research/prototypes/tests to attack high-risk assumptions early rather than treating the roadmap as waterfall.
 10. Treat originality and third-party-rights risk as something to validate, not something AI can guarantee.
 
@@ -32,7 +32,7 @@ Chat/AI outputs are proposals until reviewed and intentionally captured through 
 - `LOCKED` — dependency contract; changing it requires impact review.
 - `DEPRECATED` — retained for history but no longer active.
 
-Concrete entity values become canonical data only when the relevant system/entity is approved and represented as such; examples inside an approved architecture document are not automatically canon.
+Concrete entity values become canonical structured data only when the relevant system/entity is approved and represented as such; examples inside an approved architecture document are not automatically canon.
 
 ## Repository map
 
@@ -45,7 +45,7 @@ Current foundation files:
 - `docs/CANON_AND_DATA_POLICY.md` — ownership between docs/data/schema/code/prompts.
 - `docs/ASSET_STORAGE_POLICY.md` — binary/generated/3D storage rules.
 
-Directories such as `data/`, `schemas/`, `simulator/`, `prompts/` and detailed domain folders will be added when their first real artifacts exist. We intentionally avoid empty architecture theater.
+Directories such as `data/`, `schemas/`, `simulator/`, `prompts/` and detailed domain folders will be added when their first real artifacts exist. Serialization/schema technology will be selected from real tooling needs rather than assumed now.
 
 ## Development sequence
 
