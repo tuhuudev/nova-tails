@@ -46,21 +46,25 @@ Concrete entity values become canonical structured data only when the relevant s
 
 Directories such as `data/`, `schemas/`, `simulator/`, `prompts/` and detailed domain folders will be added only when their first real artifacts exist. Serialization/schema technology, stable-ID format and asset-registry naming will be selected from real requirements rather than assumed now.
 
-## Proposed development sequence after Phase 0
+## Proposed development flow after Phase 0
 
 ```text
 Product Vision + targeted evidence
-→ Core Experience / Loop
-→ identify highest-risk assumption
-→ cheapest credible prototype/test
-→ minimum world / taxonomy / visual work needed by retained product
-→ structured data / math when behavior is known
-→ representative vertical slice / equivalent end-to-end proof
-→ simulation / physical proof only for retained pillars
-→ scale only after validation
+          ↓
+Core Experience / Loop (only enough to expose assumptions)
+          ↓
+highest-risk assumption becomes identifiable/testable
+          ↓
+cheapest credible prototype/test
+          ↓
+minimum world / taxonomy / visual work required by retained product
+          ↓
+representative end-to-end proof
+          ↓
+scale only after evidence
 ```
 
-This sequence is risk-driven rather than strict; the prototype/test can move earlier whenever evidence suggests that is cheaper or more informative.
+This is not strict sequencing: if a critical assumption becomes testable during Product Vision itself, test it immediately rather than waiting for Core Experience or deeper documentation.
 
 ## Current rule while reviewing Phase 0
 
