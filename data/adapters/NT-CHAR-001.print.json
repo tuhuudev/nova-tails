@@ -1,0 +1,32 @@
+{
+  "adapter_id": "print/NT-CHAR-001",
+  "character_id": "NT-CHAR-001",
+  "character_revision": "0.1",
+  "master_design_revision": null,
+  "adapter_version": "0.1",
+  "lane": "print",
+  "preserved_invariants": [
+    "floating visual read in assembled display pose",
+    "negative space around central core",
+    "incomplete asymmetric broken orbit"
+  ],
+  "allowed_transformations": [
+    "part segmentation",
+    "feature thickening",
+    "hidden support/display structure",
+    "connector strategy",
+    "micro-detail simplification",
+    "pose adjustment for manufacturability"
+  ],
+  "validation": {
+    "status": "NOT_RUN",
+    "target_printer": "Bambu Lab A1 mini",
+    "known_build_volume_mm": [180, 180, 180],
+    "required": [
+      "assembled silhouette preserves broken orbit",
+      "fits target build volume or has documented segmentation",
+      "real print and assembly test before tolerances become standards"
+    ]
+  },
+  "deliverables": []
+}
