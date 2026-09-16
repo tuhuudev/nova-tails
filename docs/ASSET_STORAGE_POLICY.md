@@ -1,12 +1,12 @@
 # NOVA TAILS — Asset Storage Policy v0.1
 
-**Status:** REVIEW
+**Status:** REVIEW — proposed until Phase 0 is accepted.
 
 ## Goal
 
 Keep Git useful if the project grows from text/design files into source art, renders, game exports, 3D models or printable packages. The policy does not assume every asset class will remain in the final product.
 
-## Current policy
+## Proposed current policy
 
 During Architecture and early prototype phases:
 - keep docs, structured data, contracts and code in normal Git;
