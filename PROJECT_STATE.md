@@ -18,15 +18,16 @@ Nothing is permanently locked yet. The project is deliberately still validating 
 
 - Build an original multi-species sci-fi/fantasy character universe.
 - Shared master character identity should drive game data, 2D art and printable 3D adaptations.
-- Printable figures should favor modular, color-separated FDM construction and practical assembly.
+- Printable figures should favor modular, color-separated FDM construction and practical assembly as a current direction, with actual manufacturing rules deferred to physical tests.
 - AI is an ideation/production assistant; reviewed repository canon remains authoritative.
 - Do not mass-produce characters/assets until a vertical slice validates the systems and asset pipeline.
 - Use short-lived, purpose-specific branches and reviewed PRs for significant canonical changes.
 - Keep human-readable rationale, machine-readable canon, schemas, prompts and assets as distinct responsibilities.
+- Avoid premature Git LFS/schema/automation complexity until real prototype/asset needs exist.
 
 ## DRAFT / PRODUCT HYPOTHESES
 
-These are deliberately **not** being resolved inside the Phase 0 foundation PR:
+These are deliberately **not** resolved inside the Phase 0 foundation PR:
 
 - Working project/universe name: **NOVA TAILS**. Name/legal clearance is not complete.
 - Character-collection/card-battler as the first interactive product.
@@ -83,8 +84,10 @@ MOMO is a proof of concept, not the visual template for the universe and not yet
 - [x] Asset storage policy drafted
 - [x] PR review template added
 - [x] Baseline `.gitignore` added
-- [ ] Master Architecture v0.1 reviewed
-- [ ] Phase 0 foundation PR reviewed and merged
+- [x] Master Architecture v0.1 hardened to separate durable principles from product hypotheses
+- [x] Roadmap revised around risk-reduction/prototype gates
+- [x] Product Vision removed from Phase 0 PR so it can receive a dedicated review
+- [ ] Phase 0 foundation PR reviewed/accepted and merged
 - [ ] `main` protection/ruleset configured when repository permissions/workflow allow it
 
 ## NEXT MILESTONES
@@ -98,7 +101,7 @@ After Phase 0 merge, use separate branches/PRs:
 5. `design/visual-bible-v0.1`
 6. `feature/combat-prototype`
 
-This ordering may change only through an explicit decision if earlier work reveals a dependency problem.
+This is a risk-ordering guideline rather than waterfall. A cheap prototype may deliberately move earlier when it can answer a high-risk question faster than more documentation.
 
 ## DO NOT DO YET
 
@@ -112,4 +115,4 @@ This ordering may change only through an explicit decision if earlier work revea
 
 ## NEXT DECISION
 
-Review the Phase 0 foundation itself. If accepted, merge it into `main`; then start Product Vision on a dedicated branch rather than extending the architecture branch.
+Review the Phase 0 foundation itself. If accepted, merge it into `main`; then start Product Vision on a dedicated branch. The first Product Vision task should identify the highest-risk product assumption and decide whether a low-fidelity prototype/research test should occur before further worldbuilding.
