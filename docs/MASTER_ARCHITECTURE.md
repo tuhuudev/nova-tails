@@ -63,7 +63,7 @@ If the product/game uses enemies/bosses, they should teach/test mechanics and be
 
 ## 8. Stable identity principle
 
-Production identities should receive stable IDs once taxonomy/registry needs them. Example character ID format only: `NT-ORG-FOX-001`.
+Production identities should receive stable IDs once taxonomy/registry/tooling demonstrates the need. The ID format itself should be selected from real namespace/query/migration requirements rather than locked during Phase 0.
 
 If forms/evolution remain part of the product, forms should inherit base identity rather than independently redefining it. Exact schema is intentionally deferred.
 
@@ -108,4 +108,4 @@ Do not expand content simply because AI makes content cheap. Production begins o
 
 ## Phase 0 review boundary
 
-Phase 0 can approve the **architecture/governance principles** in this document without approving proposed universe positioning, game format, world lore, taxonomy or physical-product role. Product Vision and subsequent evidence/prototypes decide those.
+Phase 0 can approve the **architecture/governance principles** in this document without approving proposed universe positioning, game format, world lore, taxonomy, ID format or physical-product role. Product Vision and subsequent evidence/prototypes decide those.
