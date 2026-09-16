@@ -17,7 +17,7 @@ Nothing is permanently locked yet. This is intentional.
 
 ## APPROVED ARCHITECTURE / GOVERNANCE DIRECTION
 
-- When a character/identity spans outputs, one reviewed master identity should drive adaptations rather than allowing independent identity drift.
+- If a character/identity is retained across multiple outputs, one reviewed master identity should drive those adaptations rather than allowing independent identity drift; Product Vision is not required to retain multiple outputs.
 - AI is an ideation/production assistant; the repository is the authoritative project record after review.
 - Do not mass-produce content/assets until a vertical slice/equivalent proof validates relevant product/system/pipeline assumptions.
 - Use short-lived, purpose-specific branches and reviewed PRs for significant changes.
@@ -62,7 +62,7 @@ MOMO demonstrates a candidate physical-design direction (small stylized fox/scou
 5. Progression/economy/acquisition if retained.
 6. World conflict/narrative motivation to the depth required by product.
 7. Character taxonomy complexity.
-8. Sustainable cross-output adaptation pipeline.
+8. Sustainable cross-output adaptation pipeline if multiple outputs are retained.
 9. Physical manufacturing standards if print is retained.
 10. IP/name/similarity review process and eventual commercial-risk threshold for formal legal review.
 11. Whether the core product is compelling without reward scaffolding.
