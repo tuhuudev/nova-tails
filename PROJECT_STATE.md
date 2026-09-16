@@ -1,107 +1,89 @@
 # NOVA TAILS — Project State
 
-**Project version:** 0.1.0-dev  
-**Phase:** Phase 0 — Repository & Architecture Foundation  
+**Project version:** 0.2.0-dev  
+**Phase:** Phase 1 — Product Vision & Evidence  
 **Updated:** 2026-09-16  
-**Repository role proposed by this PR:** authoritative after review/acceptance; `main` is accepted baseline
+**Baseline:** Phase 0 accepted via PR #1 / squash commit `f8789431cee5c34b70f029079427436941828883`
 
-## Lifecycle policy — PROPOSED FOR ACCEPTANCE
+## ACCEPTED FOUNDATION
 
-`IDEA → DRAFT → REVIEW → APPROVED → LOCKED`; obsolete decisions become `DEPRECATED`.
-
-`APPROVED` is an accepted current decision/direction. `LOCKED` is a stronger dependency contract. Draft hypotheses may be retained in the accepted baseline without becoming active canon.
+- Repository workflow/canon governance is the accepted baseline.
+- Architecture before mass content production.
+- Use risk-driven research/prototypes rather than waterfall documentation.
+- AI proposes; reviewed repository state is authoritative.
+- Separate rationale, canonical structured data, contracts, prompts and retained assets.
+- Delay exhaustive schemas/IDs/asset registries/LFS until real requirements exist.
+- If multiple adaptations retain the same identity, preserve one master identity.
+- Originality/rights must be validated rather than assumed.
 
 ## LOCKED
 
-Nothing is permanently locked yet. This is intentional.
+Nothing is permanently locked yet.
 
-## PHASE 0 ARCHITECTURE / GOVERNANCE — PROPOSED FOR ACCEPTANCE
+## CURRENT PRODUCT VISION — REVIEW
 
-- If a character/identity is retained across multiple outputs, one reviewed master identity should drive those adaptations rather than allowing independent identity drift; Product Vision is not required to retain multiple outputs.
-- AI is an ideation/production assistant; repository changes become authoritative after review/acceptance.
-- Do not mass-produce content/assets until a representative end-to-end proof (vertical slice for a game, equivalent proof for another product) validates relevant assumptions.
-- Use short-lived, purpose-specific branches and reviewed PRs for significant changes.
-- Keep human-readable rationale, machine-readable structured/canonical data, validation contracts, prompts and assets as distinct responsibilities.
-- Defer serialization/schema technology, stable-ID format, asset-registry naming and Git LFS until real prototype/tooling/asset requirements exist.
-- Treat the roadmap as risk-driven; use external research and cheap prototypes/tests when they can materially change a decision faster than more documentation.
-- As soon as a high-risk assumption is identifiable and testable—even during Product Vision—run the cheapest credible test before deeper content/worldbuilding.
-- Treat originality and third-party-rights risk as something to validate, not something AI can guarantee.
+Working strategic hypothesis:
 
-## REVIEW / PRODUCT GOAL
+> NOVA TAILS is a character/IP system whose distinctive identities can survive across digital and physical adaptations; the first product should be whichever small experience proves that people care about those identities and want to interact with/collect them.
 
-- Build a distinctive multi-species sci-fi/fantasy universe/IP intended to become original, initially explored through character-centric concepts and potentially capable of multiple adaptations. Product Vision must validate target audience, differentiation, primary product and output priorities; IP/name/design review must validate originality/rights risk separately.
+This is not yet accepted canon.
 
-## DRAFT PRODUCT/DESIGN HYPOTHESES
+## PRODUCT OPTIONS UNDER REVIEW
 
-- working name **NOVA TAILS** (name/legal clearance incomplete);
-- character-collection/card-battler as first interactive product;
-- gacha/hero acquisition;
+1. Game-first character universe.
+2. Character/IP-first collectible ecosystem.
+3. Printable-collectible-first.
+4. Content-first validation/audience building.
+
+Do not assume these must all survive.
+
+## HIGHEST-RISK ASSUMPTIONS
+
+1. **Character desirability:** strangers can recognize, remember and want more of the identities.
+2. **Differentiation:** concept is distinguishable from crowded cute/stylized creature/robot space.
+3. **Core interaction:** if game is retained, repeated interaction works without gacha/reward scaffolding.
+4. **Physical viability:** if print is retained, unknown original characters are desirable and reliably manufacturable.
+5. **Cross-output leverage:** shared identity creates more value than complexity.
+
+## CURRENT EVIDENCE
+
+- 2025 mobile-market examples show active use of hybrid/simple-core + deeper-meta structures; this does not validate a generic NOVA TAILS gacha/card battler.
+- MakerWorld has creator commercial-license mechanisms and explicit originality/authorization requirements, making printable originals a plausible but unvalidated distribution/business extension.
+- A1 mini real build volume is 180 × 180 × 180 mm; any A1-mini manufacturing standard must ultimately be physically tested.
+
+See `docs/research/PRODUCT_VISION_EVIDENCE_2026-09-16.md`.
+
+## DRAFT / UNVALIDATED
+
+- working name NOVA TAILS;
+- card battler / character-collection RPG;
+- gacha;
 - five-character team;
 - auto/semi-auto combat;
-- cultivation progression;
-- Nova Core / The Fracture lore;
-- six origin domains/factions/classes/roles/elements;
-- evolution/Break/equipment models;
-- role of physical 3D printing in the product;
-- modular/color-separated/no-AMS-friendly FDM direction if physical collectibles are retained.
+- cultivation;
+- Nova Core / The Fracture;
+- origin/faction/class/role/element counts;
+- progression/equipment models;
+- 3D printing as core product pillar;
+- MOMO as production character.
 
-These hypotheses require dedicated design/evidence/prototype reviews.
+## FIRST TEST — PROPOSED
 
-## EXISTING PROOF-OF-CONCEPT
+**Test A: Character desirability / identity.**
 
-### MOMO — Little Scout
+Use 3–5 deliberately diverse character concepts at comparable presentation quality. Test with people outside the project for:
+- unaided recall;
+- recognizable signature/silhouette;
+- perceived distinctiveness;
+- preference reason;
+- desire to see/interact with one again.
 
-MOMO demonstrates a candidate physical-design direction (small stylized fox/scout, ~3 base colors, ~10–14 major-part target, physical color seams and cross-output identity intent). It is not the universe visual template, not yet a fully canonical production character, and its printability is unproven until engineered/sliced/printed/assembled.
-
-## MAJOR UNKNOWN / MUST VALIDATE
-
-1. Target audience/player and product positioning.
-2. Primary platform/context.
-3. Primary product format and core experience.
-4. Core interaction/battle model and team size if combat is retained.
-5. Progression/economy/acquisition if retained.
-6. World conflict/narrative motivation to the depth required by product.
-7. Character taxonomy complexity.
-8. Sustainable cross-output adaptation pipeline if multiple outputs are retained.
-9. Physical manufacturing standards if print is retained.
-10. IP/name/similarity review process and eventual commercial-risk threshold for formal legal review.
-11. Whether the core product is compelling without reward scaffolding.
-12. Whether physical printing is core, extension or later layer.
-13. Which adjacent products/genres validate or challenge differentiation.
-
-## PHASE 0 FOUNDATION CHECK
-
-- [x] Repository/project state baseline drafted
-- [x] Branch/PR workflow drafted
-- [x] Lifecycle/ADR policy drafted
-- [x] Canon/data ownership policy drafted
-- [x] Asset storage policy drafted
-- [x] PR review template added
-- [x] Baseline `.gitignore` added
-- [x] Master Architecture separates durable principles from hypotheses
-- [x] Roadmap is risk/evidence/prototype driven rather than waterfall
-- [x] Product Vision removed from Phase 0 PR for dedicated review
-- [x] Physical-collectible direction returned to REVIEW
-- [x] Product Vision gate includes targeted external evidence
-- [x] Originality/IP language requires validation rather than implying guarantee
-- [x] High-risk tests are allowed as soon as assumptions become testable, including during Product Vision
-- [x] Data serialization/schema, stable-ID format and asset-registry naming deliberately deferred until real requirements
-- [x] Repository ruleset state checked: no rulesets are currently configured
-- [x] Phase 0 foundation prepared for owner/reviewer decision
-- [ ] Owner/reviewer accepts Phase 0 and merges
-- [ ] Configure `main` protection/ruleset when repository permissions/workflow allow it
-
-## NEXT WORK AFTER ACCEPTANCE — RISK ORDER, NOT WATERFALL
-
-- Start evidence-backed Product Vision.
-- Define only enough Core Experience/Loop to expose major assumptions.
-- The moment a high-risk assumption becomes testable, create its dedicated prototype/test branch; do not wait for deeper documentation.
-- Add minimum world/taxonomy/visual work only to the depth required by the retained product/prototype.
-
-## DO NOT DO YET
-
-Do not mass-generate roster/skills/items/campaign/STL; finalize gacha/monetization; choose exhaustive data/ID/asset naming schemes without requirements; or lock placeholder balance/manufacturing values.
+Failure signal: responses are mainly generic “cute/cool” and identities are not remembered/distinguished.
 
 ## NEXT DECISION
 
-Owner/reviewer accepts Phase 0 or requests specific changes. After merge, begin evidence-backed Product Vision and move to the cheapest credible test as soon as a high-risk assumption is identifiable and testable.
+Review Product Vision v0.1 and decide whether Test A is the correct first risk-reduction experiment. If accepted, create a dedicated experiment branch and define protocol before generating more characters.
+
+## DO NOT DO YET
+
+Do not deepen lore, lock combat, build economy/gacha, generate a large roster, or engineer a production STL catalog before the first desirability/differentiation evidence exists.
