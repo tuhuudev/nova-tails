@@ -1,6 +1,6 @@
 # NT-001 Blockout Projection Review v001
 
-**Status:** CANDIDATE / projection review completed  
+**Status:** DEPRECATED / technical projection review completed  
 **Source model:** `assets/characters/NT-001/03_3d_source/master/NT001_BLOCKOUT_v001.blend`  
 **Source reference:** `NT001-PRODREF-001`, SHA-256 `032a0abb8d580e8850d147ffff45ac0ba0b1ab5827ff79e658e5d51c71ecaccd`  
 **Blender:** 5.1.2
@@ -38,7 +38,8 @@ All required renders are retained in `assets/characters/NT-001/11_validation/blo
 
 ## Decision
 
-`NT001-3D-BLOCKOUT-001` remains **CANDIDATE**. It has satisfied the required
-render/object contract and has no unresolved identity-critical geometry conflict
-at blockout detail. Promotion to `APPROVED_FOR_SCULPT` requires an explicit
-project review decision; this document does not make that promotion.
+`NT001-3D-BLOCKOUT-001` passes the required render/object contract, but an
+explicit project likeness review on 2026-09-16 found that it does not resemble
+the selected Pyrox design sufficiently. It is therefore **DEPRECATED** and may
+not be promoted to `APPROVED_FOR_SCULPT` or used as a parent for downstream
+sculpt, runtime, or print work. See `NT-001_BLOCKOUT_V001_LIKENESS_REVIEW.md`.

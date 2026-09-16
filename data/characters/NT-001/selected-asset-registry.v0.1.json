@@ -75,7 +75,7 @@
     {
       "assetId": "NT001-3D-BLOCKOUT-001",
       "role": "blender_authoring_master_blockout",
-      "lifecycle": "CANDIDATE",
+      "lifecycle": "DEPRECATED",
       "filename": "NT001_BLOCKOUT_v001.blend",
       "repoTargetPath": "assets/characters/NT-001/03_3d_source/master/NT001_BLOCKOUT_v001.blend",
       "sha256": "97eeac4f489b3813723dc016c7a27e5a2a4d03e028f37105ff468181a582bf15",
@@ -88,9 +88,10 @@
       "validation": {
         "requiredQaRenders": 8,
         "objectContract": "PASS",
-        "projectionReview": "PENDING"
+        "projectionReview": "PASS_FOR_TECHNICAL_CONTRACT_ONLY",
+        "likenessReview": "FAIL"
       },
-      "notes": "Candidate authoring master for cross-view reconciliation only; not approved for sculpt, runtime, or print adaptation."
+      "notes": "Deprecated by explicit project likeness review on 2026-09-16. It passes the object/camera contract but does not resemble the selected Pyrox design sufficiently, and must not parent a sculpt, runtime, or print asset."
     }
   ]
 }

@@ -3,7 +3,7 @@
   "stage": 1,
   "assetId": "NT001-3D-BLOCKOUT-001",
   "version": "0.1.0",
-  "status": "CANDIDATE",
+  "status": "DEPRECATED",
   "purpose": "Resolve cross-view ambiguity using one shared 3D volume before detailed sculpt, rigging or print adaptation.",
   "authoritativeInputs": [
     "data/characters/NT-001/production-reference.v0.1.json",
