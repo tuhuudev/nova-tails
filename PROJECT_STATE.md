@@ -17,9 +17,9 @@ Nothing is permanently locked yet. This is intentional.
 
 ## APPROVED ARCHITECTURE / GOVERNANCE DIRECTION
 
-- When characters span outputs, one reviewed master identity should drive adaptations rather than allowing independent identity drift.
+- When a character/identity spans outputs, one reviewed master identity should drive adaptations rather than allowing independent identity drift.
 - AI is an ideation/production assistant; the repository is the authoritative project record after review.
-- Do not mass-produce characters/assets until a vertical slice/equivalent proof validates relevant systems and pipeline assumptions.
+- Do not mass-produce content/assets until a vertical slice/equivalent proof validates relevant product/system/pipeline assumptions.
 - Use short-lived, purpose-specific branches and reviewed PRs for significant changes.
 - Keep human-readable rationale, machine-readable canon, schemas, prompts and assets as distinct responsibilities.
 - Avoid premature Git LFS/schema/automation complexity until real prototype/asset needs exist.
@@ -29,7 +29,7 @@ Nothing is permanently locked yet. This is intentional.
 
 ## REVIEW / PRODUCT GOAL
 
-- Distinctive original multi-species sci-fi/fantasy character universe capable of supporting multiple adaptations over time. Product Vision must still validate target audience, differentiation, primary product and output priorities.
+- Distinctive original multi-species sci-fi/fantasy universe/IP, initially explored through character-centric concepts and potentially capable of multiple adaptations. Product Vision must validate target audience, differentiation, primary product and output priorities.
 
 ## DRAFT PRODUCT/DESIGN HYPOTHESES
 
@@ -55,12 +55,12 @@ MOMO demonstrates a candidate physical-design direction (small stylized fox/scou
 
 ## MAJOR UNKNOWN / MUST VALIDATE
 
-1. Target player and product positioning.
-2. Primary platform.
-3. Core interaction/battle model and team size if combat is retained.
-4. Progression depth/system overlap.
-5. Economy/acquisition model.
-6. World conflict/narrative motivation.
+1. Target audience/player and product positioning.
+2. Primary platform/context.
+3. Primary product format and core experience.
+4. Core interaction/battle model and team size if combat is retained.
+5. Progression/economy/acquisition if retained.
+6. World conflict/narrative motivation to the depth required by product.
 7. Character taxonomy complexity.
 8. Sustainable cross-output adaptation pipeline.
 9. Physical manufacturing standards if print is retained.
@@ -84,7 +84,7 @@ MOMO demonstrates a candidate physical-design direction (small stylized fox/scou
 - [x] Physical-collectible direction returned to REVIEW
 - [x] Product Vision gate includes targeted external evidence
 - [x] Originality/IP language requires validation rather than implying guarantee
-- [x] Early highest-risk prototype/test is now an explicit governance decision
+- [x] Early highest-risk prototype/test is an explicit governance decision
 - [x] Internal architecture review completed; no remaining blocking governance/architecture inconsistency identified
 - [ ] Owner acceptance / merge of Phase 0 foundation PR
 - [ ] `main` protection/ruleset when repository permissions/workflow allow it
