@@ -17,13 +17,13 @@ Nothing is permanently locked yet. The project is deliberately still validating 
 ## APPROVED ARCHITECTURE DIRECTION
 
 - Build an original multi-species sci-fi/fantasy character universe.
-- When characters span outputs, one reviewed master identity should drive game/2D/3D adaptations rather than allowing independent identity drift.
+- When characters span outputs, one reviewed master identity should drive adaptations rather than allowing independent identity drift.
 - AI is an ideation/production assistant; reviewed repository state remains authoritative.
 - Do not mass-produce characters/assets until a vertical slice validates relevant systems and pipeline assumptions.
 - Use short-lived, purpose-specific branches and reviewed PRs for significant changes.
 - Keep human-readable rationale, machine-readable canon, schemas, prompts and assets as distinct responsibilities.
 - Avoid premature Git LFS/schema/automation complexity until real prototype/asset needs exist.
-- Treat the roadmap as risk-driven; use cheap prototypes/tests early when they can invalidate a risky assumption faster than more documentation.
+- Treat the roadmap as risk-driven; use external research and cheap prototypes/tests when they can materially change a decision faster than more documentation.
 
 ## DRAFT / PRODUCT HYPOTHESES
 
@@ -51,14 +51,7 @@ These hypotheses will move through dedicated design branches/PRs rather than bei
 
 ### MOMO — Little Scout
 
-Current concept demonstrates a candidate physical-design direction:
-
-- small stylized fox/scout character;
-- approximately three base print colors;
-- roughly 10–14 major printable parts target;
-- physical seams intended to correspond to color/material boundaries;
-- optional accessories intended not to make the base figure difficult to manufacture;
-- identity intended to remain consistent between 2D/game/3D adaptations.
+Current concept demonstrates a candidate physical-design direction: small stylized fox/scout; approximately three base print colors; roughly 10–14 major parts target; physical seams intended to correspond to color/material boundaries; optional accessories intended not to make the base figure difficult to manufacture; identity intended to remain consistent across adaptations.
 
 MOMO is a proof of concept, not the visual template for the universe and not yet a fully canonical production character. Its printability assumptions are not proven until a real model is engineered, sliced, printed and assembled.
 
@@ -66,16 +59,17 @@ MOMO is a proof of concept, not the visual template for the universe and not yet
 
 1. Exact target player and product positioning.
 2. Primary platform for the first playable.
-3. Core battle interaction model and team size.
+3. Core interaction/battle model and team size if combat is retained.
 4. Progression depth and system overlap.
 5. Economy and acquisition model.
 6. World conflict and narrative motivation.
 7. Character taxonomy complexity.
-8. Sustainable 2D → 3D adaptation pipeline.
-9. Actual target-printer connector/tolerance/manufacturing standards from physical tests.
+8. Sustainable cross-output adaptation pipeline.
+9. Actual target-printer connector/tolerance/manufacturing standards if print is retained.
 10. IP/name/similarity review process.
-11. Whether the game concept is fun without relying on collection/progression rewards.
+11. Whether the core product is compelling without collection/progression reward scaffolding.
 12. Whether physical printing is core product, extension or later layer.
+13. Which adjacent products/genres validate or challenge the proposed differentiation.
 
 ## CURRENT MILESTONE — Phase 0 Foundation
 
@@ -90,6 +84,7 @@ MOMO is a proof of concept, not the visual template for the universe and not yet
 - [x] Roadmap revised around risk-reduction/prototype gates
 - [x] Product Vision removed from Phase 0 PR so it can receive a dedicated review
 - [x] Physical-collectible direction moved back to REVIEW rather than prematurely treating it as product canon
+- [x] Product Vision gate now requires targeted external evidence where it can materially change a decision
 - [ ] Phase 0 foundation PR reviewed/accepted and merged
 - [ ] `main` protection/ruleset configured when repository permissions/workflow allow it
 
@@ -102,9 +97,9 @@ After Phase 0 merge, use separate branches/PRs:
 3. `design/world-architecture-v0.1`
 4. `design/character-taxonomy-v0.1`
 5. `design/visual-bible-v0.1`
-6. `feature/combat-prototype`
+6. `feature/combat-prototype` (if combat remains the selected interaction)
 
-This is a risk-ordering guideline rather than waterfall. A cheap prototype may deliberately move earlier when it can answer a high-risk question faster than more documentation.
+This is a risk-ordering guideline rather than waterfall. A cheap prototype may deliberately move earlier when it answers a high-risk question faster than more documentation.
 
 ## DO NOT DO YET
 
@@ -118,4 +113,4 @@ This is a risk-ordering guideline rather than waterfall. A cheap prototype may d
 
 ## NEXT DECISION
 
-Review the Phase 0 foundation itself. If accepted, merge it into `main`; then start Product Vision on a dedicated branch. The first Product Vision task should identify the highest-risk product assumption and decide whether a low-fidelity prototype/research test should occur before further worldbuilding.
+Review the Phase 0 foundation itself. If accepted, merge it into `main`; then start `design/product-vision-v0.1`. Product Vision should combine focused external research with explicit hypotheses and identify the cheapest credible test for the highest-risk assumption before deep worldbuilding.
