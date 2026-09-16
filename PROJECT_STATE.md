@@ -53,6 +53,15 @@ Do not assume these must all survive.
 
 See `docs/research/PRODUCT_VISION_EVIDENCE_2026-09-16.md`.
 
+## NT-001 / PYROX INTAKE — REVIEW
+
+- A retained candidate record exists at `data/characters/NT-001/character.json` (NT-001 / Pyrox, v0.1.0, `CANDIDATE`).
+- The known selected-concept, production-reference, orthographic and per-view asset context is indexed at `data/assets/NT-001.asset-manifest.json`.
+- No corresponding binary asset was present in the local clone at intake. The manifest records them as `MISSING_LOCAL`; it does not promote their reported Library status to project canon.
+- `docs/production/NT-001_PYROX_INTAKE_AND_3D_HANDOFF.md` defines the safe import target and the conditional 3D handoff.
+
+This intake does **not** override the Product Vision/Test A gate or authorize production-scale 3D work.
+
 ## DRAFT / UNVALIDATED
 
 - working name NOVA TAILS;
