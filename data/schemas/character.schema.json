@@ -1,0 +1,102 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://nova-tails.local/schemas/character.schema.json",
+  "title": "NOVA TAILS Character",
+  "type": "object",
+  "required": ["identity", "classification", "visualDNA", "evolution", "assets", "metadata"],
+  "properties": {
+    "identity": {
+      "type": "object",
+      "required": ["id", "name", "version", "status"],
+      "properties": {
+        "id": { "type": "string", "pattern": "^NT-[0-9]{3,}$" },
+        "name": { "type": "string" },
+        "codename": { "type": "string" },
+        "version": { "type": "string" },
+        "status": { "enum": ["concept", "prototype", "validated", "production"] }
+      },
+      "additionalProperties": false
+    },
+    "classification": {
+      "type": "object",
+      "properties": {
+        "family": { "type": ["string", "null"] },
+        "species": { "type": ["string", "null"] },
+        "elements": { "type": "array", "items": { "type": "string" }, "uniqueItems": true },
+        "rarity": { "type": ["string", "null"] },
+        "evolutionStage": { "type": "integer", "minimum": 1 }
+      },
+      "additionalProperties": false
+    },
+    "visualDNA": {
+      "type": "object",
+      "required": ["signatureFeatures", "traitRules"],
+      "properties": {
+        "silhouette": { "type": "string" },
+        "proportions": { "type": "string" },
+        "anatomy": { "type": "object" },
+        "surface": { "type": "object" },
+        "colors": { "type": "object" },
+        "signatureFeatures": {
+          "type": "array",
+          "minItems": 2,
+          "maxItems": 4,
+          "items": {
+            "type": "object",
+            "required": ["id", "description", "recognitionWeight", "inheritance"],
+            "properties": {
+              "id": { "type": "string" },
+              "description": { "type": "string" },
+              "recognitionWeight": { "type": "number", "minimum": 0, "maximum": 1 },
+              "inheritance": { "enum": ["LOCKED", "EVOLVABLE"] }
+            },
+            "additionalProperties": false
+          }
+        },
+        "traitRules": {
+          "type": "array",
+          "items": {
+            "type": "object",
+            "required": ["trait", "rule"],
+            "properties": {
+              "trait": { "type": "string" },
+              "rule": { "enum": ["LOCKED", "EVOLVABLE", "OPTIONAL", "FORBIDDEN"] },
+              "notes": { "type": "string" }
+            },
+            "additionalProperties": false
+          }
+        }
+      }
+    },
+    "traits": { "type": "object" },
+    "evolution": {
+      "type": "object",
+      "properties": {
+        "familyId": { "type": ["string", "null"] },
+        "previousForm": { "type": ["string", "null"] },
+        "nextForm": { "type": ["string", "null"] },
+        "inheritedTraits": { "type": "array", "items": { "type": "string" } },
+        "enhancedTraits": { "type": "array", "items": { "type": "string" } },
+        "newTraits": { "type": "array", "items": { "type": "string" } }
+      }
+    },
+    "assets": {
+      "type": "object",
+      "properties": {
+        "concept": { "type": "array", "items": { "type": "string" } },
+        "approvedReference": { "type": "array", "items": { "type": "string" } },
+        "turnaround": { "type": "array", "items": { "type": "string" } },
+        "models3D": { "type": "array", "items": { "type": "string" } }
+      }
+    },
+    "metadata": {
+      "type": "object",
+      "required": ["canonStatus"],
+      "properties": {
+        "canonStatus": { "enum": ["NON_CANON", "CANDIDATE", "CANON"] },
+        "notes": { "type": "string" }
+      }
+    }
+  },
+  "additionalProperties": false
+}
