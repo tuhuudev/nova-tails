@@ -1,0 +1,60 @@
+{
+  "studyId": "P03",
+  "title": "NT-001 Recognition & Recall",
+  "version": "0.1.0",
+  "status": "READY_TO_RUN",
+  "characterId": "NT-001",
+  "stimulus": {
+    "assetId": "NT001-P03-STIMULUS-001",
+    "source": "cropped_from_existing_stage1_candidate",
+    "labelsAllowed": false,
+    "exposureSeconds": 10
+  },
+  "hypotheses": [
+    {"id": "H1", "trait": "EAR_SHAPE", "claim": "Large triangular ears contribute to recognition."},
+    {"id": "H2", "trait": "FOREHEAD_MARK", "claim": "Forehead diamond contributes to recognition."},
+    {"id": "H3", "trait": "TAIL_SPLIT", "claim": "Split tail contributes strongly to recognition."},
+    {"id": "H4", "trait": "ARCHETYPE_FAMILIARITY", "claim": "Fire fox/canine familiarity may trigger strong existing-IP associations."}
+  ],
+  "respondents": [],
+  "summary": {
+    "sampleSize": 0,
+    "spontaneousRecall": {
+      "EAR_SHAPE": 0,
+      "FOREHEAD_MARK": 0,
+      "TAIL_SPLIT": 0
+    },
+    "promptedRecall": {
+      "EAR_SHAPE": 0,
+      "FOREHEAD_MARK": 0,
+      "TAIL_SPLIT": 0
+    },
+    "externalAssociations": [],
+    "repeatedGenericConcerns": [],
+    "decision": "PENDING",
+    "notes": "Do not calculate or interpret rates until real independent responses exist. Raw response meaning takes priority for small samples."
+  },
+  "respondentTemplate": {
+    "respondentId": "P03-R__",
+    "date": null,
+    "unprompted": {
+      "firstFeature": null,
+      "features": [],
+      "description": null,
+      "strongestRecognitionFeature": null,
+      "externalAssociation": null,
+      "genericConcern": null
+    },
+    "promptedMemory": {
+      "ears": null,
+      "foreheadMark": null,
+      "tail": null
+    },
+    "reExposure": {
+      "forgottenFeature": null,
+      "threeFeaturesToPreserve": [],
+      "suggestedDifferentiation": null
+    },
+    "observerNotes": null
+  }
+}
