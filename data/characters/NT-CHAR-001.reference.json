@@ -1,0 +1,35 @@
+{
+  "schema_version": "0.1",
+  "character_id": "NT-CHAR-001",
+  "revision": "0.1",
+  "lifecycle": "DRAFT",
+  "working_name": "Spirit Reference",
+  "identity": {
+    "premise": "A floating non-animal entity organized around a central core and an incomplete asymmetric orbit.",
+    "personality_anchors": ["serene", "alien", "controlled"],
+    "world_refs": []
+  },
+  "visual_contract": {
+    "topology": "non-grounded floating central core with orbiting structural segments",
+    "silhouette_invariants": [
+      "central floating core remains visually dominant",
+      "orbit creates visible negative space around the core",
+      "orbit is incomplete/asymmetric rather than a perfect halo",
+      "identity must not collapse into a normal grounded animal silhouette"
+    ],
+    "signature_features": [
+      {
+        "id": "broken-orbit",
+        "description": "An incomplete asymmetric orbital structure whose negative space is part of the body read, not decorative VFX.",
+        "criticality": "identity-critical"
+      }
+    ],
+    "material_intent": ["central core and orbit must read as intentionally related structures"],
+    "palette_tokens": [],
+    "adaptable_properties": ["pose/orbit phase", "expression cues", "surface detail", "render lighting", "medium-specific segmentation"]
+  },
+  "evolution_contract": null,
+  "provenance": {
+    "notes": "Provisional architecture test fixture derived from the Spirit experiment direction and P01 exploratory evidence. Not production canon, flagship selection, or market validation."
+  }
+}
