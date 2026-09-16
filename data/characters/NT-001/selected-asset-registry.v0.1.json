@@ -71,6 +71,26 @@
       "libraryPath": "/NOVA_TAILS/research/P03/NT001_P03_STIMULUS_v0.2.png",
       "repoTargetPath": "assets/research/P03/NT001_P03_STIMULUS_v0.2.png",
       "sha256": "20396dfb864e7ecad698cc5374015c24318dc7cfc2560497cdf662f835a5a327"
+    },
+    {
+      "assetId": "NT001-3D-BLOCKOUT-001",
+      "role": "blender_authoring_master_blockout",
+      "lifecycle": "CANDIDATE",
+      "filename": "NT001_BLOCKOUT_v001.blend",
+      "repoTargetPath": "assets/characters/NT-001/03_3d_source/master/NT001_BLOCKOUT_v001.blend",
+      "sha256": "51ad513cb64d3d9ebaa5963fdfc1c3a0b522bd29ec069c5f2c774f818f6f249c",
+      "parentAssetIds": ["NT001-PRODREF-001", "NT001-CONCEPT-SELECTED-002"],
+      "source": {
+        "method": "blender_python_primitive_blockout",
+        "generator": "tools/blender/nt001_blockout_generator.py",
+        "blenderVersion": "5.1.2"
+      },
+      "validation": {
+        "requiredQaRenders": 8,
+        "objectContract": "PASS",
+        "projectionReview": "PENDING"
+      },
+      "notes": "Candidate authoring master for cross-view reconciliation only; not approved for sculpt, runtime, or print adaptation."
     }
   ]
 }
