@@ -20,7 +20,7 @@ Chat/AI outputs are proposals until reviewed and intentionally captured through 
 6. Manufacturing standards must come from real physical tests if printable collectibles remain in scope.
 7. Every system layer should create a meaningful decision or serve a clear product purpose.
 8. Avoid premature complexity in schemas, IDs, asset registries, storage, branching and content volume.
-9. Use research/prototypes/tests to attack high-risk assumptions early rather than treating the roadmap as waterfall.
+9. Use research/prototypes/tests to attack high-risk assumptions as soon as they become testable rather than treating the roadmap as waterfall.
 10. Treat originality and third-party-rights risk as something to validate, not something AI can guarantee.
 
 ## Proposed lifecycle status
@@ -51,9 +51,9 @@ Directories such as `data/`, `schemas/`, `simulator/`, `prompts/` and detailed d
 ```text
 Product Vision + targeted evidence
           ↓
-Core Experience / Loop (only enough to expose assumptions)
+identify/refine core experience and assumptions
           ↓
-highest-risk assumption becomes identifiable/testable
+AS SOON AS a high-risk assumption is testable
           ↓
 cheapest credible prototype/test
           ↓
@@ -64,7 +64,7 @@ representative end-to-end proof
 scale only after evidence
 ```
 
-This is not strict sequencing: if a critical assumption becomes testable during Product Vision itself, test it immediately rather than waiting for Core Experience or deeper documentation.
+A prototype/test may start during Product Vision itself if that is the fastest credible way to reduce uncertainty.
 
 ## Current rule while reviewing Phase 0
 
