@@ -4,13 +4,13 @@
 
 ## Current phase
 
-**Phase 0 — Repository & Architecture Foundation (v0.1)**
+**Phase 0 — Repository & Architecture Foundation (v0.1, under review)**
 
-The repository is the authoritative project record once changes are reviewed/accepted. The `main` branch represents the latest accepted baseline. `APPROVED` marks accepted current decisions/directions; `LOCKED` marks stronger dependency contracts. Draft/review hypotheses may remain visible on `main` without becoming active canon.
+This branch/PR proposes that the repository become the authoritative project record after review/acceptance, with `main` as the latest accepted baseline. Until this Phase 0 PR is accepted/merged, its governance/architecture decisions are proposals.
 
 Chat/AI outputs are proposals until reviewed and intentionally captured through repository workflow.
 
-## Project principles
+## Proposed project principles
 
 1. Architecture before mass content production.
 2. Validate product/core interaction before building a large content library.
@@ -23,7 +23,7 @@ Chat/AI outputs are proposals until reviewed and intentionally captured through 
 9. Use research/prototypes/tests to attack high-risk assumptions early rather than treating the roadmap as waterfall.
 10. Treat originality and third-party-rights risk as something to validate, not something AI can guarantee.
 
-## Lifecycle status
+## Proposed lifecycle status
 
 - `IDEA` — exploratory.
 - `DRAFT` — being designed; not active canon.
@@ -34,22 +34,19 @@ Chat/AI outputs are proposals until reviewed and intentionally captured through 
 
 Concrete entity values become canonical structured data only when the relevant system/entity is approved and represented as such; examples inside an approved architecture document are not automatically canon.
 
-## Repository map
+## Foundation files in this PR
 
-Current foundation files:
-- `PROJECT_STATE.md` — current project snapshot, unknowns and next gate.
+- `PROJECT_STATE.md` — current proposal snapshot, unknowns and next gate.
 - `ROADMAP.md` — risk-reduction gates from pre-production to production.
-- `DECISIONS.md` — high-impact architecture/design decisions and hypotheses.
-- `CONTRIBUTING.md` — branch, PR, commit and review workflow.
-- `docs/MASTER_ARCHITECTURE.md` — durable system boundaries plus clearly marked candidate models.
-- `docs/CANON_AND_DATA_POLICY.md` — ownership between docs/data/schema/code/prompts.
-- `docs/ASSET_STORAGE_POLICY.md` — binary/generated/3D storage rules.
+- `DECISIONS.md` — proposed architecture/governance decisions plus product hypotheses.
+- `CONTRIBUTING.md` — proposed branch, PR, commit and review workflow.
+- `docs/MASTER_ARCHITECTURE.md` — durable system-boundary proposal plus clearly marked candidate models.
+- `docs/CANON_AND_DATA_POLICY.md` — proposed ownership between docs/data/contracts/code/prompts.
+- `docs/ASSET_STORAGE_POLICY.md` — proposed binary/generated/3D storage rules.
 
-Directories such as `data/`, `schemas/`, `simulator/`, `prompts/` and detailed domain folders will be added when their first real artifacts exist. Serialization/schema technology, stable-ID format and asset-registry naming will be selected from real requirements rather than assumed now.
+Directories such as `data/`, `schemas/`, `simulator/`, `prompts/` and detailed domain folders will be added only when their first real artifacts exist. Serialization/schema technology, stable-ID format and asset-registry naming will be selected from real requirements rather than assumed now.
 
-## Development sequence
-
-After Phase 0:
+## Proposed development sequence after Phase 0
 
 ```text
 Product Vision + targeted evidence
@@ -63,8 +60,8 @@ Product Vision + targeted evidence
 → scale only after validation
 ```
 
-The prototype can move earlier whenever it answers a critical unknown faster than documentation. Each major change should normally use a dedicated short-lived branch and focused PR.
+The prototype can move earlier whenever it answers a critical unknown faster than documentation.
 
-## Current rule
+## Current rule while reviewing Phase 0
 
-Do not expand the universe because AI makes generation cheap. Expand only after the relevant product/design/game/asset assumptions survive review or testing.
+Do not expand the universe/content library yet. First accept or revise the foundation; then move to Product Vision rather than silently treating existing game/lore ideas as settled.
