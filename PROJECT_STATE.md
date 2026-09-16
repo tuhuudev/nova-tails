@@ -93,6 +93,10 @@ Failure signal: responses are mainly generic “cute/cool” and identities are 
 
 Review Product Vision v0.1 and decide whether Test A is the correct first risk-reduction experiment. If accepted, create a dedicated experiment branch and define protocol before generating more characters.
 
+## TEST A PREPARATION — READY TO RUN
+
+`docs/experiments/TEST_A_CHARACTER_DESIRABILITY_v0.1.md` and `data/experiments/test-a-character-desirability-template.csv` now provide the protocol and anonymous-result template for the proposed first test. Execution remains blocked until the retained NT-001 source assets are imported and comparable candidate presentation boards are available. Results must be reviewed before changing Pyrox's candidate status or authorizing a 3D blockout.
+
 ## DO NOT DO YET
 
 Do not deepen lore, lock combat, build economy/gacha, generate a large roster, or engineer a production STL catalog before the first desirability/differentiation evidence exists.
