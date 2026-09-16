@@ -29,7 +29,7 @@ Nothing is permanently locked yet. This is intentional.
 
 ## REVIEW / PRODUCT GOAL
 
-- Distinctive original multi-species sci-fi/fantasy universe/IP, initially explored through character-centric concepts and potentially capable of multiple adaptations. Product Vision must validate target audience, differentiation, primary product and output priorities.
+- Build a distinctive multi-species sci-fi/fantasy universe/IP intended to become original, initially explored through character-centric concepts and potentially capable of multiple adaptations. Product Vision must validate target audience, differentiation, primary product and output priorities; IP/name/design review must validate originality/rights risk separately.
 
 ## DRAFT PRODUCT/DESIGN HYPOTHESES
 
