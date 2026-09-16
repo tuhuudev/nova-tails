@@ -6,7 +6,7 @@
 
 **Phase 0 — Repository & Architecture Foundation (v0.1)**
 
-The repository is the authoritative project record after review. The `main` branch represents the latest reviewed baseline. `APPROVED` marks accepted current decisions/directions; `LOCKED` marks stronger dependency contracts. Draft/review hypotheses may remain visible on `main` without becoming active canon.
+The repository is the authoritative project record once changes are reviewed/accepted. The `main` branch represents the latest accepted baseline. `APPROVED` marks accepted current decisions/directions; `LOCKED` marks stronger dependency contracts. Draft/review hypotheses may remain visible on `main` without becoming active canon.
 
 Chat/AI outputs are proposals until reviewed and intentionally captured through repository workflow.
 
