@@ -1,0 +1,76 @@
+{
+  "schemaVersion": "0.1.0",
+  "characterId": "NT-001",
+  "status": "CANDIDATE",
+  "storagePolicy": {
+    "structuredSourceOfTruth": "git",
+    "selectedBinarySource": "ChatGPT Library /NOVA_TAILS",
+    "gitBinaryStatus": "NOT_COMMITTED_BY_CHAT_CONNECTOR",
+    "note": "Selected binaries are persisted in the NOVA_TAILS Library and identified here by stable filename and SHA-256. They can be copied into the documented repo paths from a local checkout when binary Git upload is available. Generated artwork is not canon by itself."
+  },
+  "assets": [
+    {
+      "assetId": "NT001-CONCEPT-SELECTED-002",
+      "role": "selected_concept",
+      "lifecycle": "CANDIDATE",
+      "filename": "NT001_CONCEPT_SELECTED_v0.2.png",
+      "libraryPath": "/NOVA_TAILS/assets/characters/NT-001/reference/NT001_CONCEPT_SELECTED_v0.2.png",
+      "repoTargetPath": "assets/characters/NT-001/01_reference/concept/NT001_CONCEPT_SELECTED_v0.2.png",
+      "sha256": "c6bb97c3032146ed47c333625f5d41bc604de8fa9007d2bd164c0c9a7fa6e0e6"
+    },
+    {
+      "assetId": "NT001-PRODREF-001",
+      "role": "production_reference_candidate",
+      "lifecycle": "CANDIDATE",
+      "filename": "NT001_PRODUCTION_REFERENCE_v1.0.png",
+      "libraryPath": "/NOVA_TAILS/assets/characters/NT-001/reference/NT001_PRODUCTION_REFERENCE_v1.0.png",
+      "repoTargetPath": "assets/characters/NT-001/01_reference/production/NT001_PRODUCTION_REFERENCE_v1.0.png",
+      "sha256": "032a0abb8d580e8850d147ffff45ac0ba0b1ab5827ff79e658e5d51c71ecaccd"
+    },
+    {
+      "assetId": "NT001-ORTHO-CANDIDATE-001",
+      "role": "orthographic_candidate",
+      "lifecycle": "CANDIDATE",
+      "filename": "NT001_ORTHOGRAPHIC_CANDIDATE_v0.1.png",
+      "libraryPath": "/NOVA_TAILS/assets/characters/NT-001/reference/NT001_ORTHOGRAPHIC_CANDIDATE_v0.1.png",
+      "repoTargetPath": "assets/characters/NT-001/01_reference/orthographic/NT001_ORTHOGRAPHIC_CANDIDATE_v0.1.png",
+      "sha256": "8e78c066a5ed8752ced636d6c8dfe38883407b410af87be94937179c90915f28"
+    },
+    {
+      "assetId": "NT001-REF-FRONT-001",
+      "role": "extracted_reference_view",
+      "lifecycle": "CANDIDATE",
+      "filename": "NT001_REF_FRONT_v0.1.png",
+      "libraryPath": "/NOVA_TAILS/assets/characters/NT-001/reference/NT001_REF_FRONT_v0.1.png",
+      "repoTargetPath": "assets/characters/NT-001/01_reference/orthographic/views/NT001_REF_FRONT_v0.1.png",
+      "sha256": "1cb904c7f8d98599cfa5c5a23281534ce1c189688fac4bf5dc4c83a58b0d5ea1"
+    },
+    {
+      "assetId": "NT001-REF-LEFT-001",
+      "role": "extracted_reference_view",
+      "lifecycle": "CANDIDATE",
+      "filename": "NT001_REF_LEFT_v0.1.png",
+      "libraryPath": "/NOVA_TAILS/assets/characters/NT-001/reference/NT001_REF_LEFT_v0.1.png",
+      "repoTargetPath": "assets/characters/NT-001/01_reference/orthographic/views/NT001_REF_LEFT_v0.1.png",
+      "sha256": "7b85d3bfc970bf1e38e89c12564f0ba4a02952eac42d45f87c97f0dc41d927cc"
+    },
+    {
+      "assetId": "NT001-REF-BACK-001",
+      "role": "extracted_reference_view",
+      "lifecycle": "CANDIDATE",
+      "filename": "NT001_REF_BACK_v0.1.png",
+      "libraryPath": "/NOVA_TAILS/assets/characters/NT-001/reference/NT001_REF_BACK_v0.1.png",
+      "repoTargetPath": "assets/characters/NT-001/01_reference/orthographic/views/NT001_REF_BACK_v0.1.png",
+      "sha256": "32956ecdc177bd29e58ddc048d1f5a93617fda6692315bd98e5801004cc64fec"
+    },
+    {
+      "assetId": "NT001-P03-STIMULUS-002",
+      "role": "research_stimulus",
+      "lifecycle": "VALIDATED_FOR_P03_INPUT",
+      "filename": "NT001_P03_STIMULUS_v0.2.png",
+      "libraryPath": "/NOVA_TAILS/research/P03/NT001_P03_STIMULUS_v0.2.png",
+      "repoTargetPath": "assets/research/P03/NT001_P03_STIMULUS_v0.2.png",
+      "sha256": "20396dfb864e7ecad698cc5374015c24318dc7cfc2560497cdf662f835a5a327"
+    }
+  ]
+}
