@@ -58,7 +58,7 @@ Product Vision + targeted evidence
 → cheapest credible prototype/test
 → minimum world / taxonomy / visual work needed by retained product
 → structured data / math when behavior is known
-→ vertical slice
+→ representative vertical slice / equivalent end-to-end proof
 → simulation / physical proof only for retained pillars
 → scale only after validation
 ```
