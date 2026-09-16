@@ -24,7 +24,7 @@ Nothing is permanently locked yet. This is intentional.
 - Keep human-readable rationale, machine-readable structured/canonical data, validation contracts, prompts and assets as distinct responsibilities.
 - Defer serialization/schema technology, stable-ID format, asset-registry naming and Git LFS until real prototype/tooling/asset requirements exist.
 - Treat the roadmap as risk-driven; use external research and cheap prototypes/tests when they can materially change a decision faster than more documentation.
-- As soon as Product Vision/Core Experience gives enough information to identify the highest-risk assumption, test it before deep content/worldbuilding; the test may move ahead of nominal roadmap phases.
+- As soon as a high-risk assumption is identifiable and testable—even during Product Vision—run the cheapest credible test before deeper content/worldbuilding.
 - Treat originality and third-party-rights risk as something to validate, not something AI can guarantee.
 
 ## REVIEW / PRODUCT GOAL
@@ -84,7 +84,7 @@ MOMO demonstrates a candidate physical-design direction (small stylized fox/scou
 - [x] Physical-collectible direction returned to REVIEW
 - [x] Product Vision gate includes targeted external evidence
 - [x] Originality/IP language requires validation rather than implying guarantee
-- [x] Early highest-risk prototype/test proposed as governance decision
+- [x] High-risk tests are allowed as soon as assumptions become testable, including during Product Vision
 - [x] Data serialization/schema, stable-ID format and asset-registry naming deliberately deferred until real requirements
 - [x] Repository ruleset state checked: no rulesets are currently configured
 - [x] Phase 0 foundation prepared for owner/reviewer decision
@@ -93,9 +93,9 @@ MOMO demonstrates a candidate physical-design direction (small stylized fox/scou
 
 ## NEXT WORK AFTER ACCEPTANCE — RISK ORDER, NOT WATERFALL
 
-- Start `design/product-vision-v0.1` with targeted evidence around audience/product/differentiation/output priorities.
+- Start evidence-backed Product Vision.
 - Define only enough Core Experience/Loop to expose major assumptions.
-- The moment a high-risk assumption becomes testable, create its dedicated prototype/test branch; do not wait for deep world/taxonomy documentation.
+- The moment a high-risk assumption becomes testable, create its dedicated prototype/test branch; do not wait for deeper documentation.
 - Add minimum world/taxonomy/visual work only to the depth required by the retained product/prototype.
 
 ## DO NOT DO YET
@@ -104,4 +104,4 @@ Do not mass-generate roster/skills/items/campaign/STL; finalize gacha/monetizati
 
 ## NEXT DECISION
 
-Owner/reviewer accepts Phase 0 or requests specific changes. After merge, begin evidence-backed Product Vision and move to the cheapest credible test as soon as the highest-risk assumption is identifiable.
+Owner/reviewer accepts Phase 0 or requests specific changes. After merge, begin evidence-backed Product Vision and move to the cheapest credible test as soon as a high-risk assumption is identifiable and testable.
