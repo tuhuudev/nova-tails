@@ -4,9 +4,9 @@ NOVA TAILS is currently a small, AI-assisted project, but repository discipline 
 
 ## Source-of-truth rule
 
-`main` represents the latest reviewed canonical project state.
+`main` represents the latest **reviewed baseline**, not a claim that every line is locked canon. Only material explicitly marked `APPROVED` or `LOCKED` is canonical. `DRAFT`/`REVIEW` material may be retained on `main` when it is useful to preserve visible hypotheses/TODOs.
 
-Chat, AI output, sketches and experiments are proposals until reviewed and merged into the repository.
+Chat, AI output, sketches and experiments are proposals until intentionally captured and reviewed through repository workflow.
 
 ## Branch strategy
 
@@ -37,7 +37,7 @@ Do not create permanent `develop`, `ai`, or per-person branches unless the team/
 
 ## Pull requests
 
-Every significant canonical change should use a PR.
+Every significant change to reviewed project state should normally use a PR.
 
 A PR should:
 
@@ -59,8 +59,10 @@ Use:
 
 Use `DEPRECATED` for superseded material.
 
-- `APPROVED` means accepted as current direction.
-- `LOCKED` is stronger: downstream work may rely on it and changing it requires explicit impact review.
+- `IDEA`, `DRAFT`, `REVIEW`: not canonical.
+- `APPROVED`: accepted current canon/direction.
+- `LOCKED`: downstream work may rely on it; changing it requires explicit impact review.
+- `DEPRECATED`: no longer active canon.
 
 Do not lock placeholder balance numbers or untested manufacturing dimensions.
 
@@ -91,7 +93,7 @@ simulator/  Balance/combat simulation
 src/        Production application/game code when introduced
 tools/      Validators, generators and project automation
 prompts/    AI prompt templates derived from canon
-assets/     Approved or working binary/source assets under asset policy
+assets/     Intentionally retained binary/source assets under asset policy
 ```
 
 The repository should not create empty directory trees merely to look complete. Add a directory when its first real file is needed.
@@ -100,20 +102,21 @@ The repository should not create empty directory trees merely to look complete. 
 
 AI may research, draft, generate and validate proposals, but must:
 
-1. read relevant current canon before proposing changes;
-2. preserve `LOCKED` fields unless the change explicitly targets them;
-3. mark assumptions/placeholders;
-4. avoid silently creating canon;
-5. update dependencies when an approved decision changes;
-6. never treat generated imagery or prompts as authoritative identity data.
+1. read relevant current repository state before proposing changes;
+2. distinguish approved/locked canon from draft hypotheses;
+3. preserve `LOCKED` fields unless the change explicitly targets them;
+4. mark assumptions/placeholders;
+5. avoid silently creating canon;
+6. update dependencies when an approved decision changes;
+7. never treat generated imagery or prompts as authoritative identity data.
 
 ## Review checklist
 
 Before merge:
 
 - [ ] Scope is coherent and reviewable.
-- [ ] No brainstorm is accidentally presented as locked fact.
-- [ ] Terminology is consistent with current architecture.
+- [ ] No brainstorm is accidentally presented as approved/locked fact.
+- [ ] Terminology is consistent with current reviewed architecture.
 - [ ] Relevant ADR/decision entry is updated.
 - [ ] Relevant project state is updated.
 - [ ] Machine-readable data conforms to schemas once schemas exist.
