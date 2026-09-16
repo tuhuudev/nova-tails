@@ -70,8 +70,10 @@ def tail_lobe(name, points, radius, target):
     curve.bevel_resolution = 5
     spline = curve.splines.new("BEZIER")
     spline.bezier_points.add(len(points) - 1)
-    for point, coordinate in zip(spline.bezier_points, points):
+    taper = (0.85, 1.10, 0.78, 0.04)
+    for point, coordinate, point_radius in zip(spline.bezier_points, points, taper):
         point.co = coordinate
+        point.radius = point_radius
         point.handle_left_type = "AUTO"
         point.handle_right_type = "AUTO"
     obj = bpy.data.objects.new(name, curve)

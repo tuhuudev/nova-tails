@@ -78,7 +78,7 @@
       "lifecycle": "CANDIDATE",
       "filename": "NT001_BLOCKOUT_v001.blend",
       "repoTargetPath": "assets/characters/NT-001/03_3d_source/master/NT001_BLOCKOUT_v001.blend",
-      "sha256": "51ad513cb64d3d9ebaa5963fdfc1c3a0b522bd29ec069c5f2c774f818f6f249c",
+      "sha256": "97eeac4f489b3813723dc016c7a27e5a2a4d03e028f37105ff468181a582bf15",
       "parentAssetIds": ["NT001-PRODREF-001", "NT001-CONCEPT-SELECTED-002"],
       "source": {
         "method": "blender_python_primitive_blockout",
