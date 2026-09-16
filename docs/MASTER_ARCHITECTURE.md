@@ -5,7 +5,7 @@
 
 ## 1. Architecture model
 
-Current Product Vision hypothesis is a distinctive original multi-species sci-fi/fantasy universe/IP, initially explored through character-centric concepts and potentially supporting multiple adaptations. Phase 0 does **not** approve that market/product hypothesis; it establishes how reviewed canon and adaptations should relate if retained.
+Current Product Vision hypothesis is a distinctive multi-species sci-fi/fantasy universe/IP intended to become original, initially explored through character-centric concepts and potentially supporting multiple adaptations. Phase 0 does **not** approve that market/product hypothesis; it establishes how reviewed canon and adaptations should relate if retained.
 
 ```text
                  PROJECT / IP (working name)
