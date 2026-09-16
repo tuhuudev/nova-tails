@@ -19,7 +19,7 @@ Nothing is permanently locked yet. This is intentional.
 
 - If a character/identity is retained across multiple outputs, one reviewed master identity should drive those adaptations rather than allowing independent identity drift; Product Vision is not required to retain multiple outputs.
 - AI is an ideation/production assistant; the repository is the authoritative project record after review.
-- Do not mass-produce content/assets until a vertical slice/equivalent proof validates relevant product/system/pipeline assumptions.
+- Do not mass-produce content/assets until a representative end-to-end proof (vertical slice for a game, equivalent proof for another product) validates relevant assumptions.
 - Use short-lived, purpose-specific branches and reviewed PRs for significant changes.
 - Keep human-readable rationale, machine-readable structured/canonical data, validation contracts, prompts and assets as distinct responsibilities.
 - Defer serialization/schema technology, stable-ID format, asset-registry naming and Git LFS until real prototype/tooling/asset requirements exist.
