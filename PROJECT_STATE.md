@@ -1,89 +1,71 @@
 # NOVA TAILS — Project State
 
-**Project version:** 0.2.0-dev  
-**Phase:** Phase 1 — Product Vision & Evidence  
+**Project version:** 0.3.0-dev  
+**Phase:** Phase 3 — Master Asset Architecture  
 **Updated:** 2026-09-16  
-**Baseline:** Phase 0 accepted via PR #1 / squash commit `f8789431cee5c34b70f029079427436941828883`
+**Baseline:** Product Vision v0.1 merged on main at `493d57b01d2ecea243925e6bffe0d03937e70f1b`
 
 ## ACCEPTED FOUNDATION
 
 - Repository workflow/canon governance is the accepted baseline.
 - Architecture before mass content production.
-- Use risk-driven research/prototypes rather than waterfall documentation.
 - AI proposes; reviewed repository state is authoritative.
 - Separate rationale, canonical structured data, contracts, prompts and retained assets.
-- Delay exhaustive schemas/IDs/asset registries/LFS until real requirements exist.
 - If multiple adaptations retain the same identity, preserve one master identity.
-- Originality/rights must be validated rather than assumed.
+- Originality/rights and product demand must be validated rather than assumed.
 
-## LOCKED
+## STRATEGIC DIRECTION — REVIEW
 
-Nothing is permanently locked yet.
+Character/IP-first asset system: the shared identity/design system is the platform; game, print, card/2D and content are downstream adapters/consumers.
 
-## CURRENT PRODUCT VISION — REVIEW
+This does not require every lane to ship and does not validate cross-output leverage or market demand.
 
-Working strategic hypothesis:
+## CHARACTER EXPERIMENT EVIDENCE
 
-> NOVA TAILS is a character/IP system whose distinctive identities can survive across digital and physical adaptations; the first product should be whichever small experience proves that people care about those identities and want to interact with/collect them.
+One real exploratory participant (P01) completed the character-identity pilot. Treat `n=1` as qualitative issue discovery only, not market validation.
 
-This is not yet accepted canon.
+Observed signals to preserve for later work:
+- Scout and Guardian were perceived as related/evolution-like, indicating separation risk;
+- Scout triggered Pokémon association;
+- Spirit was read as categorically different/non-normal-animal;
+- Wild communicated a lean/speed/damage-oriented fantasy and received the strongest stated interest from P01;
+- P01 expressed interest in combination + upgrading as an interaction hypothesis.
 
-## PRODUCT OPTIONS UNDER REVIEW
+No synthetic P02/P03 responses will be counted as participant evidence.
 
-1. Game-first character universe.
-2. Character/IP-first collectible ecosystem.
-3. Printable-collectible-first.
-4. Content-first validation/audience building.
+## CURRENT WORK — MASTER ASSET ARCHITECTURE v0.1
 
-Do not assume these must all survive.
+Branch: `design/master-asset-architecture-v0.1-clean`
 
-## HIGHEST-RISK ASSUMPTIONS
+Defined:
+- L0 IP Canon → L1 Master Design → L2 Adaptations → L3 Deliverables;
+- invariant/adaptable/derived property classes;
+- machine-readable Character Identity schema v0.1;
+- Game / Print / Card-2D / Content adapter contracts;
+- dependency and revision semantics;
+- AI context/source-of-truth boundary;
+- one-reference-character proof gate;
+- asset-first roadmap.
 
-1. **Character desirability:** strangers can recognize, remember and want more of the identities.
-2. **Differentiation:** concept is distinguishable from crowded cute/stylized creature/robot space.
-3. **Core interaction:** if game is retained, repeated interaction works without gacha/reward scaffolding.
-4. **Physical viability:** if print is retained, unknown original characters are desirable and reliably manufacturable.
-5. **Cross-output leverage:** shared identity creates more value than complexity.
+## NEXT GATE
 
-## CURRENT EVIDENCE
+Review/merge Master Asset Architecture v0.1 as an architecture contract, then create exactly one real reference identity instance and stress-test **Card/2D + Print** adaptations.
 
-- 2025 mobile-market examples show active use of hybrid/simple-core + deeper-meta structures; this does not validate a generic NOVA TAILS gacha/card battler.
-- MakerWorld has creator commercial-license mechanisms and explicit originality/authorization requirements, making printable originals a plausible but unvalidated distribution/business extension.
-- A1 mini real build volume is 180 × 180 × 180 mm; any A1-mini manufacturing standard must ultimately be physically tested.
-
-See `docs/research/PRODUCT_VISION_EVIDENCE_2026-09-16.md`.
-
-## DRAFT / UNVALIDATED
-
-- working name NOVA TAILS;
-- card battler / character-collection RPG;
-- gacha;
-- five-character team;
-- auto/semi-auto combat;
-- cultivation;
-- Nova Core / The Fracture;
-- origin/faction/class/role/element counts;
-- progression/equipment models;
-- 3D printing as core product pillar;
-- MOMO as production character.
-
-## FIRST TEST — PROPOSED
-
-**Test A: Character desirability / identity.**
-
-Use 3–5 deliberately diverse character concepts at comparable presentation quality. Test with people outside the project for:
-- unaided recall;
-- recognizable signature/silhouette;
-- perceived distinctiveness;
-- preference reason;
-- desire to see/interact with one again.
-
-Failure signal: responses are mainly generic “cute/cool” and identities are not remembered/distinguished.
-
-## NEXT DECISION
-
-Review Product Vision v0.1 and decide whether Test A is the correct first risk-reduction experiment. If accepted, create a dedicated experiment branch and define protocol before generating more characters.
+Reference-character status must remain explicit: test fixture does not automatically mean production canon or flagship.
 
 ## DO NOT DO YET
 
-Do not deepen lore, lock combat, build economy/gacha, generate a large roster, or engineer a production STL catalog before the first desirability/differentiation evidence exists.
+- Do not generate a large roster.
+- Do not deepen game economy/gacha/combat systems.
+- Do not lock final lore taxonomy.
+- Do not define universal print tolerances before physical tests.
+- Do not build automation/registries/LFS infrastructure before the reference proof demonstrates the need.
+- Do not claim the architecture proves demand.
+
+## OPEN RISKS
+
+1. Character desirability/differentiation remains low-confidence because participant evidence is `n=1`.
+2. Cross-output leverage is still a hypothesis until the reference proof is completed.
+3. Print manufacturability requires actual slice/print/assembly evidence.
+4. Final commercial output lane remains undecided.
+5. Working name NOVA TAILS is not legally cleared.
