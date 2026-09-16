@@ -12,28 +12,28 @@
 
 ## Status / canon impact
 
-- Current status: `IDEA | DRAFT | REVIEW | APPROVED | LOCKED | N/A`
-- Proposed status: `DRAFT | REVIEW | APPROVED | LOCKED | DEPRECATED | N/A`
-- Does this change active canon (`APPROVED`/`LOCKED`)? `YES | NO`
+- Current lifecycle status: `IDEA | DRAFT | REVIEW | APPROVED | LOCKED | N/A`
+- Target status after acceptance: `DRAFT | REVIEW | APPROVED | LOCKED | DEPRECATED | N/A`
+- Does this modify already-active `APPROVED`/`LOCKED` canon on `main`? `YES | NO`
 - ADR/Decision affected: `ADR-XXXX | None`
 
 ## Dependencies / affected areas
 
 - [ ] Product
 - [ ] World/Lore
-- [ ] Character taxonomy
+- [ ] Identity/Character taxonomy
 - [ ] Interaction/Combat
 - [ ] Progression
 - [ ] Skills/Abilities
 - [ ] Equipment/Economy
 - [ ] 2D assets
 - [ ] 3D/Print assets
-- [ ] Canon data/schema
+- [ ] Structured data/contracts
 - [ ] Code/Simulator/Tools
 
 ## Validation / evidence
 
-<!-- Research, prototype, simulation, physical print, schema validation, playtest, etc. State NONE when this is only a hypothesis proposal. -->
+<!-- Research, prototype, simulation, physical print, contract validation, playtest, etc. State NONE when this is only a hypothesis proposal. -->
 
 ## Assumptions / unresolved questions
 
@@ -42,6 +42,7 @@
 ## Review checklist
 
 - [ ] Scope is small/coherent enough to review.
+- [ ] Branch proposals are not described as already accepted baseline decisions.
 - [ ] DRAFT/REVIEW material is not presented as active canon.
 - [ ] No placeholder number/manufacturing value is presented as final.
 - [ ] Locked constraints are preserved or explicitly changed with impact analysis.
