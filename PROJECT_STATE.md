@@ -85,8 +85,7 @@ MOMO demonstrates a candidate physical-design direction (small stylized fox/scou
 - [x] Product Vision gate includes targeted external evidence
 - [x] Originality/IP language requires validation rather than implying guarantee
 - [x] Early highest-risk prototype/test is an explicit governance decision
-- [x] Internal architecture review completed; no remaining blocking governance/architecture inconsistency identified
-- [ ] Owner acceptance / merge of Phase 0 foundation PR
+- [ ] Phase 0 owner/reviewer acceptance and merge
 - [ ] `main` protection/ruleset when repository permissions/workflow allow it
 
 ## NEXT MILESTONES
