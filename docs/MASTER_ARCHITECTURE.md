@@ -1,14 +1,14 @@
 # NOVA TAILS — Master Architecture v0.1
 
 **Status:** REVIEW  
-**Purpose:** Define durable boundaries and dependency principles before detailed product/content production. Concrete game/lore taxonomies and output priorities below remain hypotheses until dedicated reviews.
+**Purpose:** Define durable boundaries and dependency principles before detailed product/content production. Concrete game/lore taxonomies and output priorities remain hypotheses until dedicated reviews.
 
 ## 1. Durable architecture
 
-NOVA TAILS is being developed as an original IP that can support multiple adaptations if Product Vision retains them. The durable relationship being reviewed in Phase 0 is:
+The project goal is a distinctive original character IP that can support multiple adaptations if Product Vision retains them. Originality/third-party-rights risk must be validated during design/release review; it is not guaranteed by AI generation or this architecture.
 
 ```text
-                    NOVA TAILS IP
+                    NOVA TAILS IP (working name)
                          |
                     REVIEWED CANON
                          |
@@ -30,131 +30,60 @@ No adaptation lane is automatically required to be a launch product. Product Vis
 ## 2. Canon layers
 
 ### Universe Canon
-Defines cosmology, history, worlds, factions, cultures, conflicts, terminology and narrative constraints once reviewed.
+Defines reviewed cosmology, history, worlds, factions, cultures, conflicts and terminology.
 
 ### Character Canon
-Defines immutable identity, origin, signature visual traits and other retained character constraints once reviewed.
+Defines reviewed stable identity and retained character constraints.
 
 ### Game Canon — if/when a game is retained
-Defines combat/interaction, progression, skills, stats, equipment, enemies, bosses, economy and acquisition once those systems survive design/prototype review.
+Defines interaction/combat, progression, abilities, stats, equipment, enemies, bosses, economy and acquisition once those systems survive design/prototype review.
 
 ### Asset Canon
 Defines reviewed visual identity and output adaptation standards. Manufacturing constraints become canonical only if physical collectibles remain in scope and are physically tested.
 
-## 3. Candidate character architecture — PRODUCT/DESIGN HYPOTHESIS
+## 3. Candidate character architecture — DRAFT
 
-```text
-CHARACTER
-|
-+-- Origin
-|   +-- Origin Domain
-|   +-- Race
-|   +-- Species
-|   +-- Variant / Trait
-|
-+-- World Identity
-|   +-- Faction
-|   +-- Culture
-|
-+-- Combat (if retained)
-|   +-- Class
-|   +-- Specialization
-|   +-- Role
-|   +-- Element
-|   +-- Weapon Family
-|
-+-- Progression (if retained)
-|   +-- Level
-|   +-- Cultivation Rank
-|   +-- Evolution Form
-|   +-- Skill Tree
-|   +-- Equipment
-|
-+-- Visual DNA
-|   +-- Body Archetype
-|   +-- Shape Language
-|   +-- Signature Feature
-|   +-- Material Language
-|   +-- Locked Identity Features
-|
-+-- Adaptations
-    +-- Game
-    +-- 2D
-    +-- 3D / Print
-```
+Potential dimensions include origin (domain/race/species/trait), world identity (faction/culture), combat identity (class/specialization/role/element/weapon if retained), progression (if retained), visual DNA and output adaptations.
 
-This decomposition is a stress-test model, not approved taxonomy. Individual categories must justify the decisions they enable.
+This decomposition is a stress-test model, not approved taxonomy. Individual dimensions must justify the decisions they enable.
+
+`Origin Domain` is a candidate term to avoid collision with possible cultivation terminology; naming remains reviewable.
 
 ## 4. Candidate origin domains — DRAFT
 
-- Organic
-- Mecha
-- Spirit
-- Arcane
-- Abyss
-- Celestial
+Organic, Mecha, Spirit, Arcane, Abyss, Celestial.
 
-If retained, species should not automatically determine combat class and faction should not automatically determine species. These independence principles are stronger than the exact candidate lists.
+If retained, species should not automatically determine combat class and faction should not automatically determine species. These independence principles are stronger than the exact candidate list.
 
 ## 5. Candidate combat taxonomy — DRAFT
 
-Possible base classes:
+Possible classes include Warrior, Guardian, Ranger, Mystic, Support and Trickster. Possible roles/elements have also been brainstormed.
 
-- Warrior
-- Guardian
-- Ranger
-- Mystic
-- Support
-- Trickster
+These lists must not be mass-populated before Product Vision, Core Loop and interaction/combat prototype review. Element reactions/dual elements are deferred until a base model demonstrates they add meaningful decisions.
 
-Possible roles include Tank, Bruiser, Burst DPS, Sustained DPS, AoE DPS, Healer, Buffer, Debuffer, Controller, Summoner and Energy/Battery.
-
-Possible elements:
-
-- Fire
-- Water
-- Nature
-- Lightning/Storm
-- Earth
-- Frost
-- Light
-- Void
-
-These lists must not be mass-populated before Product Vision, Core Loop and interaction/combat prototype review. Element reactions and dual elements are deferred until a base model demonstrates they add meaningful decisions.
-
-## 6. Candidate progression budget — DRAFT
+## 6. Candidate progression — DRAFT
 
 Current brainstorming includes Level, Cultivation/Breakthrough, Evolution, Skill choices/tree and Equipment. There is no requirement that all survive.
 
-Durable principle: retained progression systems must have distinct jobs. Multiple systems that only provide percentage stat inflation should be merged/removed.
+Durable principle: retained progression systems must have distinct jobs. Systems that only duplicate percentage stat inflation should be merged/removed.
 
 ## 7. Candidate ability architecture — DRAFT
 
-If the game direction requires character combat kits, a possible starting vocabulary is Basic Attack / Skill / Passive / Ultimate.
-
-A future machine-readable ability grammar may include trigger, target, scaling, type, element, effects, resource interaction, cooldown, conditions and tags. Exact grammar must be extracted from the prototype rather than invented exhaustively now.
+If the game direction requires character combat kits, Basic Attack / Skill / Passive / Ultimate is one candidate vocabulary. Exact ability grammar must be extracted from the prototype rather than invented exhaustively now.
 
 ## 8. Candidate equipment architecture — DRAFT
 
-Weapon / Armor / Accessory is a candidate model only.
-
-Durable principle: if equipment exists, it should create trade-offs/build choices rather than exist only as a linear item-level ladder.
+Weapon / Armor / Accessory is a candidate only. If equipment exists, it should create trade-offs/build choices rather than only a linear item-level ladder.
 
 ## 9. Candidate enemy architecture — DRAFT
 
-Normal / Elite / Boss and subtypes are candidate encounter taxonomy only.
-
-Durable principle: if the game uses enemies, they should teach/test mechanics and belong coherently to the world rather than functioning only as HP/stat bags.
+Normal / Elite / Boss and possible subtypes are candidate encounter taxonomy only. If the game uses enemies, they should teach/test mechanics and belong coherently to the world rather than functioning only as HP/stat bags.
 
 ## 10. Stable identity principle
 
-Each production character should eventually receive a stable ID once the character taxonomy/registry needs it. Example format only:
+Production characters should receive stable IDs once taxonomy/registry needs them. Example format only: `NT-ORG-FOX-001`.
 
-```text
-NT-ORG-FOX-001
-```
-
-If evolution/forms remain part of the product, forms should inherit base identity instead of independently redefining the character. Exact schema is intentionally deferred.
+If evolution/forms remain part of the product, forms should inherit base identity rather than independently redefining the character. Exact schema is intentionally deferred.
 
 ## 11. Cross-output identity principle
 
@@ -166,15 +95,7 @@ MASTER CHARACTER IDENTITY
    GAME     2D      PRINT
 ```
 
-Adaptations may differ technically while preserving reviewed identity.
-
-Examples if print is retained:
-- card/concept art may use floating energy effects;
-- print adaptation may convert them to supported geometry;
-- fine cloth may be thickened for FDM;
-- micro color regions may be merged into physical components.
-
-These are adaptation examples, not manufacturing specifications.
+Adaptations may differ technically while preserving reviewed identity. If print is retained, visual effects/fine details may require physical reinterpretation. Such examples are not manufacturing specifications.
 
 ## 12. AI generation architecture
 
@@ -198,35 +119,14 @@ Prompts are derived artifacts. Prompt text must never silently override canon.
 
 ## 13. Validation gates
 
-Use only gates relevant to the artifact/system being reviewed.
+Use only gates relevant to the artifact/system being reviewed:
+- Identity: stable identity/locked features/signature.
+- World/Game: reviewed constraints; placeholders remain marked.
+- Visual: reviewed visual language and roster distinction.
+- Print (conditional): part/color/geometry/support/build-volume and physical tolerance tests.
+- IP risk: internal similarity review, external name/design research, provenance/human design history; formal legal review where commercial risk justifies it.
 
-### Identity
-- correct stable identity when IDs exist;
-- locked features preserved;
-- recognizable signature/silhouette where visual identity applies.
-
-### World / Game
-- matches reviewed constraints;
-- no unbudgeted mechanic overload;
-- numeric placeholders remain marked until tested.
-
-### Visual
-- follows reviewed universe/faction language once defined;
-- remains sufficiently distinct from internal roster.
-
-### Print — only if retained
-- part/color separation;
-- robust geometry;
-- connector strategy;
-- support/orientation/build-volume feasibility;
-- physical tolerance validation before locking dimensions.
-
-### IP risk
-- internal similarity check;
-- external name/design similarity research before production/release;
-- retain human design decisions/version history.
-
-This process reduces risk; it does not guarantee absence of third-party rights.
+These processes reduce risk; they do not guarantee absence of third-party rights.
 
 ## 14. Production principle
 
