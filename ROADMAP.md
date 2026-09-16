@@ -1,7 +1,7 @@
 # NOVA TAILS — Master Roadmap
 
 **Status:** REVIEW  
-**Strategy:** foundation → evidence-backed product hypothesis → cheapest useful proof → vertical slice → production.
+**Strategy:** foundation → evidence-backed product hypothesis → cheapest useful proof → representative slice → production.
 
 This is a **risk map, not waterfall**. Product Vision decides which later systems are actually required. A cheap prototype may move ahead of world/taxonomy documentation when it answers a critical unknown faster.
 
@@ -32,7 +32,7 @@ Use targeted external research for adjacent products/genres, expectations, diffe
 
 **Exit gate:** clear target/product/value/boundaries, evidence supporting the direction and explicit high-risk assumptions.
 
-## Phase 2 — Core Loop / Core Experience
+## Phase 2 — Core Experience / Loop
 
 Define the minimum repeated experience appropriate to the selected product. For a game hypothesis this may include encounter → decision/build → feedback/reward → progression → next challenge. Acquisition belongs here only if Phase 1 retains it.
 
@@ -42,32 +42,25 @@ Define the minimum repeated experience appropriate to the selected product. For 
 
 Before large worldbuilding, identify the assumption most likely to invalidate the product and build the cheapest credible test.
 
-Examples:
-- low-fidelity interaction/combat prototype;
-- clickable UX flow;
-- paper/card simulation;
-- character desirability/concept test;
-- 2D→3D physical proof if physical differentiation is the highest-risk pillar.
+Examples: low-fidelity interaction/combat prototype, clickable UX flow, paper/card simulation, character desirability/concept test, or 2D→3D physical proof if physical differentiation is the highest-risk pillar.
 
 **GATE A — CORE PRODUCT:** if the core promise is not understandable/promising without reward scaffolding, revise Phase 1/2.
 
 ## Phase 4 — Minimum World Architecture — CONDITIONAL DEPTH
 
-Define only world rules needed by the selected product/prototype: premise/conflict, player/user role, one initial setting and enough world logic for characters/challenges. Nova Core/The Fracture/six domains remain replaceable hypotheses.
+Define only world rules needed by the selected product/prototype: premise/conflict, user/player role, one initial setting and enough world logic for identities/challenges. Nova Core/The Fracture/six domains remain replaceable hypotheses. Full campaign/cosmology is not required.
 
-Full campaign/cosmology is not required.
-
-## Phase 5 — Minimum Character Taxonomy — CONDITIONAL DEPTH
+## Phase 5 — Minimum Identity / Character Taxonomy — CONDITIONAL DEPTH
 
 Stress-test a small diverse set. Candidate dimensions include origin, world identity, interaction/combat identity, visual DNA and stable identity/inheritance. Remove dimensions that do not create useful design/product decisions.
 
-## Phase 6 — Visual Identity Proof
+## Phase 6 — Visual Identity Proof — IF RELEVANT
 
-Define enough visual system to make representative characters coherent/distinct and preserve identity across retained outputs. Include similarity review where appropriate.
+Define enough visual system to make representative identities coherent/distinct and preserve identity across retained outputs. Include similarity review where appropriate.
 
 ## Phase 7 — Interaction / Combat Model — IF RETAINED
 
-If the first product is a character battler, prototype team size, targeting/action model, ability/resource vocabulary and one meaningful encounter mechanic with placeholders. Do not implement full progression/economy first.
+If the selected product is a character battler, prototype team size, targeting/action model, ability/resource vocabulary and one meaningful encounter mechanic with placeholders. Do not implement full progression/economy first.
 
 ## Phase 8 — Math + Structured Data — WHEN BEHAVIOR IS KNOWN
 
@@ -91,21 +84,21 @@ Decide only after core product/progression exists. If gacha remains likely, sepa
 
 ## Phase 13 — Representative Content Set
 
-Create only enough characters/challenges/world content to teach and demonstrate the retained core systems. Counts are capacity targets, not canon.
+Create only enough identities/challenges/world content to demonstrate retained core systems. Counts are capacity targets, not canon.
 
-## Phase 14 — Capstone Encounter / Experience
+## Phase 14 — Capstone Experience
 
-Build one representative capstone that combines earlier learned mechanics/ideas and creates decisions rather than only increasing numbers.
+Build one representative capstone that combines earlier learned mechanics/ideas where the selected product benefits from one.
 
-## Phase 15 — Vertical Slice
+## Phase 15 — Representative Vertical Slice / Equivalent Proof
 
-Build one coherent representative slice of the selected product with representative UI, characters/content, core loop and only the progression/assets actually retained.
+For a game, this is typically a coherent vertical slice with representative UI/content/core loop. For another product format, use the equivalent end-to-end proof. Include only progression/assets/outputs actually retained.
 
-**GATE B — PRODUCT:** test with users/players before scaling.
+**GATE B — PRODUCT:** test with target users/players before scaling.
 
 ## Phase 16 — Simulation / Telemetry — AS NEEDED
 
-Use deterministic simulation when the system is data-driven enough for balance analysis; use telemetry when real users/builds exist. Neither replaces qualitative playtesting.
+Use deterministic simulation when a system is data-driven enough for quantitative analysis; use telemetry when real users/builds exist. Neither replaces qualitative testing.
 
 ## Phase 17 — Physical Asset Proof — IF RETAINED
 
@@ -129,11 +122,11 @@ Do not automate unstable design decisions merely to generate more content faster
 
 ## Phase 21 — IP / Similarity / Release Gate
 
-Before production-scale release of names/characters/assets: internal comparison, external name/design research, provenance/human review and formal legal review where commercial risk justifies it. This reduces risk; it cannot guarantee zero infringement.
+Before production-scale release of names/identities/assets: internal comparison, external name/design research, provenance/human review and formal legal review where commercial risk justifies it. This reduces risk; it cannot guarantee zero infringement.
 
 ## Production Gate
 
-Scale only if evidence supports the **retained** pillars: understandable/compelling core experience, meaningful decisions, desirable/distinct characters where relevant, sufficient world context, manageable progression/economy where relevant, repeatable asset pipeline, physical viability where retained, and maintainable technical/data architecture.
+Scale only if evidence supports the **retained** pillars: understandable/compelling core experience, meaningful decisions, desirable/distinct identities where relevant, sufficient world context, manageable progression/economy where relevant, repeatable asset pipeline, physical viability where retained, and maintainable technical/data architecture.
 
 If a pillar fails, revise or remove it rather than compensating with more content.
 
