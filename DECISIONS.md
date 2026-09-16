@@ -1,6 +1,6 @@
 # NOVA TAILS — Decision Log
 
-Use this file for high-impact project decisions. Do not silently convert brainstorms into canon.
+Use this file for high-impact project decisions. Statuses on a review branch are **proposed statuses** until the PR is accepted/merged into the baseline.
 
 ## ADR template
 
@@ -20,7 +20,7 @@ Revisit trigger
 ---
 
 ## ADR-0001 — Repository is authoritative after review/acceptance
-**Status:** APPROVED  
+**Proposed status:** APPROVED  
 **Date:** 2026-09-16
 
 The repository is the authoritative project record once changes are reviewed/accepted. `main` is the latest accepted baseline and may intentionally contain explicitly marked draft/review hypotheses. Chat/AI output does not become authoritative merely by being generated or committed to a review branch.
@@ -28,7 +28,7 @@ The repository is the authoritative project record once changes are reviewed/acc
 ---
 
 ## ADR-0002 — Architecture before mass content
-**Status:** APPROVED  
+**Proposed status:** APPROVED  
 **Date:** 2026-09-16
 
 Do not create a large roster, skill/item catalog, campaign or printable collection before validating architecture and a representative end-to-end proof (vertical slice for a game, equivalent proof for another product). Cheap generation is not evidence that generated content is worth producing.
@@ -36,7 +36,7 @@ Do not create a large roster, skill/item catalog, campaign or printable collecti
 ---
 
 ## ADR-0003 — Shared master identity across retained adaptations
-**Status:** APPROVED  
+**Proposed status:** APPROVED  
 **Date:** 2026-09-16
 
 If an identity/character is retained across multiple outputs, those adaptations should derive from one canonical identity rather than becoming independently redesigned identities. This does not require Product Vision to retain multiple outputs.
@@ -68,7 +68,7 @@ A modular, color-separated, no-AMS-friendly FDM layer may differentiate the proj
 ---
 
 ## ADR-0007 — Short-lived purpose-specific branches
-**Status:** APPROVED  
+**Proposed status:** APPROVED  
 **Date:** 2026-09-16
 
 Use `main` as accepted project baseline and short-lived purpose-specific branches (`design/`, `feature/`, `character/`, `balance/`, `asset/`, `tooling/`, `fix/`, `chore/`). Significant changes to accepted state go through focused PRs. Do not add permanent integration branches without a demonstrated team/release need.
@@ -76,7 +76,7 @@ Use `main` as accepted project baseline and short-lived purpose-specific branche
 ---
 
 ## ADR-0008 — Separate canon responsibilities
-**Status:** APPROVED  
+**Proposed status:** APPROVED  
 **Date:** 2026-09-16
 
 Separate responsibilities: `docs/` for intent/rationale/hypotheses; `data/` for machine-readable structured/canonical instances when needed; `schemas/` for validity/contracts when needed; `prompts/` for derived generation instructions; `assets/` for intentionally retained assets; implementation/tools consume reviewed contracts rather than silently redefining canon.
@@ -86,7 +86,7 @@ The serialization/schema technology is deliberately undecided until real prototy
 ---
 
 ## ADR-0009 — Do not prematurely enable Git LFS or exhaustive schemas
-**Status:** APPROVED  
+**Proposed status:** APPROVED  
 **Date:** 2026-09-16
 
 Define storage/data-contract policy now, but delay Git LFS, serialization choice and detailed entity schemas until representative binary assets and prototype data/tooling exist.
@@ -94,7 +94,7 @@ Define storage/data-contract policy now, but delay Git LFS, serialization choice
 ---
 
 ## ADR-0010 — Roadmap is risk-driven, not waterfall
-**Status:** APPROVED  
+**Proposed status:** APPROVED  
 **Date:** 2026-09-16
 
 Roadmap phases express dependency/risk order. Targeted research or a cheap prototype/test should move earlier whenever it can invalidate a risky assumption faster than documentation. Feed evidence back into decisions instead of protecting sunk work.
@@ -102,7 +102,7 @@ Roadmap phases express dependency/risk order. Targeted research or a cheap proto
 ---
 
 ## ADR-0011 — Originality is a goal with validation, not a guaranteed property
-**Status:** APPROVED  
+**Proposed status:** APPROVED  
 **Date:** 2026-09-16
 
 If the project aims to create original IP, neither AI generation nor internal design review can guarantee absence of third-party rights. Names and production/release designs require similarity/name research and documented human review; formal legal review can be added where commercial risk justifies it.
@@ -118,7 +118,7 @@ Hypothesis: center the project on a distinctive multi-species sci-fi/fantasy uni
 ---
 
 ## ADR-0013 — Prototype the highest-risk product assumption before deep content
-**Status:** APPROVED  
+**Proposed status:** APPROVED  
 **Date:** 2026-09-16
 
 After Product Vision/Core Experience identify the most dangerous assumption, create the cheapest credible prototype/test before investing in deep lore, exhaustive taxonomy or production content. The test type depends on the risk: interaction prototype, paper simulation, clickable flow, concept desirability test or physical proof.
