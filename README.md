@@ -6,7 +6,7 @@
 
 **Phase 0 — Repository & Architecture Foundation (v0.1)**
 
-The repository is the source of truth for project history and reviewed decisions. The `main` branch represents the latest reviewed baseline; only content explicitly marked `APPROVED` or `LOCKED` is canonical. Draft material may still exist on `main` when intentionally retained as a visible hypothesis.
+The repository is the source of truth for project history and reviewed decisions. The `main` branch represents the latest reviewed baseline. `APPROVED` marks accepted current decisions/directions; `LOCKED` marks stronger dependency contracts. Draft hypotheses may remain visible on `main` without becoming canon.
 
 Chat/AI outputs are proposals until reviewed and promoted through repository workflow. The exact first product/game format and the role of physical 3D printing are still being validated.
 
@@ -20,21 +20,22 @@ Chat/AI outputs are proposals until reviewed and promoted through repository wor
 6. Manufacturing standards must come from real physical tests if printable collectibles remain in scope.
 7. Every game system should create a meaningful decision or serve a clear product purpose.
 8. Avoid premature complexity in schemas, storage, branching and content volume.
-9. Use prototypes/tests to attack high-risk assumptions early rather than treating the roadmap as waterfall.
+9. Use research/prototypes/tests to attack high-risk assumptions early rather than treating the roadmap as waterfall.
 
-## Canon status
+## Lifecycle status
 
 - `IDEA` — exploratory.
-- `DRAFT` — being designed; not canon.
-- `REVIEW` — ready for explicit review; not canon yet.
-- `APPROVED` — accepted current canon/direction.
+- `DRAFT` — being designed; not active canon.
+- `REVIEW` — ready for explicit review; not active canon yet.
+- `APPROVED` — accepted current decision/direction.
 - `LOCKED` — dependency contract; changing it requires impact review.
-- `DEPRECATED` — retained for history but no longer active canon.
+- `DEPRECATED` — retained for history but no longer active.
+
+Concrete entity values become canonical data only when the relevant system/entity is approved and represented as such; examples inside an approved architecture document are not automatically canon.
 
 ## Repository map
 
 Current foundation files:
-
 - `PROJECT_STATE.md` — current project snapshot, unknowns and next gate.
 - `ROADMAP.md` — risk-reduction gates from pre-production to production.
 - `DECISIONS.md` — high-impact architecture/design decisions and hypotheses.
@@ -50,7 +51,7 @@ Directories such as `data/`, `schemas/`, `simulator/`, `prompts/` and detailed d
 After Phase 0 is reviewed and merged:
 
 ```text
-Product Vision
+Product Vision + targeted evidence
 → Core Loop
 → Minimum World Architecture
 → Minimum Character Taxonomy
