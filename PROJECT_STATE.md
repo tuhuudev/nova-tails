@@ -24,7 +24,7 @@ Nothing is permanently locked yet. This is intentional.
 - Keep human-readable rationale, machine-readable structured/canonical data, validation contracts, prompts and assets as distinct responsibilities.
 - Defer serialization/schema technology, stable-ID format, asset-registry naming and Git LFS until real prototype/tooling/asset requirements exist.
 - Treat the roadmap as risk-driven; use external research and cheap prototypes/tests when they can materially change a decision faster than more documentation.
-- Once Product Vision/Core Experience expose a highest-risk assumption, prototype/test it before deep content/worldbuilding; this test may move earlier than nominal roadmap phases.
+- As soon as Product Vision/Core Experience gives enough information to identify the highest-risk assumption, test it before deep content/worldbuilding; the test may move ahead of nominal roadmap phases.
 - Treat originality and third-party-rights risk as something to validate, not something AI can guarantee.
 
 ## REVIEW / PRODUCT GOAL
@@ -94,8 +94,8 @@ MOMO demonstrates a candidate physical-design direction (small stylized fox/scou
 ## NEXT WORK AFTER ACCEPTANCE — RISK ORDER, NOT WATERFALL
 
 - Start `design/product-vision-v0.1` with targeted evidence around audience/product/differentiation/output priorities.
-- Define only enough Core Experience/Loop to expose the major assumptions.
-- As soon as the highest-risk assumption is identifiable, create a dedicated prototype/test branch; do not wait for deep world/taxonomy documentation.
+- Define only enough Core Experience/Loop to expose major assumptions.
+- The moment a high-risk assumption becomes testable, create its dedicated prototype/test branch; do not wait for deep world/taxonomy documentation.
 - Add minimum world/taxonomy/visual work only to the depth required by the retained product/prototype.
 
 ## DO NOT DO YET
@@ -104,4 +104,4 @@ Do not mass-generate roster/skills/items/campaign/STL; finalize gacha/monetizati
 
 ## NEXT DECISION
 
-Owner/reviewer accepts Phase 0 or requests specific changes. After merge, Product Vision should combine focused external research with explicit hypotheses and choose the cheapest credible test for the highest-risk product assumption before deep worldbuilding.
+Owner/reviewer accepts Phase 0 or requests specific changes. After merge, begin evidence-backed Product Vision and move to the cheapest credible test as soon as the highest-risk assumption is identifiable.
