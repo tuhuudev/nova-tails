@@ -20,134 +20,106 @@ Revisit trigger
 ---
 
 ## ADR-0001 — Repository is the authoritative reviewed project record
-
 **Status:** APPROVED  
 **Date:** 2026-09-16
 
-### Decision
-The Git repository is the authoritative project record after review. `main` is the latest reviewed baseline and may intentionally contain explicitly marked draft/review hypotheses. Chat/AI output does not become authoritative merely by being generated.
+The Git repository is authoritative after review. `main` is the latest reviewed baseline and may intentionally contain explicitly marked draft/review hypotheses. Chat/AI output does not become authoritative merely by being generated.
 
 ---
 
 ## ADR-0002 — Architecture before mass content
-
 **Status:** APPROVED  
 **Date:** 2026-09-16
 
-### Decision
-Do not create a large roster, skill library, equipment catalog or printable collection before validating architecture and a vertical slice/equivalent proof.
+Do not create a large roster, skill library, equipment catalog, campaign or printable collection before validating architecture and a vertical slice/equivalent proof. Cheap generation is not evidence that generated content is worth producing.
 
 ---
 
 ## ADR-0003 — Shared master character identity
-
 **Status:** APPROVED  
 **Date:** 2026-09-16
 
-### Decision
 When a character is adapted across outputs, those adaptations should derive from one canonical character identity rather than becoming independently redesigned identities.
 
 ---
 
 ## ADR-0004 — First game direction
-
 **Status:** DRAFT / DEFERRED TO PRODUCT VISION  
 **Date:** 2026-09-16
 
-### Hypothesis
-An accessible character-collection RPG/card-battler may be a suitable first interactive product. Five-character teams and semi-auto/auto combat are hypotheses, not architecture decisions.
-
-### Validation required
-Dedicated Product Vision review and cheap interaction prototype(s).
+Character-collection RPG/card-battler, five-character teams and semi-auto/auto combat are hypotheses. Product Vision + cheap interaction tests decide whether they survive.
 
 ---
 
 ## ADR-0005 — V1 progression budget
-
 **Status:** DRAFT / DEFERRED TO CORE LOOP  
 **Date:** 2026-09-16
 
-### Hypothesis
-Level, Cultivation/Breakthrough, Evolution, Skill choices and Equipment are candidate progression dimensions. There is no requirement that all five survive.
-
-### Durable constraint
-Each retained progression dimension must create a distinct decision/unlock/job. Systems that merely duplicate percentage stat inflation should be merged, removed or deferred.
+Level, Cultivation/Breakthrough, Evolution, Skill choices and Equipment are candidates only. Each retained progression dimension must create a distinct decision/unlock/job; duplicate stat-inflation layers should be merged/removed.
 
 ---
 
 ## ADR-0006 — Physical collectible / FDM direction
-
 **Status:** REVIEW / DEFERRED TO PRODUCT VISION + PHYSICAL PROOF  
 **Date:** 2026-09-16
 
-### Hypothesis
-A modular, color-separated FDM-printable collectible layer—ideally allowing base figures to be printed without AMS—could be a meaningful differentiator.
-
-### Validation required
-Product Vision decision plus representative physical prints before locking manufacturing standards.
+A modular, color-separated, no-AMS-friendly FDM layer may differentiate the project. Product Vision must decide its role and representative physical prints must validate manufacturing rules before they are locked.
 
 ---
 
 ## ADR-0007 — Short-lived purpose-specific branches
-
 **Status:** APPROVED  
 **Date:** 2026-09-16
 
-### Decision
-Use `main` as reviewed project baseline and short-lived purpose-specific branches (`design/`, `feature/`, `character/`, `balance/`, `asset/`, `tooling/`, `fix/`, `chore/`). Significant changes to reviewed state go through focused PRs.
+Use `main` as reviewed baseline and short-lived purpose-specific branches (`design/`, `feature/`, `character/`, `balance/`, `asset/`, `tooling/`, `fix/`, `chore/`). Significant changes to reviewed state go through focused PRs. Do not add permanent integration branches without a demonstrated team/release need.
 
 ---
 
 ## ADR-0008 — Separate canon responsibilities
-
 **Status:** APPROVED  
 **Date:** 2026-09-16
 
-### Decision
-Separate responsibilities: `docs/` for intent/rationale/hypotheses; `data/` for machine-readable structured/canonical instances when needed; `schemas/` for validity/contracts; `prompts/` for derived generation instructions; `assets/` for intentionally retained project assets; implementation/tools consume reviewed contracts rather than silently redefining canon.
+Separate responsibilities: `docs/` for intent/rationale/hypotheses; `data/` for machine-readable structured/canonical instances when needed; `schemas/` for validity/contracts; `prompts/` for derived generation instructions; `assets/` for intentionally retained assets; implementation/tools consume reviewed contracts rather than silently redefining canon.
 
 ---
 
 ## ADR-0009 — Do not prematurely enable Git LFS or exhaustive schemas
-
 **Status:** APPROVED  
 **Date:** 2026-09-16
 
-### Decision
-Define storage/schema policy now, but delay Git LFS configuration and detailed entity schemas until representative binary assets and prototype data exist.
+Define storage/schema policy now, but delay Git LFS and detailed entity schemas until representative binary assets and prototype data exist.
 
 ---
 
 ## ADR-0010 — Roadmap is risk-driven, not waterfall
-
 **Status:** APPROVED  
 **Date:** 2026-09-16
 
-### Decision
-Roadmap phases express dependency/risk order, not a requirement to complete large documents sequentially. When targeted external research or a cheap prototype/test can invalidate a risky assumption faster than documentation, use it and feed evidence back into the relevant decision.
+Roadmap phases express dependency/risk order. Targeted research or a cheap prototype/test should move earlier whenever it can invalidate a risky assumption faster than documentation. Feed evidence back into decisions instead of protecting sunk work.
 
 ---
 
 ## ADR-0011 — Originality is a goal with validation, not a guaranteed property
-
 **Status:** APPROVED  
 **Date:** 2026-09-16
 
-### Decision
 If the project pursues an original IP, neither AI generation nor internal design review can guarantee absence of third-party rights. Names and production/release designs require similarity/name research and documented human review; formal legal review can be added where commercial risk justifies it.
 
 ---
 
 ## ADR-0012 — Distinctive original character universe as project goal
-
 **Status:** REVIEW / DEFERRED TO PRODUCT VISION  
 **Date:** 2026-09-16
 
-### Hypothesis
-The project should center on a distinctive original multi-species sci-fi/fantasy character universe capable of supporting more than one adaptation/output over time.
+Hypothesis: center the project on a distinctive original multi-species sci-fi/fantasy character universe capable of supporting multiple adaptations. Product Vision must validate audience, primary product, differentiation and output priorities using targeted evidence.
 
-### Why not approved yet
-This direction is strongly supported by existing exploration, but Product Vision still needs to define the target audience, primary product, differentiation and which outputs matter first.
+---
 
-### Validation required
-Targeted adjacent-market/product research and Product Vision review.
+## ADR-0013 — Prototype the highest-risk product assumption before deep content
+**Status:** APPROVED  
+**Date:** 2026-09-16
+
+After Product Vision/Core Experience identify the most dangerous assumption, create the cheapest credible prototype/test before investing in deep lore, exhaustive taxonomy or production content. The test type depends on the risk: interaction prototype, paper simulation, clickable flow, concept desirability test or physical proof.
+
+### Why
+Architecture is valuable only if it helps reduce rework. Documentation that delays testing the assumption most likely to kill/change the product becomes a liability.
