@@ -39,7 +39,7 @@ Do not create a large roster, skill/item catalog, campaign or printable collecti
 **Status:** APPROVED  
 **Date:** 2026-09-16
 
-When a character/identity is adapted across outputs, adaptations should derive from one canonical identity rather than becoming independently redesigned identities.
+When an identity/character is adapted across outputs, adaptations should derive from one canonical identity rather than becoming independently redesigned identities.
 
 ---
 
@@ -79,7 +79,9 @@ Use `main` as reviewed baseline and short-lived purpose-specific branches (`desi
 **Status:** APPROVED  
 **Date:** 2026-09-16
 
-Separate responsibilities: `docs/` for intent/rationale/hypotheses; `data/` for machine-readable structured/canonical instances when needed; `schemas/` for validity/contracts; `prompts/` for derived generation instructions; `assets/` for intentionally retained assets; implementation/tools consume reviewed contracts rather than silently redefining canon.
+Separate responsibilities: `docs/` for intent/rationale/hypotheses; `data/` for machine-readable structured/canonical instances when needed; `schemas/` for validity/contracts when needed; `prompts/` for derived generation instructions; `assets/` for intentionally retained assets; implementation/tools consume reviewed contracts rather than silently redefining canon.
+
+The serialization/schema technology is deliberately undecided until real prototype/tooling requirements exist.
 
 ---
 
@@ -87,7 +89,7 @@ Separate responsibilities: `docs/` for intent/rationale/hypotheses; `data/` for 
 **Status:** APPROVED  
 **Date:** 2026-09-16
 
-Define storage/schema policy now, but delay Git LFS and detailed entity schemas until representative binary assets and prototype data exist.
+Define storage/data-contract policy now, but delay Git LFS, serialization choice and detailed entity schemas until representative binary assets and prototype data/tooling exist.
 
 ---
 
