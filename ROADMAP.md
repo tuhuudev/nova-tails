@@ -1,13 +1,13 @@
 # NOVA TAILS — Master Roadmap
 
-**Status:** REVIEW  
+**Status:** REVIEW — proposed until Phase 0 is accepted.  
 **Strategy:** foundation → evidence-backed product hypothesis → cheapest useful proof → representative slice → production.
 
 This is a **risk map, not waterfall**. Product Vision decides which later systems are actually required. A cheap prototype may move ahead of world/taxonomy documentation when it answers a critical unknown faster.
 
 ## Phase 0 — Repository & Architecture Foundation
 
-Goal: maintainable reviewed project record without overengineering.
+Goal: maintainable accepted project record without overengineering.
 
 Deliverables: project state, lifecycle/ADR policy, short-lived branch + focused PR workflow, canon/data ownership, asset-storage policy, baseline ignore/security hygiene and architecture boundaries.
 
@@ -17,42 +17,31 @@ Deliverables: project state, lifecycle/ADR policy, short-lived branch + focused 
 
 ## Phase 1 — Product Vision & Evidence
 
-Resolve enough to decide what deserves prototyping:
-- target audience/player and core fantasy/value;
-- primary platform/context;
-- primary product format;
-- differentiation;
-- which outputs are core vs optional/later;
-- role of collection/acquisition;
-- role of physical printing;
-- business/market constraints only where design-relevant;
-- pivot/cancellation criteria.
+Resolve enough to decide what deserves prototyping: target audience/core value, primary platform/context, primary product format, differentiation, output priorities, role of collection/printing, relevant business constraints and pivot/cancellation criteria.
 
-Use targeted external research for adjacent products/genres, expectations, differentiation and relevant platform/physical-digital precedents. Research must end in a decision, hypothesis or test—not a giant competitor spreadsheet.
+Use targeted external research for adjacent products/genres, expectations, differentiation and relevant precedents. Research must end in a decision, hypothesis or test—not a giant competitor spreadsheet.
 
 **Exit gate:** clear target/product/value/boundaries, evidence supporting the direction and explicit high-risk assumptions.
 
 ## Phase 2 — Core Experience / Loop
 
-Define the minimum repeated experience appropriate to the selected product. For a game hypothesis this may include encounter → decision/build → feedback/reward → progression → next challenge. Acquisition belongs here only if Phase 1 retains it.
+Define the minimum repeated experience appropriate to the selected product. Acquisition/progression belong only if Phase 1 retains them.
 
 **Exit gate:** repeated use/play has value beyond receiving more currency/content.
 
 ## Phase 3 — Cheapest High-Risk Prototype
 
-Before large worldbuilding, identify the assumption most likely to invalidate the product and build the cheapest credible test.
+Identify the assumption most likely to invalidate the product and build the cheapest credible test: low-fidelity interaction prototype, clickable UX, paper simulation, concept desirability test, physical proof, etc.
 
-Examples: low-fidelity interaction/combat prototype, clickable UX flow, paper/card simulation, character desirability/concept test, or 2D→3D physical proof if physical differentiation is the highest-risk pillar.
-
-**GATE A — CORE PRODUCT:** if the core promise is not understandable/promising without reward scaffolding, revise Phase 1/2.
+**GATE A — CORE PRODUCT:** if the core promise is not understandable/promising, revise Phase 1/2.
 
 ## Phase 4 — Minimum World Architecture — CONDITIONAL DEPTH
 
-Define only world rules needed by the selected product/prototype: premise/conflict, user/player role, one initial setting and enough world logic for identities/challenges. Nova Core/The Fracture/six domains remain replaceable hypotheses. Full campaign/cosmology is not required.
+Define only world rules needed by the selected product/prototype. Existing Nova Core/The Fracture/six-domain ideas remain replaceable hypotheses. Full campaign/cosmology is not required.
 
 ## Phase 5 — Minimum Identity / Character Taxonomy — CONDITIONAL DEPTH
 
-Stress-test a small diverse set. Candidate dimensions include origin, world identity, interaction/combat identity, visual DNA and stable identity/inheritance. Remove dimensions that do not create useful design/product decisions.
+Stress-test a small diverse set. Remove taxonomy dimensions that do not create useful design/product decisions.
 
 ## Phase 6 — Visual Identity Proof — IF RELEVANT
 
@@ -60,19 +49,19 @@ Define enough visual system to make representative identities coherent/distinct 
 
 ## Phase 7 — Interaction / Combat Model — IF RETAINED
 
-If the selected product is a character battler, prototype team size, targeting/action model, ability/resource vocabulary and one meaningful encounter mechanic with placeholders. Do not implement full progression/economy first.
+If the selected product is a character battler, prototype the minimal interaction model with placeholders before full progression/economy.
 
 ## Phase 8 — Math + Structured Data — WHEN BEHAVIOR IS KNOWN
 
-Formalize only the stats/formulas/contracts the working prototype needs. Extract first schemas from real behavior rather than predicting every field.
+Formalize only the math/contracts the working prototype needs. Extract first schemas/contracts from real behavior rather than predicting every field.
 
 ## Phase 9 — Progression Proof — IF RETAINED
 
-Test the smallest set that creates distinct decisions. Current Level/Cultivation/Evolution/Skill/Equipment ideas are candidates, not requirements. Merge/remove duplicate stat-inflation layers.
+Test the smallest set that creates distinct decisions. Current progression ideas are candidates, not requirements.
 
 ## Phase 10 — Equipment / Build Layer — IF RETAINED
 
-Introduce only when the core interaction has meaningful build decisions. Weapon/Armor/Accessory is a candidate, not a requirement.
+Introduce only when the core interaction has meaningful build decisions.
 
 ## Phase 11 — Economy — IF RETAINED
 
@@ -80,33 +69,33 @@ Map every resource as source → inventory → sink. No currency without a disti
 
 ## Phase 12 — Acquisition / Gacha — IF RETAINED
 
-Decide only after core product/progression exists. If gacha remains likely, separately research rates/pity/duplicates/transparency plus applicable platform/legal/age-market constraints before release. Gacha is not an architecture default.
+Decide only after core product/progression exists. If retained, separately research applicable design/platform/legal/age-market constraints before release. Gacha is not an architecture default.
 
 ## Phase 13 — Representative Content Set
 
 Create only enough identities/challenges/world content to demonstrate retained core systems. Counts are capacity targets, not canon.
 
-## Phase 14 — Capstone Experience
+## Phase 14 — Capstone Experience — IF USEFUL
 
-Build one representative capstone that combines earlier learned mechanics/ideas where the selected product benefits from one.
+Build one representative capstone combining earlier mechanics/ideas where the selected product benefits from one.
 
 ## Phase 15 — Representative Vertical Slice / Equivalent Proof
 
-For a game, this is typically a coherent vertical slice with representative UI/content/core loop. For another product format, use the equivalent end-to-end proof. Include only progression/assets/outputs actually retained.
+For a game, typically a coherent vertical slice with representative UI/content/core loop. For another product, use an equivalent end-to-end proof. Include only outputs actually retained.
 
 **GATE B — PRODUCT:** test with target users/players before scaling.
 
 ## Phase 16 — Simulation / Telemetry — AS NEEDED
 
-Use deterministic simulation when a system is data-driven enough for quantitative analysis; use telemetry when real users/builds exist. Neither replaces qualitative testing.
+Use simulation for sufficiently data-driven systems and telemetry when real users/builds exist. Neither replaces qualitative testing.
 
 ## Phase 17 — Physical Asset Proof — IF RETAINED
 
-Validate a tiny representative sample through source design/model → print adaptation → slice → print → assembly → review. No tolerance/detail/manufacturing rule becomes locked before physical evidence.
+Validate a tiny sample through source design/model → print adaptation → slice → print → assembly → review. No manufacturing rule becomes locked before physical evidence.
 
 ## Phase 18 — Manufacturing Bible — IF RETAINED
 
-Record only proven physical rules after the proof milestone.
+Record only proven physical rules after physical proof.
 
 ## Phase 19 — Asset Registry / Storage Scaling — WHEN NEEDED
 
@@ -114,11 +103,7 @@ Introduce stable asset IDs and Git LFS/external storage only when real asset cou
 
 ## Phase 20 — AI Pipeline — AFTER STABILITY
 
-Automate stable/repetitive work only:
-
-`Reviewed Canon → Context → Prompt → AI Proposal → Validation → Human Review → Approved Canon/Asset Registry`
-
-Do not automate unstable design decisions merely to generate more content faster.
+Automate stable/repetitive work only: `Accepted Canon → Context → Prompt → AI Proposal → Validation → Human Review → Approved Canon/Asset Registry`.
 
 ## Phase 21 — IP / Similarity / Release Gate
 
@@ -126,9 +111,7 @@ Before production-scale release of names/identities/assets: internal comparison,
 
 ## Production Gate
 
-Scale only if evidence supports the **retained** pillars: understandable/compelling core experience, meaningful decisions, desirable/distinct identities where relevant, sufficient world context, manageable progression/economy where relevant, repeatable asset pipeline, physical viability where retained, and maintainable technical/data architecture.
-
-If a pillar fails, revise or remove it rather than compensating with more content.
+Scale only if evidence supports the **retained** pillars. If a pillar fails, revise or remove it rather than compensating with more content.
 
 ## Production
 
