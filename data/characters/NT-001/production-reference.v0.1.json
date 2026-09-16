@@ -1,7 +1,7 @@
 {
   "characterId": "NT-001",
   "stage": 1,
-  "version": "0.1.0",
+  "version": "0.2.0",
   "status": "CANDIDATE",
   "coordinateSystem": {
     "units": "normalized",
@@ -14,38 +14,30 @@
     "exceptions": [],
     "rule": "Asymmetry must be intentional and documented; AI view-to-view drift is not design asymmetry."
   },
-  "lockedIdentity": [
-    "EAR_SHAPE",
-    "FOREHEAD_MARK",
-    "TAIL_SPLIT"
-  ],
+  "lockedIdentity": ["EAR_SHAPE", "FOREHEAD_MARK", "TAIL_SPLIT"],
   "geometryVsFx": {
     "ears": "Physical ear/fur geometry carries the flame-like silhouette; glow is optional FX.",
-    "tail": "Physical split-tail/fur geometry must remain recognizable with all emissive/fire FX disabled.",
-    "foreheadMark": "Surface marking/inlay identity; not dependent on glow.",
+    "tail": "One physical tail root splits into two persistent physical flame-shaped lobes. Both lobes remain recognizable with FX disabled.",
+    "foreheadMark": "Centered surface marking/inlay identity; not dependent on glow.",
     "rule": "NT-001 must remain recognizable in unlit/clay render and physical print."
   },
-  "requiredViews": [
-    "front",
-    "left_side",
-    "right_side",
-    "back",
-    "top",
-    "bottom"
-  ],
-  "requiredLandmarks": [
-    "ground",
-    "paw_top",
-    "shoulder",
-    "hip",
-    "eye_center",
-    "ear_base",
-    "ear_tip",
-    "nose_tip",
-    "tail_root",
-    "tail_max_envelope",
-    "forehead_mark_center"
-  ],
+  "tailTopology": {
+    "rootCount": 1,
+    "branchCount": 2,
+    "splitType": "physical",
+    "symmetryIntent": "bilateral",
+    "fxRequiredForIdentity": false,
+    "status": "RESOLVED_FOR_PROTOTYPE"
+  },
+  "earConstruction": {
+    "outerEar": "physical fur/ear geometry",
+    "innerFlameShape": "physical fur/ear geometry",
+    "elementGlow": "optional FX",
+    "fxRequiredForIdentity": false,
+    "status": "RESOLVED_AT_RULE_LEVEL"
+  },
+  "requiredViews": ["front", "left_side", "right_side", "back", "top", "bottom"],
+  "requiredLandmarks": ["ground", "paw_top", "shoulder", "hip", "eye_center", "ear_base", "ear_tip", "nose_tip", "tail_root", "tail_max_envelope", "forehead_mark_center"],
   "crossViewConstraints": [
     "same neutral standing pose",
     "same body revision",
@@ -61,16 +53,6 @@
   ],
   "openGeometryDecisions": [
     {
-      "id": "TAIL_TOPOLOGY",
-      "question": "Is the signature tail one root splitting into two persistent physical lobes/branches, or one tail mass with an internal flame-shaped notch?",
-      "blocking": true
-    },
-    {
-      "id": "EAR_PHYSICAL_BOUNDARY",
-      "question": "Exact physical boundary between white outer ear fur, orange inner flame-like fur, and optional elemental FX.",
-      "blocking": true
-    },
-    {
       "id": "BACK_MARKING",
       "question": "Whether the current back marking is retained as an optional marking or removed from the master design.",
       "blocking": false
@@ -82,5 +64,12 @@
       "deferUntil": "3D blockout and print feasibility"
     }
   ],
-  "promotionRule": "Do not mark any orthographic view APPROVED until the six-view pack passes cross-view reconciliation and the blocking geometry decisions are resolved."
+  "currentReferencePack": {
+    "version": "0.1",
+    "status": "CANDIDATE",
+    "sourceType": "ai_generated_composite_and_extracted_views",
+    "crossViewValidation": "PENDING",
+    "important": "Text such as APPROVED FOR 3D BLOCKOUT appearing inside generated artwork is not authoritative project status."
+  },
+  "promotionRule": "Do not mark any orthographic view APPROVED until the six-view pack passes cross-view reconciliation. Approval for 3D blockout is distinct from CANON character status."
 }
