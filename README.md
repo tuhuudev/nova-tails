@@ -1,55 +1,68 @@
 # NOVA TAILS
 
-> Working title. Original-IP project combining a character-collection game universe, 2D assets, and modular FDM-printable 3D collectibles.
+> Working title. Original-IP project exploring a collectible-character game universe, reusable 2D identity and modular FDM-printable 3D collectibles.
 
 ## Current phase
 
-**Pre-production — Architecture (v0.1)**
+**Phase 0 — Repository & Architecture Foundation (v0.1)**
 
-The repository is the single source of truth for project decisions. Chat/AI outputs are proposals until reviewed and promoted into canonical project files.
+The repository is the source of truth for reviewed project decisions. Chat/AI outputs are proposals until reviewed and promoted through repository workflow.
+
+The exact game/product direction is still being validated. Do not read current gameplay/lore hypotheses as finished canon.
 
 ## Project principles
 
 1. Architecture before mass content production.
-2. Prototype core gameplay before building a large roster.
-3. One master character identity feeds game, 2D, and 3D outputs.
+2. Validate product/core gameplay before building a large roster.
+3. One master character identity feeds game, 2D and 3D adaptations.
 4. AI generates proposals; it does not directly define canon.
-5. Every important decision is versioned and reviewable.
-6. 3D assets must respect real FDM manufacturing constraints.
-7. Avoid unnecessary systems: every system must create a meaningful player/design decision.
+5. Every important decision is reviewable and traceable.
+6. 3D standards must ultimately come from real manufacturing tests.
+7. Every game system should create a meaningful decision or serve a clear product purpose.
+8. Avoid premature complexity in schemas, storage, branching and content volume.
 
 ## Canon status
 
 - `IDEA` — exploratory.
 - `DRAFT` — being designed.
-- `REVIEW` — ready for review.
-- `APPROVED` — accepted direction, may still evolve.
-- `LOCKED` — canonical constraint; changes require an explicit decision.
+- `REVIEW` — ready for explicit review.
+- `APPROVED` — accepted current direction.
+- `LOCKED` — dependency contract; changing it requires impact review.
 - `DEPRECATED` — retained for history but no longer current.
 
 ## Repository map
 
-- `PROJECT_STATE.md` — current project snapshot and next step.
-- `ROADMAP.md` — stage gates from architecture to production.
-- `DECISIONS.md` — architecture/design decision log.
-- `docs/MASTER_ARCHITECTURE.md` — high-level system architecture.
-- `docs/world/` — universe, lore, factions, locations, campaign.
-- `docs/game/` — combat, progression, economy, skills, equipment.
-- `docs/design/` — visual and asset design standards.
-- `data/` — machine-readable canonical data (YAML/JSON later).
-- `schemas/` — validation schemas for canonical data.
-- `prompts/` — AI prompt templates derived from canon, never source of truth.
-- `simulator/` — future deterministic combat/balance simulator.
+Current foundation files:
 
-## Immediate milestone
+- `PROJECT_STATE.md` — current project snapshot, unknowns and next gate.
+- `ROADMAP.md` — gated pre-production → validation → production roadmap.
+- `DECISIONS.md` — high-impact architecture/design decisions.
+- `CONTRIBUTING.md` — branch, PR, commit and review workflow.
+- `docs/MASTER_ARCHITECTURE.md` — high-level system boundaries/hypotheses.
+- `docs/CANON_AND_DATA_POLICY.md` — ownership between docs/data/schema/code/prompts.
+- `docs/ASSET_STORAGE_POLICY.md` — binary/generated/3D storage rules.
 
-Complete Architecture v0.1 in this order:
+Directories such as `data/`, `schemas/`, `simulator/`, `prompts/` and detailed domain folders will be added when their first real artifacts exist. We intentionally avoid empty architecture theater.
 
-1. Product Vision
-2. Core Loop
-3. World Architecture
-4. Character Taxonomy
-5. Visual Bible
-6. Combat Prototype specification
+## Development sequence
 
-Only after the first playable/vertical-slice assumptions survive review should the project expand into a large roster or large asset library.
+After Phase 0 is reviewed and merged:
+
+```text
+Product Vision
+→ Core Loop
+→ World Architecture
+→ Character Taxonomy
+→ Visual Bible
+→ Combat Prototype
+→ Mathematical Combat Model
+→ Vertical Slice
+→ Simulation / Physical Asset Proof
+→ Scale only after validation
+```
+
+Each major step should normally use a dedicated short-lived branch and focused PR.
+
+## Current rule
+
+Do not expand the universe because AI makes generation cheap. Expand only after the relevant design/game/asset assumptions survive review or testing.
