@@ -1,6 +1,6 @@
 # NOVA TAILS
 
-> Working title. Original-IP project exploring a distinctive character universe with potential game, 2D and modular FDM-printable 3D adaptations.
+> Working title. Project goal: develop a distinctive, original character universe with potential game, 2D and modular FDM-printable 3D adaptations. Originality/IP risk must be validated during design/release review; it is not guaranteed by this label.
 
 ## Current phase
 
@@ -21,6 +21,7 @@ Chat/AI outputs are proposals until reviewed and intentionally captured through 
 7. Every game system should create a meaningful decision or serve a clear product purpose.
 8. Avoid premature complexity in schemas, storage, branching and content volume.
 9. Use research/prototypes/tests to attack high-risk assumptions early rather than treating the roadmap as waterfall.
+10. Treat originality and third-party-rights risk as something to review, not something AI can guarantee.
 
 ## Lifecycle status
 
