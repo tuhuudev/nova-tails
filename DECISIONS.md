@@ -31,15 +31,15 @@ The Git repository is authoritative after review. `main` is the latest reviewed 
 **Status:** APPROVED  
 **Date:** 2026-09-16
 
-Do not create a large roster, skill library, equipment catalog, campaign or printable collection before validating architecture and a vertical slice/equivalent proof. Cheap generation is not evidence that generated content is worth producing.
+Do not create a large roster, skill/item catalog, campaign or printable collection before validating architecture and a vertical slice/equivalent proof. Cheap generation is not evidence that generated content is worth producing.
 
 ---
 
-## ADR-0003 — Shared master character identity
+## ADR-0003 — Shared master identity across adaptations
 **Status:** APPROVED  
 **Date:** 2026-09-16
 
-When a character is adapted across outputs, those adaptations should derive from one canonical character identity rather than becoming independently redesigned identities.
+When a character/identity is adapted across outputs, adaptations should derive from one canonical identity rather than becoming independently redesigned identities.
 
 ---
 
@@ -52,7 +52,7 @@ Character-collection RPG/card-battler, five-character teams and semi-auto/auto c
 ---
 
 ## ADR-0005 — V1 progression budget
-**Status:** DRAFT / DEFERRED TO CORE LOOP  
+**Status:** DRAFT / DEFERRED TO CORE EXPERIENCE  
 **Date:** 2026-09-16
 
 Level, Cultivation/Breakthrough, Evolution, Skill choices and Equipment are candidates only. Each retained progression dimension must create a distinct decision/unlock/job; duplicate stat-inflation layers should be merged/removed.
@@ -107,11 +107,11 @@ If the project pursues an original IP, neither AI generation nor internal design
 
 ---
 
-## ADR-0012 — Distinctive original character universe as project goal
+## ADR-0012 — Distinctive original universe/IP as product hypothesis
 **Status:** REVIEW / DEFERRED TO PRODUCT VISION  
 **Date:** 2026-09-16
 
-Hypothesis: center the project on a distinctive original multi-species sci-fi/fantasy character universe capable of supporting multiple adaptations. Product Vision must validate audience, primary product, differentiation and output priorities using targeted evidence.
+Hypothesis: center the project on a distinctive original multi-species sci-fi/fantasy universe/IP, initially explored through character-centric concepts and capable of supporting multiple adaptations over time. Product Vision must validate audience, primary product, differentiation and output priorities using targeted evidence.
 
 ---
 
@@ -122,4 +122,4 @@ Hypothesis: center the project on a distinctive original multi-species sci-fi/fa
 After Product Vision/Core Experience identify the most dangerous assumption, create the cheapest credible prototype/test before investing in deep lore, exhaustive taxonomy or production content. The test type depends on the risk: interaction prototype, paper simulation, clickable flow, concept desirability test or physical proof.
 
 ### Why
-Architecture is valuable only if it helps reduce rework. Documentation that delays testing the assumption most likely to kill/change the product becomes a liability.
+Architecture is valuable only if it reduces rework. Documentation that delays testing the assumption most likely to kill/change the product becomes a liability.
