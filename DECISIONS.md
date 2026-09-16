@@ -35,11 +35,11 @@ Do not create a large roster, skill/item catalog, campaign or printable collecti
 
 ---
 
-## ADR-0003 — Shared master identity across adaptations
+## ADR-0003 — Shared master identity across retained adaptations
 **Status:** APPROVED  
 **Date:** 2026-09-16
 
-When an identity/character is adapted across outputs, adaptations should derive from one canonical identity rather than becoming independently redesigned identities.
+If an identity/character is retained across multiple outputs, those adaptations should derive from one canonical identity rather than becoming independently redesigned identities. This does not require Product Vision to retain multiple outputs.
 
 ---
 
