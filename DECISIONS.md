@@ -113,3 +113,67 @@ Base collectible designs should prioritize modular FDM manufacturing, strong phy
 
 ### Validation required
 Physical prints of at least two character archetypes and one boss-scale model. Connector dimensions/tolerances remain unapproved until measured from real prints.
+
+---
+
+## ADR-0007 — Short-lived purpose-specific branches
+
+**Status:** APPROVED  
+**Date:** 2026-09-16
+
+### Context
+The project will contain interdependent design, code, balance and asset changes. A single long-lived development branch would make review boundaries and canon promotion unclear.
+
+### Decision
+Use `main` as reviewed project state and short-lived purpose-specific branches (`design/`, `feature/`, `character/`, `balance/`, `asset/`, `tooling/`, `fix/`, `chore/`). Significant canonical changes go through focused PRs.
+
+### Alternatives considered
+- permanent `develop` branch;
+- one branch per contributor;
+- committing AI changes directly to `main`.
+
+### Why
+The current team/project size does not justify GitFlow-style permanent integration branches. Focused branches make review, rollback and dependency reasoning easier.
+
+### Revisit trigger
+A larger team/release process demonstrates a concrete need for release/integration branches.
+
+---
+
+## ADR-0008 — Separate canon responsibilities
+
+**Status:** APPROVED  
+**Date:** 2026-09-16
+
+### Decision
+Separate responsibilities as follows:
+
+- `docs/` explains intent/rationale;
+- `data/` stores machine-readable canonical instances once needed;
+- `schemas/` defines validity/contracts;
+- `prompts/` derives generation instructions from canon;
+- `assets/` stores intentionally retained project assets under storage policy;
+- implementation/simulator/tools consume the contracts rather than redefining canon silently.
+
+### Why
+This prevents prompt drift, duplicated entity facts and contradictions between documentation, game implementation and asset generation.
+
+### Validation required
+The first vertical-slice schemas/data should demonstrate that the split is useful rather than bureaucratic.
+
+---
+
+## ADR-0009 — Do not prematurely enable Git LFS or exhaustive schemas
+
+**Status:** APPROVED  
+**Date:** 2026-09-16
+
+### Decision
+Define storage/schema policy now, but delay Git LFS configuration and detailed entity schemas until representative physical assets and prototype data exist.
+
+### Why
+Optimizing for hypothetical file sizes/fields creates maintenance cost before actual requirements are known.
+
+### Revisit trigger
+- first structured combat data slice for schemas;
+- Physical Asset Proof milestone for LFS/storage.
