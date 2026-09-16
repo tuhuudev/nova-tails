@@ -24,7 +24,7 @@ Nothing is permanently locked yet. This is intentional.
 - Keep human-readable rationale, machine-readable structured/canonical data, validation contracts, prompts and assets as distinct responsibilities.
 - Defer serialization/schema technology, stable-ID format, asset-registry naming and Git LFS until real prototype/tooling/asset requirements exist.
 - Treat the roadmap as risk-driven; use external research and cheap prototypes/tests when they can materially change a decision faster than more documentation.
-- After Product Vision/Core Experience identify the highest-risk assumption, prototype/test it before deep content/worldbuilding.
+- Once Product Vision/Core Experience expose a highest-risk assumption, prototype/test it before deep content/worldbuilding; this test may move earlier than nominal roadmap phases.
 - Treat originality and third-party-rights risk as something to validate, not something AI can guarantee.
 
 ## REVIEW / PRODUCT GOAL
@@ -91,12 +91,12 @@ MOMO demonstrates a candidate physical-design direction (small stylized fox/scou
 - [ ] Owner/reviewer accepts Phase 0 and merges
 - [ ] Configure `main` protection/ruleset when repository permissions/workflow allow it
 
-## NEXT MILESTONES — AFTER ACCEPTANCE
+## NEXT WORK AFTER ACCEPTANCE — RISK ORDER, NOT WATERFALL
 
-1. `design/product-vision-v0.1` — audience/product/differentiation/output priorities + targeted evidence.
-2. `design/core-loop-v0.1` — minimum repeated experience for the selected product.
-3. Create a dedicated cheapest-high-risk-prototype branch as soon as the most dangerous assumption is identifiable; it may precede deeper world/taxonomy work.
-4. Add minimum world/taxonomy/visual work only to the depth required by the selected product/prototype.
+- Start `design/product-vision-v0.1` with targeted evidence around audience/product/differentiation/output priorities.
+- Define only enough Core Experience/Loop to expose the major assumptions.
+- As soon as the highest-risk assumption is identifiable, create a dedicated prototype/test branch; do not wait for deep world/taxonomy documentation.
+- Add minimum world/taxonomy/visual work only to the depth required by the retained product/prototype.
 
 ## DO NOT DO YET
 
