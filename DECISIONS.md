@@ -1,6 +1,6 @@
 # NOVA TAILS — Decision Log
 
-Use this file for high-impact product/design decisions. Do not silently convert brainstorms into canon.
+Use this file for high-impact project decisions. Do not silently convert brainstorms into canon.
 
 ## ADR template
 
@@ -70,33 +70,33 @@ Character specs must explicitly separate locked identity features from output-sp
 
 ## ADR-0004 — First game direction
 
-**Status:** DRAFT / REVIEW REQUIRED  
+**Status:** DRAFT / DEFERRED TO PRODUCT VISION  
 **Date:** 2026-09-16
 
-### Proposed decision
-Validate an accessible character-collection RPG/card-battler rather than a complex real-time 3D game. Current hypotheses include a five-character team and semi-auto/auto combat with strategically meaningful skills/ultimates.
+### Hypothesis
+An accessible character-collection RPG/card-battler may be a suitable first interactive product. Five-character teams and semi-auto/auto combat are hypotheses, not architecture decisions.
 
-### Alternatives
+### Alternatives to test
 - fully manual turn-based;
 - smaller 3–4 unit party;
-- real-time action;
-- pure idle auto-battler.
+- semi-auto/auto with manual decisions;
+- other low-complexity formats consistent with the IP.
 
 ### Validation required
-Product Vision review followed by a cheap combat prototype.
+Dedicated Product Vision review and cheap interaction prototype(s).
 
 ---
 
 ## ADR-0005 — V1 progression budget
 
-**Status:** DRAFT  
+**Status:** DRAFT / DEFERRED TO CORE LOOP  
 **Date:** 2026-09-16
 
-### Proposed decision
-Initially test Level, Cultivation/Breakthrough, Evolution, Skill Tree and Equipment only. Defer Artifact/Bond/Rune/Relic systems.
+### Hypothesis
+Level, Cultivation/Breakthrough, Evolution, Skill choices and Equipment are candidate progression dimensions. There is no requirement that all five survive.
 
-### Why
-Each progression dimension must create a distinct decision or unlock; overlapping percentage-growth systems add complexity without depth.
+### Durable constraint
+Each retained progression dimension must create a distinct decision/unlock/job. Systems that merely duplicate percentage stat inflation should be merged, removed or deferred.
 
 ### Validation required
 Core-loop/progression prototype.
@@ -105,14 +105,14 @@ Core-loop/progression prototype.
 
 ## ADR-0006 — Physical design philosophy
 
-**Status:** APPROVED DIRECTION / NOT YET LOCKED  
+**Status:** APPROVED DIRECTION / NOT LOCKED  
 **Date:** 2026-09-16
 
-### Proposed decision
-Base collectible designs should prioritize modular FDM manufacturing, strong physical color separation and robust assembly. They should be printable without AMS by printing color-separated components independently.
+### Decision
+Physical collectible exploration should prioritize modular FDM manufacturing, strong physical color separation and robust assembly, including workflows that do not require AMS for the base figure.
 
 ### Validation required
-Physical prints of at least two character archetypes and one boss-scale model. Connector dimensions/tolerances remain unapproved until measured from real prints.
+Physical prints of contrasting character archetypes before locking manufacturing standards. Connector dimensions/tolerances remain unapproved until measured from real prints.
 
 ---
 
@@ -177,3 +177,19 @@ Optimizing for hypothetical file sizes/fields creates maintenance cost before ac
 ### Revisit trigger
 - first structured combat data slice for schemas;
 - Physical Asset Proof milestone for LFS/storage.
+
+---
+
+## ADR-0010 — Roadmap is risk-driven, not waterfall
+
+**Status:** APPROVED  
+**Date:** 2026-09-16
+
+### Decision
+Roadmap phases express dependency/risk order, not a requirement to complete large documents sequentially. When a cheap prototype/test can invalidate a risky assumption faster than documentation, prototype earlier and feed evidence back into the relevant decision.
+
+### Why
+The project must avoid replacing implementation risk with excessive worldbuilding/design documentation.
+
+### Impact
+Product Vision and Core Loop should identify the highest-risk assumptions and select the cheapest credible validation method before expanding content.
