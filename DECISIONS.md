@@ -25,17 +25,11 @@ Revisit trigger
 **Status:** APPROVED  
 **Date:** 2026-09-16
 
-### Context
-The project is being developed through iterative AI-assisted discussion and may eventually contain game systems, lore, structured data, 2D assets and 3D printable assets. Chat history alone is unsuitable as canonical project storage.
-
 ### Decision
-The Git repository is the authoritative project record. AI/chat outputs remain proposals until reviewed and written into canonical project files.
-
-### Impact
-Every significant future session should read the relevant repository state before proposing canonical changes.
+The Git repository is the authoritative project record. AI/chat outputs remain proposals until intentionally captured and reviewed through repository workflow.
 
 ### Revisit trigger
-Only if project scale requires a dedicated content-management/database system; Git should still retain versioned schemas/code/docs.
+If project scale requires a dedicated content-management/database system; Git should still retain versioned schemas/code/docs and decision history.
 
 ---
 
@@ -50,9 +44,6 @@ Do not create a large roster, skill library, equipment catalog or printable coll
 ### Why
 Cheap AI generation can create large amounts of internally inconsistent content and increase sunk cost before core assumptions are proven.
 
-### Validation required
-A playable vertical slice and repeatable asset pipeline.
-
 ---
 
 ## ADR-0003 — Shared master character identity
@@ -61,10 +52,10 @@ A playable vertical slice and repeatable asset pipeline.
 **Date:** 2026-09-16
 
 ### Decision
-Game unit, 2D artwork and 3D printable figure are adaptations of one canonical character identity, not independently redesigned characters.
+When a character is adapted across outputs, game unit, 2D artwork and 3D printable figure should derive from one canonical character identity rather than becoming independently redesigned identities.
 
 ### Impact
-Character specs must explicitly separate locked identity features from output-specific adaptation rules.
+Character specs should eventually separate locked identity features from output-specific adaptation rules.
 
 ---
 
@@ -98,21 +89,23 @@ Level, Cultivation/Breakthrough, Evolution, Skill choices and Equipment are cand
 ### Durable constraint
 Each retained progression dimension must create a distinct decision/unlock/job. Systems that merely duplicate percentage stat inflation should be merged, removed or deferred.
 
-### Validation required
-Core-loop/progression prototype.
-
 ---
 
-## ADR-0006 — Physical design philosophy
+## ADR-0006 — Physical collectible / FDM direction
 
-**Status:** APPROVED DIRECTION / NOT LOCKED  
+**Status:** REVIEW / DEFERRED TO PRODUCT VISION + PHYSICAL PROOF  
 **Date:** 2026-09-16
 
-### Decision
-Physical collectible exploration should prioritize modular FDM manufacturing, strong physical color separation and robust assembly, including workflows that do not require AMS for the base figure.
+### Hypothesis
+A modular, color-separated FDM-printable collectible layer—ideally allowing base figures to be printed without AMS—could be a meaningful differentiator for the IP.
+
+### Why not approved yet
+We have design proof-of-concept work, but have not yet decided whether physical printing is a core product pillar, extension or later layer, and manufacturing rules have not been validated on representative physical prototypes.
 
 ### Validation required
-Physical prints of contrasting character archetypes before locking manufacturing standards. Connector dimensions/tolerances remain unapproved until measured from real prints.
+1. Product Vision decision on the role of physical collectibles.
+2. Physical prints of contrasting character archetypes before locking manufacturing standards.
+3. Measured connector/tolerance/detail results before canonical manufacturing dimensions.
 
 ---
 
@@ -121,11 +114,8 @@ Physical prints of contrasting character archetypes before locking manufacturing
 **Status:** APPROVED  
 **Date:** 2026-09-16
 
-### Context
-The project will contain interdependent design, code, balance and asset changes. A single long-lived development branch would make review boundaries and canon promotion unclear.
-
 ### Decision
-Use `main` as reviewed project state and short-lived purpose-specific branches (`design/`, `feature/`, `character/`, `balance/`, `asset/`, `tooling/`, `fix/`, `chore/`). Significant canonical changes go through focused PRs.
+Use `main` as reviewed project baseline and short-lived purpose-specific branches (`design/`, `feature/`, `character/`, `balance/`, `asset/`, `tooling/`, `fix/`, `chore/`). Significant changes to reviewed state go through focused PRs.
 
 ### Alternatives considered
 - permanent `develop` branch;
@@ -133,7 +123,7 @@ Use `main` as reviewed project state and short-lived purpose-specific branches (
 - committing AI changes directly to `main`.
 
 ### Why
-The current team/project size does not justify GitFlow-style permanent integration branches. Focused branches make review, rollback and dependency reasoning easier.
+The current project/team size does not justify GitFlow-style permanent integration branches. Focused branches make review, rollback and dependency reasoning easier.
 
 ### Revisit trigger
 A larger team/release process demonstrates a concrete need for release/integration branches.
@@ -148,18 +138,15 @@ A larger team/release process demonstrates a concrete need for release/integrati
 ### Decision
 Separate responsibilities as follows:
 
-- `docs/` explains intent/rationale;
+- `docs/` explains intent/rationale and may contain explicitly marked hypotheses;
 - `data/` stores machine-readable canonical instances once needed;
 - `schemas/` defines validity/contracts;
-- `prompts/` derives generation instructions from canon;
+- `prompts/` derives generation instructions from reviewed canon;
 - `assets/` stores intentionally retained project assets under storage policy;
-- implementation/simulator/tools consume the contracts rather than redefining canon silently.
-
-### Why
-This prevents prompt drift, duplicated entity facts and contradictions between documentation, game implementation and asset generation.
+- implementation/simulator/tools consume reviewed contracts rather than redefining canon silently.
 
 ### Validation required
-The first vertical-slice schemas/data should demonstrate that the split is useful rather than bureaucratic.
+The first prototype/vertical-slice schemas/data should demonstrate that the split is useful rather than bureaucratic.
 
 ---
 
@@ -171,11 +158,8 @@ The first vertical-slice schemas/data should demonstrate that the split is usefu
 ### Decision
 Define storage/schema policy now, but delay Git LFS configuration and detailed entity schemas until representative physical assets and prototype data exist.
 
-### Why
-Optimizing for hypothetical file sizes/fields creates maintenance cost before actual requirements are known.
-
 ### Revisit trigger
-- first structured combat data slice for schemas;
+- first structured game-data slice for schemas;
 - Physical Asset Proof milestone for LFS/storage.
 
 ---
