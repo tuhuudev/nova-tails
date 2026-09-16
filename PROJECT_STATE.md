@@ -3,9 +3,9 @@
 **Project version:** 0.1.0-dev  
 **Phase:** Phase 0 — Repository & Architecture Foundation  
 **Updated:** 2026-09-16  
-**Repository role:** authoritative after review/acceptance; `main` is accepted baseline
+**Repository role proposed by this PR:** authoritative after review/acceptance; `main` is accepted baseline
 
-## Lifecycle policy
+## Lifecycle policy — PROPOSED FOR ACCEPTANCE
 
 `IDEA → DRAFT → REVIEW → APPROVED → LOCKED`; obsolete decisions become `DEPRECATED`.
 
@@ -15,9 +15,7 @@
 
 Nothing is permanently locked yet. This is intentional.
 
-## PROPOSED APPROVED ARCHITECTURE / GOVERNANCE DIRECTION
-
-The following items are proposed for acceptance by this Phase 0 PR; until merged/accepted, they remain branch proposals:
+## PHASE 0 ARCHITECTURE / GOVERNANCE — PROPOSED FOR ACCEPTANCE
 
 - If a character/identity is retained across multiple outputs, one reviewed master identity should drive those adaptations rather than allowing independent identity drift; Product Vision is not required to retain multiple outputs.
 - AI is an ideation/production assistant; repository changes become authoritative after review/acceptance.
@@ -86,16 +84,15 @@ MOMO demonstrates a candidate physical-design direction (small stylized fox/scou
 - [x] Physical-collectible direction returned to REVIEW
 - [x] Product Vision gate includes targeted external evidence
 - [x] Originality/IP language requires validation rather than implying guarantee
-- [x] Early highest-risk prototype/test is proposed as governance decision
+- [x] Early highest-risk prototype/test proposed as governance decision
 - [x] Data serialization/schema, stable-ID format and asset-registry naming deliberately deferred until real requirements
 - [x] Repository ruleset state checked: no rulesets are currently configured
 - [x] Phase 0 foundation prepared for owner/reviewer decision
 - [ ] Owner/reviewer accepts Phase 0 and merges
 - [ ] Configure `main` protection/ruleset when repository permissions/workflow allow it
 
-## NEXT MILESTONES
+## NEXT MILESTONES — AFTER ACCEPTANCE
 
-After Phase 0 acceptance/merge:
 1. `design/product-vision-v0.1` — audience/product/differentiation/output priorities + targeted evidence.
 2. `design/core-loop-v0.1` — minimum repeated experience for the selected product.
 3. Create a dedicated cheapest-high-risk-prototype branch as soon as the most dangerous assumption is identifiable; it may precede deeper world/taxonomy work.
