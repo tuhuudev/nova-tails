@@ -1,0 +1,36 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "NOVA TAILS Skill",
+  "type": "object",
+  "required": ["id", "characterId", "name", "status", "type", "logic", "presentation"],
+  "properties": {
+    "id": {"type": "string", "pattern": "^SK-NT[0-9]+-[0-9]+$"},
+    "characterId": {"type": "string", "pattern": "^NT-[0-9]{3,}$"},
+    "name": {"type": "string"},
+    "status": {"enum": ["candidate", "validated", "canon"]},
+    "type": {"enum": ["basic", "active", "passive", "ultimate"]},
+    "element": {"type": ["string", "null"]},
+    "logic": {
+      "type": "object",
+      "properties": {
+        "target": {"type": ["string", "null"]},
+        "damageProfile": {"type": ["string", "number", "null"]},
+        "cooldown": {"type": ["number", "null"]},
+        "cost": {"type": ["number", "null"]},
+        "effects": {"type": "array", "items": {"type": "string"}}
+      }
+    },
+    "presentation": {
+      "type": "object",
+      "properties": {
+        "animationAssetId": {"type": ["string", "null"]},
+        "vfxAssetId": {"type": ["string", "null"]},
+        "sfxAssetId": {"type": ["string", "null"]},
+        "iconAssetId": {"type": ["string", "null"]},
+        "fxAnchors": {"type": "array", "items": {"type": "string"}}
+      }
+    },
+    "description": {"type": "string"}
+  },
+  "additionalProperties": false
+}
