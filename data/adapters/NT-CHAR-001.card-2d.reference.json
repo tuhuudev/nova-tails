@@ -1,0 +1,17 @@
+{
+  "schema_version": "0.1",
+  "adapter_id": "card-2d/NT-CHAR-001/reference",
+  "lane": "card-2d",
+  "character_id": "NT-CHAR-001",
+  "character_revision": "0.1",
+  "master_design_revision": null,
+  "adapter_version": "0.1",
+  "preserved_invariants": ["central floating core", "broken asymmetric orbit", "orbit negative space", "non-grounded topology"],
+  "allowed_transformations": ["camera", "composition", "orbit phase", "lighting", "environmental VFX", "surface-detail refinement"],
+  "validation": {
+    "status": "PLANNED",
+    "gates": ["recognizable without nameplate", "broken orbit remains structural rather than VFX-only", "no normal-animal anatomy introduced"]
+  },
+  "deliverables": [],
+  "provenance": {"notes": "Architecture proof manifest only; no production art is approved by this file."}
+}
