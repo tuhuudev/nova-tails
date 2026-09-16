@@ -24,6 +24,7 @@ Nothing is permanently locked yet. This is intentional.
 - Keep human-readable rationale, machine-readable canon, schemas, prompts and assets as distinct responsibilities.
 - Avoid premature Git LFS/schema/automation complexity until real prototype/asset needs exist.
 - Treat the roadmap as risk-driven; use external research and cheap prototypes/tests when they can materially change a decision faster than more documentation.
+- After Product Vision/Core Experience identify the highest-risk assumption, prototype/test it before deep content/worldbuilding.
 - Treat originality and third-party-rights risk as something to validate, not something AI can guarantee.
 
 ## REVIEW / PRODUCT GOAL
@@ -83,6 +84,7 @@ MOMO demonstrates a candidate physical-design direction (small stylized fox/scou
 - [x] Physical-collectible direction returned to REVIEW
 - [x] Product Vision gate includes targeted external evidence
 - [x] Originality/IP language requires validation rather than implying guarantee
+- [x] Early highest-risk prototype/test is now an explicit governance decision
 - [x] Internal architecture review completed; no remaining blocking governance/architecture inconsistency identified
 - [ ] Owner acceptance / merge of Phase 0 foundation PR
 - [ ] `main` protection/ruleset when repository permissions/workflow allow it
@@ -91,11 +93,9 @@ MOMO demonstrates a candidate physical-design direction (small stylized fox/scou
 
 After Phase 0 acceptance/merge:
 1. `design/product-vision-v0.1` — audience/product/differentiation/output priorities + targeted evidence.
-2. `design/core-loop-v0.1` — only after Product Vision has a viable hypothesis.
-3. A dedicated **cheapest high-risk prototype** branch should be created as soon as Product Vision/Core Loop identify the most dangerous assumption; it may occur before deeper world/taxonomy work.
-4. Minimum world/taxonomy/visual work is added only to the depth required by the selected product/prototype.
-
-This is risk ordering, not waterfall.
+2. `design/core-loop-v0.1` — minimum repeated experience for the selected product.
+3. Create a dedicated cheapest-high-risk-prototype branch as soon as the most dangerous assumption is identifiable; it may precede deeper world/taxonomy work.
+4. Add minimum world/taxonomy/visual work only to the depth required by the selected product/prototype.
 
 ## DO NOT DO YET
 
