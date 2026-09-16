@@ -26,7 +26,7 @@ Working strategic hypothesis:
 
 > NOVA TAILS is a character/IP system whose distinctive identities can survive across digital and physical adaptations; the first product should be whichever small experience proves that people care about those identities and want to interact with/collect them.
 
-This is not yet accepted canon.
+This remains a product hypothesis rather than permanent canon.
 
 ## PRODUCT OPTIONS UNDER REVIEW
 
@@ -50,8 +50,10 @@ Do not assume these must all survive.
 - 2025 mobile-market examples show active use of hybrid/simple-core + deeper-meta structures; this does not validate a generic NOVA TAILS gacha/card battler.
 - MakerWorld has creator commercial-license mechanisms and explicit originality/authorization requirements, making printable originals a plausible but unvalidated distribution/business extension.
 - A1 mini real build volume is 180 × 180 × 180 mm; any A1-mini manufacturing standard must ultimately be physically tested.
+- Internal character-identity exploration has produced four intentionally separated topology directions: Scout, Guardian, Spirit and Wild.
+- Internal stimulus review currently passes with conditions; this is design evidence only, not participant evidence.
 
-See `docs/research/PRODUCT_VISION_EVIDENCE_2026-09-16.md`.
+See `docs/research/PRODUCT_VISION_EVIDENCE_2026-09-16.md` and `docs/experiments/character-desirability/`.
 
 ## DRAFT / UNVALIDATED
 
@@ -65,25 +67,55 @@ See `docs/research/PRODUCT_VISION_EVIDENCE_2026-09-16.md`.
 - origin/faction/class/role/element counts;
 - progression/equipment models;
 - 3D printing as core product pillar;
-- MOMO as production character.
+- MOMO as production character;
+- Scout / Guardian / Spirit / Wild as production characters;
+- any flagship/main-character selection.
 
-## FIRST TEST — PROPOSED
+## FIRST TEST — ACTIVE
 
 **Test A: Character desirability / identity.**
 
-Use 3–5 deliberately diverse character concepts at comparable presentation quality. Test with people outside the project for:
-- unaided recall;
-- recognizable signature/silhouette;
-- perceived distinctiveness;
-- preference reason;
-- desire to see/interact with one again.
+Current experiment branch: `experiment/character-desirability-v0.1`.
 
-Failure signal: responses are mainly generic “cute/cool” and identities are not remembered/distinguished.
+Completed internally:
+- experiment protocol;
+- identity briefs;
+- silhouette selection/revision rules;
+- two stimulus-review passes;
+- Wild topology moved away from mammalian fox/wolf convergence;
+- internal gate: **PASS WITH CONDITIONS**;
+- operator-ready 3–5 person pilot protocol/package.
+
+The controlled test uses four deliberately different identities and measures:
+- unaided recall;
+- signature/silhouette recognition;
+- confusion between identities;
+- external-IP associations;
+- preference reasons;
+- continued-interest mode.
+
+## CURRENT BLOCKER — HUMAN PILOT REQUIRED
+
+The next evidence-producing step cannot be completed by repository work or AI review alone.
+
+Run the frozen procedure with **3–5 real people outside the project**. Pilot data validates the procedure only; it is not market evidence and must not be mixed into the later directional sample.
+
+Before participant P01, freeze:
+1. four normalized silhouette stimuli;
+2. four comparable neutral 3/4 renders;
+3. stimulus version/order record;
+4. the question script and result table in `PILOT_PACKAGE.md`.
+
+After the pilot:
+- if the procedure/stimuli fail the gate, revise and run a new pilot version;
+- if the procedure passes, freeze the accepted stimulus version and prepare the later 15–25 person directional test.
 
 ## NEXT DECISION
 
-Review Product Vision v0.1 and decide whether Test A is the correct first risk-reduction experiment. If accepted, create a dedicated experiment branch and define protocol before generating more characters.
+Do not decide the game format, flagship character or physical-product role from internal visual preference.
+
+The next decision is evidence-driven: **does the 3–5 person pilot validate the measurement procedure and separability of the four controlled identities?**
 
 ## DO NOT DO YET
 
-Do not deepen lore, lock combat, build economy/gacha, generate a large roster, or engineer a production STL catalog before the first desirability/differentiation evidence exists.
+Do not deepen lore, lock combat, build economy/gacha, generate a large roster, engineer a production STL catalog, or select a flagship character before participant evidence exists.
