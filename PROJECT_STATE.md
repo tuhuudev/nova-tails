@@ -3,22 +3,24 @@
 **Project version:** 0.1.0-dev  
 **Phase:** Phase 0 — Repository & Architecture Foundation  
 **Updated:** 2026-09-16  
-**Repository role:** authoritative project record after review
+**Repository role:** authoritative after review/acceptance; `main` is accepted baseline
 
 ## Lifecycle policy
 
 `IDEA → DRAFT → REVIEW → APPROVED → LOCKED`; obsolete decisions become `DEPRECATED`.
 
-`APPROVED` is an accepted current decision/direction. `LOCKED` is a stronger dependency contract. Draft hypotheses may be retained in the reviewed baseline without becoming active canon.
+`APPROVED` is an accepted current decision/direction. `LOCKED` is a stronger dependency contract. Draft hypotheses may be retained in the accepted baseline without becoming active canon.
 
 ## LOCKED
 
 Nothing is permanently locked yet. This is intentional.
 
-## APPROVED ARCHITECTURE / GOVERNANCE DIRECTION
+## PROPOSED APPROVED ARCHITECTURE / GOVERNANCE DIRECTION
+
+The following items are proposed for acceptance by this Phase 0 PR; until merged/accepted, they remain branch proposals:
 
 - If a character/identity is retained across multiple outputs, one reviewed master identity should drive those adaptations rather than allowing independent identity drift; Product Vision is not required to retain multiple outputs.
-- AI is an ideation/production assistant; the repository is the authoritative project record after review.
+- AI is an ideation/production assistant; repository changes become authoritative after review/acceptance.
 - Do not mass-produce content/assets until a representative end-to-end proof (vertical slice for a game, equivalent proof for another product) validates relevant assumptions.
 - Use short-lived, purpose-specific branches and reviewed PRs for significant changes.
 - Keep human-readable rationale, machine-readable structured/canonical data, validation contracts, prompts and assets as distinct responsibilities.
@@ -71,20 +73,20 @@ MOMO demonstrates a candidate physical-design direction (small stylized fox/scou
 
 ## PHASE 0 FOUNDATION CHECK
 
-- [x] Repository/project state baseline
-- [x] Branch/PR workflow
-- [x] Lifecycle/ADR policy
-- [x] Canon/data ownership policy
-- [x] Asset storage policy
-- [x] PR review template
-- [x] Baseline `.gitignore`
+- [x] Repository/project state baseline drafted
+- [x] Branch/PR workflow drafted
+- [x] Lifecycle/ADR policy drafted
+- [x] Canon/data ownership policy drafted
+- [x] Asset storage policy drafted
+- [x] PR review template added
+- [x] Baseline `.gitignore` added
 - [x] Master Architecture separates durable principles from hypotheses
 - [x] Roadmap is risk/evidence/prototype driven rather than waterfall
 - [x] Product Vision removed from Phase 0 PR for dedicated review
 - [x] Physical-collectible direction returned to REVIEW
 - [x] Product Vision gate includes targeted external evidence
 - [x] Originality/IP language requires validation rather than implying guarantee
-- [x] Early highest-risk prototype/test is an explicit governance decision
+- [x] Early highest-risk prototype/test is proposed as governance decision
 - [x] Data serialization/schema, stable-ID format and asset-registry naming deliberately deferred until real requirements
 - [x] Repository ruleset state checked: no rulesets are currently configured
 - [x] Phase 0 foundation prepared for owner/reviewer decision
