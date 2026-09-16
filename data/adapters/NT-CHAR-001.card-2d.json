@@ -1,0 +1,29 @@
+{
+  "adapter_id": "card-2d/NT-CHAR-001",
+  "character_id": "NT-CHAR-001",
+  "character_revision": "0.1",
+  "master_design_revision": null,
+  "adapter_version": "0.1",
+  "lane": "card-2d",
+  "preserved_invariants": [
+    "floating topology",
+    "negative space around central core",
+    "incomplete asymmetric broken orbit"
+  ],
+  "allowed_transformations": [
+    "pose and orbit rotation",
+    "camera and composition",
+    "expression",
+    "lighting and environmental VFX",
+    "surface-detail density"
+  ],
+  "validation": {
+    "status": "NOT_RUN",
+    "required": [
+      "recognizable without nameplate",
+      "broken orbit remains structural rather than decorative",
+      "no conventional animal anatomy introduced"
+    ]
+  },
+  "deliverables": []
+}
