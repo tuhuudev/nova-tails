@@ -4,7 +4,7 @@ NOVA TAILS is currently a small, AI-assisted project, but repository discipline 
 
 ## Source-of-truth rule
 
-The repository is the authoritative project record after review. `main` represents the latest reviewed baseline, not a claim that every line is locked canon. `DRAFT`/`REVIEW` material may be retained on `main` as visible hypotheses/TODOs.
+The repository is the authoritative project record once changes are reviewed/accepted. `main` represents the latest accepted baseline, not a claim that every line is locked canon. `DRAFT`/`REVIEW` material may be retained on `main` as visible hypotheses/TODOs.
 
 `APPROVED` means an accepted current decision/direction. Concrete entity facts become canonical when the relevant entity/system is approved and represented as canonical data. `LOCKED` is a stronger dependency contract.
 
@@ -30,7 +30,7 @@ Examples such as `design/product-vision-v0.1` or `feature/combat-prototype` illu
 
 ## Pull requests
 
-Every significant change to reviewed project state should normally use a PR. Keep scope coherent, state out-of-scope and uncertainty, identify affected areas/evidence, and update decisions/project state when appropriate. Draft PRs are preferred while a decision is still being explored.
+Every significant change to the accepted project baseline should normally use a PR. Keep scope coherent, state out-of-scope and uncertainty, identify affected areas/evidence, and update decisions/project state when appropriate. Draft PRs are preferred while a decision is still being explored.
 
 ## Lifecycle status
 
@@ -67,7 +67,7 @@ AI may research, draft, generate and validate proposals, but must read relevant 
 Before merge:
 - [ ] Scope is coherent and reviewable.
 - [ ] No brainstorm is accidentally presented as approved/locked fact.
-- [ ] Terminology is consistent with current reviewed architecture.
+- [ ] Terminology is consistent with current accepted architecture.
 - [ ] Relevant ADR/decision and project state are updated.
 - [ ] Structured data conforms to contracts once contracts exist.
 - [ ] Binary/generated files comply with asset policy.
