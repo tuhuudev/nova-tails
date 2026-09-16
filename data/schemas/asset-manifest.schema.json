@@ -1,0 +1,40 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "NOVA TAILS Asset Manifest",
+  "type": "object",
+  "required": ["assetId", "characterId", "assetType", "version", "status", "source", "validation"],
+  "properties": {
+    "assetId": {"type": "string", "pattern": "^[A-Z0-9-]+$"},
+    "characterId": {"type": "string", "pattern": "^NT-[0-9]{3,}$"},
+    "assetType": {"type": "string"},
+    "purpose": {"type": "string"},
+    "version": {"type": "string"},
+    "status": {"enum": ["EXPERIMENT", "CANDIDATE", "APPROVED", "DEPRECATED"]},
+    "path": {"type": ["string", "null"]},
+    "source": {
+      "type": "object",
+      "required": ["method", "parentAssetIds"],
+      "properties": {
+        "method": {"enum": ["ai_generated", "human_authored", "hybrid", "derived_export", "scan", "other"]},
+        "parentAssetIds": {"type": "array", "items": {"type": "string"}, "uniqueItems": true},
+        "generatorOrTool": {"type": ["string", "null"]},
+        "promptRef": {"type": ["string", "null"]}
+      },
+      "additionalProperties": false
+    },
+    "validation": {
+      "type": "object",
+      "properties": {
+        "visualDNA": {"enum": ["not_applicable", "pending", "pass", "fail"]},
+        "crossView": {"enum": ["not_applicable", "pending", "pass", "fail"]},
+        "production": {"enum": ["not_applicable", "pending", "pass", "fail"]},
+        "runtime": {"enum": ["not_applicable", "pending", "pass", "fail"]},
+        "print": {"enum": ["not_applicable", "pending", "pass", "fail"]}
+      },
+      "additionalProperties": false
+    },
+    "derivedAssetIds": {"type": "array", "items": {"type": "string"}, "uniqueItems": true},
+    "notes": {"type": "string"}
+  },
+  "additionalProperties": false
+}
