@@ -3,12 +3,14 @@
 **Project version:** 0.1.0-dev  
 **Phase:** Phase 0 — Repository & Architecture Foundation  
 **Updated:** 2026-09-16  
-**Source of truth:** this repository
+**Repository role:** reviewed baseline and authoritative project record
 
 ## Status policy
 
 `IDEA → DRAFT → REVIEW → APPROVED → LOCKED`  
 Obsolete decisions become `DEPRECATED` rather than being silently erased.
+
+`APPROVED` is an accepted current decision/direction. `LOCKED` is a stronger dependency contract. Draft hypotheses may be retained in the reviewed baseline without becoming active canon.
 
 ## LOCKED
 
@@ -18,7 +20,7 @@ Nothing is permanently locked yet. The project is deliberately still validating 
 
 - Build an original multi-species sci-fi/fantasy character universe.
 - When characters span outputs, one reviewed master identity should drive adaptations rather than allowing independent identity drift.
-- AI is an ideation/production assistant; reviewed repository state remains authoritative.
+- AI is an ideation/production assistant; the repository is the authoritative project record after review.
 - Do not mass-produce characters/assets until a vertical slice validates relevant systems and pipeline assumptions.
 - Use short-lived, purpose-specific branches and reviewed PRs for significant changes.
 - Keep human-readable rationale, machine-readable canon, schemas, prompts and assets as distinct responsibilities.
