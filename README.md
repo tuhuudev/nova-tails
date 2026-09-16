@@ -49,22 +49,21 @@ Directories such as `data/`, `schemas/`, `simulator/`, `prompts/` and detailed d
 
 ## Development sequence
 
-After Phase 0 is reviewed and merged:
+After Phase 0:
 
 ```text
 Product Vision + targeted evidence
-→ Core Loop
-→ minimum world / taxonomy / visual work required by the product
-→ interaction prototype as early as useful
+→ Core Experience / Loop
+→ identify highest-risk assumption
+→ cheapest credible prototype/test
+→ minimum world / taxonomy / visual work needed by retained product
 → structured data / math when behavior is known
 → vertical slice
 → simulation / physical proof only for retained pillars
 → scale only after validation
 ```
 
-This is a risk/dependency sequence, not strict waterfall. A cheap prototype may move earlier if it answers a critical unknown faster than more documentation.
-
-Each major step should normally use a dedicated short-lived branch and focused PR.
+The prototype can move earlier whenever it answers a critical unknown faster than documentation. Each major change should normally use a dedicated short-lived branch and focused PR.
 
 ## Current rule
 
