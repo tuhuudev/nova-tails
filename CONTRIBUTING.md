@@ -18,7 +18,7 @@ Use short-lived branches with one reviewable purpose:
 main
 ├── design/<topic>-vX.Y
 ├── feature/<topic>
-├── character/<id-or-name>
+├── character/<slug-or-id-when-defined>
 ├── balance/<topic>
 ├── asset/<topic>
 ├── tooling/<topic>
@@ -26,7 +26,7 @@ main
 └── chore/<topic>
 ```
 
-Do not create permanent `develop`, `ai`, or per-person branches unless the team/workflow later demonstrates a real need.
+Examples such as `design/product-vision-v0.1` or `feature/combat-prototype` illustrate branch syntax; they do not approve the underlying product decision. Do not create permanent `develop`, `ai`, or per-person branches unless the team/workflow later demonstrates a real need.
 
 ## Pull requests
 
@@ -34,9 +34,7 @@ Every significant change to reviewed project state should normally use a PR. Kee
 
 ## Lifecycle status
 
-`IDEA → DRAFT → REVIEW → APPROVED → LOCKED`; use `DEPRECATED` for superseded material.
-
-Do not lock placeholder balance numbers or untested manufacturing dimensions.
+`IDEA → DRAFT → REVIEW → APPROVED → LOCKED`; use `DEPRECATED` for superseded material. Do not lock placeholder balance numbers or untested manufacturing dimensions.
 
 ## Commit convention
 
