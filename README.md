@@ -1,6 +1,6 @@
 # NOVA TAILS
 
-> Working title. Current product hypothesis: a distinctive original multi-species sci-fi/fantasy universe/IP, initially explored through character-centric concepts, with potential game, 2D and modular FDM-printable 3D adaptations. Product Vision still needs to validate audience, differentiation, primary product and output priorities. Originality/IP risk requires review; it is not guaranteed by AI generation.
+> Working title. Current product hypothesis: build a distinctive multi-species sci-fi/fantasy universe/IP intended to become original, initially explored through character-centric concepts, with potential game, 2D and modular FDM-printable 3D adaptations. Product Vision still needs to validate audience, differentiation, primary product and output priorities. Originality/IP clearance requires review; it is not guaranteed by AI generation.
 
 ## Current phase
 
