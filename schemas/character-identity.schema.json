@@ -1,0 +1,112 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://nova-tails.local/schemas/character-identity.schema.json",
+  "title": "NOVA TAILS Character Identity v0.1",
+  "type": "object",
+  "additionalProperties": false,
+  "required": [
+    "schema_version",
+    "character_id",
+    "revision",
+    "lifecycle",
+    "identity",
+    "visual_contract"
+  ],
+  "properties": {
+    "schema_version": { "const": "0.1" },
+    "character_id": {
+      "type": "string",
+      "pattern": "^NT-CHAR-[0-9]{3,}$"
+    },
+    "revision": {
+      "type": "string",
+      "pattern": "^[0-9]+\\.[0-9]+$"
+    },
+    "lifecycle": {
+      "enum": ["IDEA", "DRAFT", "REVIEW", "APPROVED", "LOCKED", "DEPRECATED"]
+    },
+    "working_name": { "type": ["string", "null"] },
+    "identity": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["premise", "personality_anchors"],
+      "properties": {
+        "premise": { "type": "string", "minLength": 1 },
+        "personality_anchors": {
+          "type": "array",
+          "minItems": 1,
+          "maxItems": 5,
+          "uniqueItems": true,
+          "items": { "type": "string", "minLength": 1 }
+        },
+        "world_refs": {
+          "type": "array",
+          "uniqueItems": true,
+          "items": { "type": "string", "minLength": 1 }
+        }
+      }
+    },
+    "visual_contract": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["topology", "silhouette_invariants", "signature_features", "adaptable_properties"],
+      "properties": {
+        "topology": { "type": "string", "minLength": 1 },
+        "silhouette_invariants": {
+          "type": "array",
+          "minItems": 1,
+          "uniqueItems": true,
+          "items": { "type": "string", "minLength": 1 }
+        },
+        "signature_features": {
+          "type": "array",
+          "minItems": 1,
+          "uniqueItems": true,
+          "items": {
+            "type": "object",
+            "additionalProperties": false,
+            "required": ["id", "description", "criticality"],
+            "properties": {
+              "id": { "type": "string", "pattern": "^[a-z0-9][a-z0-9-]*$" },
+              "description": { "type": "string", "minLength": 1 },
+              "criticality": { "enum": ["identity-critical", "supporting"] }
+            }
+          }
+        },
+        "material_intent": {
+          "type": "array",
+          "uniqueItems": true,
+          "items": { "type": "string", "minLength": 1 }
+        },
+        "palette_tokens": {
+          "type": "array",
+          "uniqueItems": true,
+          "items": { "type": "string", "minLength": 1 }
+        },
+        "adaptable_properties": {
+          "type": "array",
+          "minItems": 1,
+          "uniqueItems": true,
+          "items": { "type": "string", "minLength": 1 }
+        }
+      }
+    },
+    "evolution_contract": {
+      "type": ["object", "null"],
+      "additionalProperties": false,
+      "properties": {
+        "continuity_rules": {
+          "type": "array",
+          "items": { "type": "string", "minLength": 1 }
+        }
+      }
+    },
+    "provenance": {
+      "type": "object",
+      "additionalProperties": true,
+      "properties": {
+        "notes": { "type": "string" }
+      }
+    }
+  }
+}
