@@ -6,9 +6,9 @@
 
 **Phase 0 — Repository & Architecture Foundation (v0.1)**
 
-The repository is the source of truth for project history and reviewed decisions. The `main` branch represents the latest reviewed baseline. `APPROVED` marks accepted current decisions/directions; `LOCKED` marks stronger dependency contracts. Draft hypotheses may remain visible on `main` without becoming canon.
+The repository is the authoritative project record after review. The `main` branch represents the latest reviewed baseline. `APPROVED` marks accepted current decisions/directions; `LOCKED` marks stronger dependency contracts. Draft hypotheses may remain visible on `main` without becoming active canon.
 
-Chat/AI outputs are proposals until reviewed and promoted through repository workflow. The exact first product/game format and the role of physical 3D printing are still being validated.
+Chat/AI outputs are proposals until reviewed and intentionally captured through repository workflow. The exact first product/game format and the role of physical 3D printing are still being validated.
 
 ## Project principles
 
