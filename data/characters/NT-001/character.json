@@ -1,0 +1,82 @@
+{
+  "identity": {
+    "id": "NT-001",
+    "name": "Pyrox",
+    "codename": "NT-001 Golden Character Candidate",
+    "version": "0.1.0",
+    "status": "concept"
+  },
+  "classification": {
+    "family": null,
+    "species": null,
+    "elements": ["Fire"],
+    "rarity": null,
+    "evolutionStage": 1
+  },
+  "visualDNA": {
+    "silhouette": "Small quadruped with oversized triangular ears and a prominent split flame-like rear-tail silhouette.",
+    "proportions": "Cute/compact Stage 1 proportions with large head, short body and short legs.",
+    "anatomy": {
+      "workingInterpretation": "Fox/canine-like quadruped; exact species is not canonized."
+    },
+    "surface": {
+      "workingInterpretation": "Light fur base with warm flame-like accents; exact markings remain candidate-level."
+    },
+    "colors": {
+      "status": "candidate",
+      "roles": ["light neutral base", "warm orange primary", "yellow/orange flame accent", "warm eye color"]
+    },
+    "signatureFeatures": [
+      {
+        "id": "EAR_SHAPE",
+        "description": "Oversized triangular ears with flame-like internal shape language",
+        "recognitionWeight": 0.8,
+        "inheritance": "LOCKED"
+      },
+      {
+        "id": "FOREHEAD_MARK",
+        "description": "Centered diamond-shaped forehead marking",
+        "recognitionWeight": 0.9,
+        "inheritance": "LOCKED"
+      },
+      {
+        "id": "TAIL_SPLIT",
+        "description": "Split flame-shaped tail/rear silhouette",
+        "recognitionWeight": 0.9,
+        "inheritance": "LOCKED"
+      }
+    ],
+    "traitRules": [
+      { "trait": "ear silhouette", "rule": "LOCKED" },
+      { "trait": "forehead diamond", "rule": "LOCKED" },
+      { "trait": "split tail identity", "rule": "LOCKED" },
+      { "trait": "body size", "rule": "EVOLVABLE" },
+      { "trait": "pattern complexity", "rule": "EVOLVABLE" },
+      { "trait": "flame intensity", "rule": "EVOLVABLE" },
+      { "trait": "horns", "rule": "OPTIONAL" },
+      { "trait": "wings", "rule": "FORBIDDEN", "notes": "Forbidden in the current candidate lineage unless explicitly reviewed." }
+    ]
+  },
+  "traits": {
+    "personality": ["curious", "loyal", "playful", "brave"],
+    "status": "candidate"
+  },
+  "evolution": {
+    "familyId": null,
+    "previousForm": null,
+    "nextForm": null,
+    "inheritedTraits": ["EAR_SHAPE", "FOREHEAD_MARK", "TAIL_SPLIT"],
+    "enhancedTraits": ["body size", "pattern complexity", "flame intensity"],
+    "newTraits": []
+  },
+  "assets": {
+    "concept": ["assets/characters/NT-001/concept/NT-001_concept_v001.png"],
+    "approvedReference": [],
+    "turnaround": [],
+    "models3D": []
+  },
+  "metadata": {
+    "canonStatus": "CANDIDATE",
+    "notes": "Pyrox, Fire element, anatomy, palette, personality and all visual details are working candidate decisions derived from concept_v001. Do not treat them as canon until explicit review/promotion. The generated sheet also proposed names/species/evolution details that are intentionally not all copied into canon data."
+  }
+}
