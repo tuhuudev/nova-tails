@@ -1,6 +1,6 @@
 # NOVA TAILS
 
-> Working title. Current product hypothesis: build a distinctive original multi-species sci-fi/fantasy universe/IP, initially explored through character-centric concepts, with potential game, 2D and modular FDM-printable 3D adaptations. Product Vision still needs to validate audience, differentiation, primary product and output priorities. Originality/IP risk requires review; it is not guaranteed by AI generation.
+> Working title. Current product hypothesis: a distinctive original multi-species sci-fi/fantasy universe/IP, initially explored through character-centric concepts, with potential game, 2D and modular FDM-printable 3D adaptations. Product Vision still needs to validate audience, differentiation, primary product and output priorities. Originality/IP risk requires review; it is not guaranteed by AI generation.
 
 ## Current phase
 
@@ -13,12 +13,12 @@ Chat/AI outputs are proposals until reviewed and intentionally captured through 
 ## Project principles
 
 1. Architecture before mass content production.
-2. Validate product/core interaction before building a large roster/content library.
-3. When a character spans outputs, one master identity should feed its adaptations.
+2. Validate product/core interaction before building a large content library.
+3. When an identity/character spans outputs, one master identity should feed its adaptations.
 4. AI generates proposals; it does not directly define canon.
 5. Every important decision is reviewable and traceable.
 6. Manufacturing standards must come from real physical tests if printable collectibles remain in scope.
-7. Every game/system layer should create a meaningful decision or serve a clear product purpose.
+7. Every system layer should create a meaningful decision or serve a clear product purpose.
 8. Avoid premature complexity in schemas, storage, branching and content volume.
 9. Use research/prototypes/tests to attack high-risk assumptions early rather than treating the roadmap as waterfall.
 10. Treat originality and third-party-rights risk as something to validate, not something AI can guarantee.
