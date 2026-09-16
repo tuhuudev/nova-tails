@@ -3,7 +3,7 @@
 **Status:** REVIEW — proposed until Phase 0 is accepted.  
 **Strategy:** foundation → evidence-backed product hypothesis → cheapest useful proof → representative slice → production.
 
-This is a **risk map, not waterfall**. Product Vision decides which later systems are actually required. A cheap prototype may move ahead of world/taxonomy documentation when it answers a critical unknown faster.
+This is a **risk map, not waterfall**. Numbering gives a default dependency order, not a rule that each phase must finish before the next starts. A test should move earlier whenever the relevant assumption becomes testable.
 
 ## Phase 0 — Repository & Architecture Foundation
 
@@ -21,19 +21,19 @@ Resolve enough to decide what deserves prototyping: target audience/core value, 
 
 Use targeted external research for adjacent products/genres, expectations, differentiation and relevant precedents. Research must end in a decision, hypothesis or test—not a giant competitor spreadsheet.
 
+**Important:** if a high-risk assumption becomes testable during Phase 1, run the cheap test immediately; do not wait for Phase 2/3.
+
 **Exit gate:** clear target/product/value/boundaries, evidence supporting the direction and explicit high-risk assumptions.
 
 ## Phase 2 — Core Experience / Loop
 
-Define the minimum repeated experience appropriate to the selected product. Acquisition/progression belong only if Phase 1 retains them.
-
-**Exit gate:** repeated use/play has value beyond receiving more currency/content.
+Define the minimum repeated experience appropriate to the selected product. Acquisition/progression belong only if Phase 1 retains them. Stop once there is enough definition to test the risky interaction/product assumptions.
 
 ## Phase 3 — Cheapest High-Risk Prototype
 
-Identify the assumption most likely to invalidate the product and build the cheapest credible test: low-fidelity interaction prototype, clickable UX, paper simulation, concept desirability test, physical proof, etc.
+Identify the assumption most likely to invalidate the product and build the cheapest credible test: low-fidelity interaction prototype, clickable UX, paper simulation, concept desirability test, physical proof, etc. This phase may overlap or move into Phase 1/2.
 
-**GATE A — CORE PRODUCT:** if the core promise is not understandable/promising, revise Phase 1/2.
+**GATE A — CORE PRODUCT:** if the core promise is not understandable/promising, revise earlier assumptions.
 
 ## Phase 4 — Minimum World Architecture — CONDITIONAL DEPTH
 
@@ -49,7 +49,7 @@ Define enough visual system to make representative identities coherent/distinct 
 
 ## Phase 7 — Interaction / Combat Model — IF RETAINED
 
-If the selected product is a character battler, prototype the minimal interaction model with placeholders before full progression/economy.
+If the selected product is a character battler, prototype the minimal interaction model with placeholders before full progression/economy. This may be the Phase 3 high-risk prototype rather than a separate later effort.
 
 ## Phase 8 — Math + Structured Data — WHEN BEHAVIOR IS KNOWN
 
@@ -91,7 +91,7 @@ Use simulation for sufficiently data-driven systems and telemetry when real user
 
 ## Phase 17 — Physical Asset Proof — IF RETAINED
 
-Validate a tiny sample through source design/model → print adaptation → slice → print → assembly → review. No manufacturing rule becomes locked before physical evidence.
+Validate a tiny sample through source design/model → print adaptation → slice → print → assembly → review. No manufacturing rule becomes locked before physical evidence. This can move earlier if physical viability is the highest-risk Product Vision assumption.
 
 ## Phase 18 — Manufacturing Bible — IF RETAINED
 
