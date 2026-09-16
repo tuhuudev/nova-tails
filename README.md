@@ -1,27 +1,27 @@
 # NOVA TAILS
 
-> Working title. Project goal: develop a distinctive, original character universe with potential game, 2D and modular FDM-printable 3D adaptations. Originality/IP risk must be validated during design/release review; it is not guaranteed by this label.
+> Working title. Current product hypothesis: a distinctive original multi-species sci-fi/fantasy character universe with potential game, 2D and modular FDM-printable 3D adaptations. Product Vision still needs to validate audience, differentiation, primary product and output priorities. Originality/IP risk also requires review; it is not guaranteed by AI generation.
 
 ## Current phase
 
 **Phase 0 — Repository & Architecture Foundation (v0.1)**
 
-The repository is the authoritative project record after review. The `main` branch represents the latest reviewed baseline. `APPROVED` marks accepted current decisions/directions; `LOCKED` marks stronger dependency contracts. Draft hypotheses may remain visible on `main` without becoming active canon.
+The repository is the authoritative project record after review. The `main` branch represents the latest reviewed baseline. `APPROVED` marks accepted current decisions/directions; `LOCKED` marks stronger dependency contracts. Draft/review hypotheses may remain visible on `main` without becoming active canon.
 
-Chat/AI outputs are proposals until reviewed and intentionally captured through repository workflow. The exact first product/game format and the role of physical 3D printing are still being validated.
+Chat/AI outputs are proposals until reviewed and intentionally captured through repository workflow.
 
 ## Project principles
 
 1. Architecture before mass content production.
 2. Validate product/core interaction before building a large roster.
-3. When a character spans outputs, one master identity should feed game, 2D and 3D adaptations.
+3. When a character spans outputs, one master identity should feed its adaptations.
 4. AI generates proposals; it does not directly define canon.
 5. Every important decision is reviewable and traceable.
 6. Manufacturing standards must come from real physical tests if printable collectibles remain in scope.
 7. Every game system should create a meaningful decision or serve a clear product purpose.
 8. Avoid premature complexity in schemas, storage, branching and content volume.
 9. Use research/prototypes/tests to attack high-risk assumptions early rather than treating the roadmap as waterfall.
-10. Treat originality and third-party-rights risk as something to review, not something AI can guarantee.
+10. Treat originality and third-party-rights risk as something to validate, not something AI can guarantee.
 
 ## Lifecycle status
 
