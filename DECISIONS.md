@@ -19,11 +19,11 @@ Revisit trigger
 
 ---
 
-## ADR-0001 — Repository is the authoritative reviewed project record
+## ADR-0001 — Repository is authoritative after review/acceptance
 **Status:** APPROVED  
 **Date:** 2026-09-16
 
-The Git repository is authoritative after review. `main` is the latest reviewed baseline and may intentionally contain explicitly marked draft/review hypotheses. Chat/AI output does not become authoritative merely by being generated.
+The repository is the authoritative project record once changes are reviewed/accepted. `main` is the latest accepted baseline and may intentionally contain explicitly marked draft/review hypotheses. Chat/AI output does not become authoritative merely by being generated or committed to a review branch.
 
 ---
 
@@ -71,7 +71,7 @@ A modular, color-separated, no-AMS-friendly FDM layer may differentiate the proj
 **Status:** APPROVED  
 **Date:** 2026-09-16
 
-Use `main` as reviewed baseline and short-lived purpose-specific branches (`design/`, `feature/`, `character/`, `balance/`, `asset/`, `tooling/`, `fix/`, `chore/`). Significant changes to reviewed state go through focused PRs. Do not add permanent integration branches without a demonstrated team/release need.
+Use `main` as accepted project baseline and short-lived purpose-specific branches (`design/`, `feature/`, `character/`, `balance/`, `asset/`, `tooling/`, `fix/`, `chore/`). Significant changes to accepted state go through focused PRs. Do not add permanent integration branches without a demonstrated team/release need.
 
 ---
 
