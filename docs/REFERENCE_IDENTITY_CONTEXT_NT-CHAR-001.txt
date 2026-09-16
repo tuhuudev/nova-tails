@@ -1,0 +1,36 @@
+CHARACTER: NT-CHAR-001@0.1
+LIFECYCLE: DRAFT
+PURPOSE: architecture reference only
+
+PREMISE
+Floating non-animal identity organized around a central core and an incomplete orbital structure.
+
+PERSONALITY ANCHORS
+- serene
+- alien
+
+MUST PRESERVE
+- floating rather than standing on animal-like legs
+- central core remains visual/body focus
+- meaningful negative space around the core
+- orbit is incomplete/asymmetric, never a perfect halo
+- broken-orbit structure is identity-critical
+
+MAY ADAPT
+- pose/orbit rotation while broken-orbit read survives
+- expression/core-face treatment
+- surface detail density
+- lighting
+- geometry density
+- print segmentation/connectors
+
+DO NOT INVENT AS CANON
+- final name
+- faction
+- element
+- combat role or powers
+- rarity
+- lore
+- evolution stage
+
+Any output is a proposal until reviewed. Any requested change to an invariant must be routed upstream as an identity revision proposal rather than silently applied in an adapter.
